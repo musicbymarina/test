@@ -1,14 +1,23 @@
 html, body, .root {
   height: 100%;
 }
+
 body {
   line-height: 1.5;
 }
+
 body, .app {
   background: white;
 }
 
+h1,
+h2,
+h3{
+  text-align: center;
+}
+
 /* main page */
+
 
 .list-books-title {
   padding: 10px 0;
@@ -38,6 +47,7 @@ body, .app {
 
 .bookshelf-title {
   border-bottom: 1px solid #dedede;
+  text-align: left;
 }
 .bookshelf-books {
   text-align: center;
@@ -103,6 +113,19 @@ body, .app {
   padding: 80px 10px 20px;
 }
 
+/* shelfs grid*/
+.shelves-grid {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shelves-grid > li {
+  width: 100%;
+}
+
 /* books grid */
 
 .books-grid {
@@ -122,6 +145,10 @@ body, .app {
 .book {
   width: 140px;
 }
+
+.book:hover {
+    border: solid 5px #2e7c31;
+}
 .book-title,
 .book-authors {
   font-size: 0.8em;
@@ -132,14 +159,116 @@ body, .app {
 .book-authors {
   color: #999;
 }
+.book-info {
+  color: #2e7c31;
+}
 
 .book-top {
   position: relative;
   height: 200px;
   display: flex;
   align-items: flex-end;
+    z-index: 0;
 }
 
+
+/*Display the description of the book*/
+.tooltip-toggle {
+  cursor: help;
+  position: relative;
+}
+
+.tooltip-toggle::before {
+  position: absolute;
+  top: 220px;
+  left: -10px;
+  background-color: #2e7c31;
+  border-radius: 5px;
+  color: #fff;
+  content: attr(data-tooltip);
+  padding: 1rem;
+  text-transform: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 900px;
+  z-index: 2;
+}
+
+.tooltip-toggle::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #2e7c31;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+  margin-left: -5px;
+  width: 0;
+}
+
+.tooltip-toggle::before,
+.tooltip-toggle::after {
+  color: #efefef;
+  font: 1em monospace;
+  opacity: 0;
+  pointer-events: none;
+  text-align: left;
+}
+
+.tooltip-toggle:hover::before,
+.tooltip-toggle:hover::after,
+.more:hover {
+
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+.more button{
+  cursor: help;
+ position: absolute;
+
+  width: 40px;
+  height: 40px;
+  background: white;
+  background-image: url('./icons/question.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+
+.details {
+margin-bottom: 1rem;
+position: absolute;
+top: 50px;
+right: 50px;
+border: #60ac5d solid 3px;
+}
+
+.description {
+  margin-top: 3rem;
+  font-size: 1em;
+}
+
+.google {
+  color: #60ac5d;
+  text-align: center;
+  display: block;
+}
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #60ac5d;
+  background-image: url('./icons/close-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
 .book-shelf-changer {
   position: absolute;
   right: 0;
@@ -166,6 +295,8 @@ body, .app {
 .book-cover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background: #eee;
+    z-index: 0;
+  position: relative;
 }
 .book-cover-title {
   padding: 20px 10px 0;
