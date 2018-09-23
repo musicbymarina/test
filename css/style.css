@@ -1,0 +1,299 @@
+/*COLORS:
+- dark grey: #414143 (background body)
+- powder pink: #A67E77 (menu background / hover color)
+- light grey: #8F8780 (hover menu background)
+- mushroom color: #E2DCD9 (color body)
+*/
+
+* {
+	font-family: Roboto, sans-serif;
+	color: #E2DCD9;
+}
+
+body {
+	background-color: #414143;
+}
+
+/*MENU*/
+
+h1, h2 {
+	text-align: center;
+}
+
+h1, li {
+	text-transform: uppercase;
+}
+
+header > div{
+	display: none;
+}
+
+ul.parent-menu, ul.child-menu, ul#insert {
+	list-style-type: none;
+	font-size: 1em;
+	padding: 0;
+}
+
+ul.parent-menu {
+	display: flex;
+	margin: 1em;
+	width: 100%;
+}
+
+ul.parent-menu > li, ul.child-menu > li {
+	background-color: #A67E77;
+	border: solid 4px #414143;
+	text-align: center;
+}
+
+ul.parent-menu > li {
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	margin: auto;
+}
+
+
+ul.parent-menu > li:hover,
+ ul.child-menu > li:hover {
+	background-color: #8F8780;
+}
+
+ul.parent-menu > li a, ul.child-menu > li a {
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	height: 1em;
+}
+
+ul.child-menu {
+	display: none;
+	position: absolute;
+	margin: -4px;
+	top: 3em;
+	width: 100%;
+}
+
+ul.child-menu > li {
+	width: inherit;
+	margin-top: 1px;
+	padding: 1em 0;
+}
+
+/*EXTRAIT IMAGES*/
+
+main {
+	width: 100%;
+}
+
+section {
+	border: #E2DCD9;
+	width: 100%;
+}
+
+#buttons {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+
+#buttons > button, 
+#buttons > h2 {
+	width: 100%;
+	margin: 0 auto;	
+}
+
+button {
+	color: #A67E77;
+	background-color:#E2DCD9;
+	text-transform: uppercase;
+	border: 5px solid #E2DCD9;
+	border-radius: 50px;
+	margin: 2em 10%;
+}
+
+
+.slider {
+	display: flex;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+}
+
+/*.slider > figure {
+	flex-wrap: wrap;
+	margin: auto;
+	display: none;
+}*/
+
+.hidden {
+	flex-wrap: wrap;
+	margin: auto;
+	display: none;
+}
+
+.slider img {
+	max-width: 100%;
+	-webkit-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+	-moz-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+	box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+}
+
+.slider figure.active {
+	display: block;
+	animation: fadeImg 0.8s;
+	-webkit-animation: fadeImg 0.8s;
+	-moz-animation: fadeImg 0.8s;
+}
+
+@-webkit-keyframes
+fadeImg {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes
+fadeImg {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes
+fadeImg {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+figcaption {
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.thumbnail {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#thumbnail {
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#thumbnail > li {
+	flex-wrap: wrap;
+	width: 200px;
+	margin: 20px;
+	list-style-type: none;
+	border: solid 5px #A67E77;
+}
+
+#thumbnail li img {
+	width: 100%;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	color: white;
+	background-color: black;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+#thumbnail .tooltip {
+	position: relative;
+}
+
+#thumbnail .tooltip .tooltiptext {
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+}
+
+.slider-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.slider-nav li {
+	-webkit-box-flex: 2;
+	flex: 2;
+	text-align: center;
+	display: -webkit-box;
+	display: flex;
+}
+
+.slider-nav .arrow {
+	flex: 0 0 15%;
+}
+
+.slider-nav a {
+	flex-basis: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.slider-nav span {
+	display: block;
+	width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+	header > div {
+		display: block;
+		margin: 5px 1em;
+		width: 10%;
+		border: solid 3px white;
+	}
+	.parent-menu {
+		margin: 1em;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.parent-menu > li {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		text-align: left;
+	}
+	button{
+		display: block;
+		width: 80%;
+		margin: 1em auto;
+	}
+	
+	#thumbnail{
+		flex-direction: column;
+	}
+	
+	#thumbnail > li{
+		margin: auto;
+	}
+	
+	
+	
+}

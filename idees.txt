@@ -1,0 +1,117 @@
+images initiales tirees de showPhotos() => les fleches sont ok
+
+si je clique sur une liste (all, electro ou rock) => les fleches sont pas ok
+
+1/RECUPERER LA LISTE DES PHOTOS (parametres) ET LA METTRE dans THUMBNAIL + SLIDER
+2/LA PREMIERE LI DU SLIDER DOIT AVOIR LA CLASSE ACTIVE ET LES AUTRES LI DU SLIDER DOIVENT AVOIR LA CLASSE HIDDEN
+3/ LA PHOTO DU THUMBNAIL QUI CORRESPOND A CELLE DU SLIDER AFFICHEE DOIT AVOIR UN BORDER BLANC
+4/ FAIRE UNE PROMISE POUR AFFICHER PAR DEFAUT LA LISTE DE TOUTES LES TOFFS + LE DISPLAY DU THUMBNAIL
+ET FAIRE UN MESSAGE ERREUR EN CAS DE PROBLEME (a utiliser par la suite)
+
+
+
+const slider = $('#slider');
+const thumbnail = $('#thumbnail');
+
+function fetchPhotos(liste){
+if(liste) {
+	liste.map(artiste=> {
+		artiste.photosPath.map((photo)=>{
+			const content = 
+			`<li>
+				<figure>
+					<img src='${photo}' alt='${artiste.name} at ${artiste.venue}'>
+					<figcaption>${artiste.name} at ${artiste.venue}</figcaption>
+				</figure>
+			</li>`;
+		slider.prepend(content);
+		thumbnail.prepend(content);
+		});
+	});
+} else {
+	console.warn('check si une liste apparait dans fetchPhotos');
+}
+const firstLiSlider = $('#slider li:first');
+const autresLiSlider = $('#slider li:first ~li');
+firstLiSlider.addClass('active');
+autresLiSlider.addClass('hidden');
+}
+
+/* Ajouter un border blanc dans le thumbnail qui correspond a la photo du slider
+A chaque fois qu'une photo sera vue dans le slider, chaque photo vue aura ce border
+(comme ca on sait celles qu'on a pas vu)
+*/
+const displayThumbnail = () =>{
+	// je récupère l'index du li du slider qui est actif
+	const indexSlider = $('#slider').find('li.active').index();
+	
+	// je récupere le li du thumbnail qui a le meme index que le li du slider actif
+	const thumbnailToDisplay = $('#thumbnail li')[indexSlider];
+	thumbnailToDisplay.style.border = 'solid 5px white';
+}
+
+SI JE CLIQUE SUR LA PHOTO dans le thumbnail:
+1/ la photo correspondante doit avoir un border blanc
+2/ l'index de la photo doit correspondre a l'index de la photo du slider pour etre concordant
+
+const choosePhoto = (event) =>{
+	const photoChoisie = $(event.target);
+	if(photoChoisie.is('li')) {
+		// Je change le titre h2 par le figcaption de la photo
+		const titrePhotoChoisie = photoChoisie.find('figcaption').html();
+		$('#titre').html(titrePhotoChoisie);
+		// je mets un border blanc sur la photo choisie dans le thumbnail
+		photoChoisie.css('border', 'solid 5px white');
+		// je trouve l'index de ma photo choisie dans le thumbnail
+		const indexPhotoChoisie = $('#thumbnail').find(photoChoisie).index();
+		// je cache la photo actuelle du slider
+		$('#slider').find('.active').addClass('hidden');
+		$('#slider').find('.active').removeClass('active');
+		// je récupère l'index de la photo du slider qui correspond a la photo choisie
+		const photoCorrespondante = $('#slider li')[indexPhotoChoisie];
+		photoCorrespondante.classList.add('active');
+		photoCorrespondante.classList.remove('hidden');
+
+	}
+}
+
+$('#thumbnail').click(choosePhoto);
+
+SI JE CLIQUE SUR LE BOUTON ELECTRO:
+1/ Je montre les photos correspondantes a ma liste dans le slider et thumbnail
+$('#electro').click(()=>{
+	// je nettoie d'abord mon thumbnail et mon slider:
+	cleanMySlider();
+	// je montre les photos du slider et thumbnail correspondantes aux djs
+	fetchPhotos(electroList);
+	// je mets mon fameux border blanc sur le thumbnail
+	displayThumbnail();
+});
+
+SI JE CLIQUE SUR LE BOUTON ROCK:
+1/ Je montre les photos correspondantes a ma liste dans le slider et thumbnail
+$('#rock').click(()=>{
+	// je nettoie d'abord mon thumbnail et mon slider:
+	cleanMySlider();
+	// je montre les photos du slider et thumbnail correspondantes aux rock bands
+	fetchPhotos(rockList);
+	// je mets mon fameux border blanc sur le thumbnail
+	displayThumbnail();
+});
+
+SI JE CLIQUE SUR LE BOUTON SHOW ALL:
+1/ Je montre les photos correspondantes a ma liste dans le slider et thumbnail
+$('#all').click(()=>{
+	// je nettoie d'abord mon thumbnail et mon slider:
+	cleanMySlider();
+	// je montre les photos du slider et thumbnail correspondantes aux djs
+	fetchPhotos(data);
+	// je mets mon fameux border blanc sur le thumbnail
+	displayThumbnail();
+});
+
+SI JE CLIQUE SUR LE BOUTON NEXT DU SLIDER:
+1/ Je montre dans le thumbnail (border blanc) la photo sélectionnée (+1) sauf si c'est la dernière photo du thumbnail
+2/ Je montre la photo correspondante dans le slider sauf si c'est la derniere toff du thumbnail
+
+
