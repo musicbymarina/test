@@ -175,15 +175,24 @@ button {
 	font-size: 1em;
 	width: 30%;
 	-webkit-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
--moz-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+	-moz-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+	box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+}
+
+button:hover{
+	background-color: #57595B;
+	color: white;
 }
 
 button:active{
+	background-color: #57595B;
+	color: white;
 	-webkit-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
--moz-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+	transform: translateY(4px);
 }
+
 
 .slider {
 	display: flex;
