@@ -1,5 +1,6 @@
 /*COLORS:
 - dark : black (background body + menu hover)
+- grey: #57595B (color for buttons)
 - light : white (hover menu background + color)
 */
 
@@ -162,7 +163,7 @@ section {
 }
 
 button {
-	color: black;
+	color: #57595B;
 	background-color: white;
 	text-transform: uppercase;
 	border: 5px solid black;
@@ -173,6 +174,9 @@ button {
 	font-weight: bolder;
 	font-size: 1em;
 	width: 30%;
+	-webkit-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
 }
 
 
@@ -365,7 +369,7 @@ figcaption {
 		display: flex;
 	}
 	
-	nav{
+	header nav{
 		display: none;
 	}
 	
@@ -378,6 +382,10 @@ figcaption {
 	.child-menu{
 		flex-direction: column;
 		display: flex;
+	}
+	
+	#thumbnail{
+		flex-direction: column;
 	}
 
 	
