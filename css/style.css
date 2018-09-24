@@ -95,6 +95,7 @@ ul.parent-menu > li {
 }
 
 ul.parent-menu > li a, ul.child-menu > li a {
+	color: white;
 	text-decoration: none;
 	display: block;
 	padding: 1em;
@@ -115,10 +116,6 @@ ul.child-menu > li {
 	padding-bottom: 1em;
 }
 
-.parent-menu > li a,
-.child-menu > li a{
-	color: white;
-}
 
 ul.parent-menu > li:hover,
 ul.child-menu > li:hover,
@@ -364,11 +361,21 @@ figcaption {
 		flex-direction: column;
 		display: flex;
 	}
+	
+	main{
+		width: 100%;
+	}
 	#buttons{
-		flex-direction: column;
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		flex-direction: row;
 	}
 	button {
-		width: 80%;
+		height: 60px;
+		font-weight: bolder;
+		font-size: 1em;
+		width: 30%;
 	}
 	
 }
