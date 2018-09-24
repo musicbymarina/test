@@ -138,7 +138,7 @@ ul.child-menu > li:active {
 /*EXTRAIT IMAGES*/
 
 main {
-	width: 80%;
+	width: 100%;
 }
 
 section {
@@ -171,7 +171,7 @@ button {
 	width: 100%;
 }
 
-.slider > figure {
+#slider > figure {
 	flex-wrap: wrap;
 	width: 100%;
 	display: none;
@@ -183,14 +183,14 @@ button {
 	display: none;
 }
 
-.slider img {
+#slider img {
 	max-width: 100%;
 	-webkit-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
 	-moz-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
 	box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
 }
 
-.slider figure.active {
+#slider figure.active {
 	display: block;
 	animation: fadeImg 0.8s;
 	-webkit-animation: fadeImg 0.8s;
@@ -346,17 +346,21 @@ figcaption {
 	header h3{
 		display: block;
 	}
+	
 	#burger{
 		display: none;
 	}
+	
 	nav{
 		display: block;
 	}
+	
 	.parent-menu > li{
 		display: flex;
 		flex-direction: column;
 		width: 40%;
 	}
+	
 	.child-menu{
 		flex-direction: column;
 		display: flex;
@@ -365,12 +369,14 @@ figcaption {
 	main{
 		width: 100%;
 	}
+	
 	#buttons{
 		display: flex;
 		width: 100%;
 		margin: 0 auto;
 		flex-direction: row;
 	}
+	
 	button {
 		height: 60px;
 		font-weight: bolder;
