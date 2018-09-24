@@ -68,7 +68,7 @@ h1, li {
 }
 
 nav{
-	display: none;
+	display: block;
 	width: 100%;
 }
 
@@ -366,7 +366,7 @@ figcaption {
 	}
 	
 	nav{
-		display: block;
+		display: none;
 	}
 	
 	.parent-menu > li{
