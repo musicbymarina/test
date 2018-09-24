@@ -2,12 +2,11 @@
 When I click on Portfolio in the menu, I can see the submenu
 */
 $('#portfolio').on('click', ()=>{
-	$(this).css({'background-color': 'white',
+	$('#portfolio').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
 	$('#portfolio a').css({'color': 'black', 'font-weight': 'bold'});
 	
-	$('#portfolio-child li').children('a').css({'color': 'white', 'font-weight': 'bold'});
 	if($(window).width() < 700){
 	$('#portfolio-child').slideToggle();
 	$('#works').toggle();
@@ -24,12 +23,11 @@ $('#portfolio').on('click', ()=>{
 When I click on Works in the menu, I can see the submenu
 */
 $('#works').on('click', ()=>{
-	$(this).css({'background-color': 'white',
+	console.log('the element clicked is: ' + $(this));
+	$('#works').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
 	$('#works a').css({'color': 'black', 'font-weight': 'bold'});
-	
-	$('#works-child li').children('a').css({'color': 'white', 'font-weight': 'bold'});
 	if($(window).width() < 700){
 	$('#works-child').slideToggle();
 	$('#news').toggle();
@@ -52,10 +50,12 @@ $('#burger').on('click', ()=>{
 - au lieu d'avoir le color white et background noir,
 
 */
-$('.parent-menu li').on('mouseenter', ()=>{
-	$(this).children('a').css({'color': 'black', 'font-weight': 'bold'});
-})
 
-$('.child-menu li').on('mouseenter', ()=>{
-	$(this).children('a').css({'color': 'black', 'font-weight': 'bold'});
-})
+const menuPrincipal = $('.parent-menu li');
+const menuSecondaire = $('.child-menu li');
+
+if(menuPrincipal.style.backgroundColor === 'white' || menuSecondaire.style.backgroundColor === 'white') {
+	$(this).children('a').css('color', 'black');
+} else {
+	$(this).children('a').css('color', 'white');
+} 
