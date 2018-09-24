@@ -97,7 +97,9 @@ ul.parent-menu > li {
 }
 
 ul.parent-menu > li:hover,
-ul.child-menu > li:hover {
+ul.child-menu > li:hover,
+ul.parent-menu > li:active,
+ul.child-menu > li:active {
 	background-color: white;
 	border-radius: 50px 20px;
 	border-left-color: grey;
@@ -111,7 +113,9 @@ ul.parent-menu > li a, ul.child-menu > li a {
 }
 
 .parent-menu > li a:hover,
-.child-menu > li a:hover{
+.child-menu > li a:hover,
+.parent-menu > li a:active,
+.child-menu > li a:active{
 	color: black;
 	font-weight: bold;
 }
@@ -344,8 +348,23 @@ figcaption {
 }
 
 @media screen and (max-width: 500px) {
-	.parent-menu{
+	header h3{
+		display: block;
+	}
+	#burger{
 		display: none;
+	}
+	nav{
+		display: block;
+	}
+	.parent-menu > li{
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+	}
+	.child-menu{
+		flex-direction: column;
+		display: flex;
 	}
 	#buttons{
 		flex-direction: column;
