@@ -2,6 +2,7 @@
 When I click on Portfolio in the menu, I can see the submenu
 */
 $('#portfolio').on('click', ()=>{
+	$('#portfolio a').css({'color': 'black'});
 	if($(window).width() < 700){
 	$('#portfolio-child').slideToggle();
 	$('#works').toggle();
@@ -18,6 +19,7 @@ $('#portfolio').on('click', ()=>{
 When I click on Works in the menu, I can see the submenu
 */
 $('#works').on('click', ()=>{
+	$('#works a').css({'color': 'black'});
 	if($(window).width() < 700){
 	$('#works-child').slideToggle();
 	$('#news').toggle();
