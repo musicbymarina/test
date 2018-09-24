@@ -6,7 +6,7 @@ $('#portfolio').on('click', ()=>{
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
 	$('#portfolio a').css({'color': 'black', 'font-weight': 'bold'});
-	
+	$('#portfolio-child li > a').css({'color': 'white'});
 	if($(window).width() < 700){
 	$('#portfolio-child').slideToggle();
 	$('#works').toggle();
@@ -28,6 +28,7 @@ $('#works').on('click', ()=>{
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
 	$('#works a').css({'color': 'black', 'font-weight': 'bold'});
+	$('#works-child li > a').css({'color': 'white'});
 	if($(window).width() < 700){
 	$('#works-child').slideToggle();
 	$('#news').toggle();
@@ -46,16 +47,4 @@ $('#burger').on('click', ()=>{
 	$('nav').toggle();
 });
 
-/* Si je hover sur un li du menu principal:
-- au lieu d'avoir le color white et background noir,
 
-*/
-
-const menuPrincipal = $('.parent-menu li');
-const menuSecondaire = $('.child-menu li');
-
-if(menuPrincipal.style.backgroundColor === 'white' || menuSecondaire.style.backgroundColor === 'white') {
-	$(this).children('a').css('color', 'black');
-} else {
-	$(this).children('a').css('color', 'white');
-} 
