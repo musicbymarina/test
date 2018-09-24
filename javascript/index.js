@@ -5,7 +5,8 @@ $('#portfolio').on('click', ()=>{
 	$(this).css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
-	$(this).children('a').css({'color': 'black'});
+	$('#portfolio a').css({'color': 'black', 'font-weight': 'bold'});
+	
 	$('#portfolio-child li').children('a').css({'color': 'white', 'font-weight': 'bold'});
 	if($(window).width() < 700){
 	$('#portfolio-child').slideToggle();
@@ -26,7 +27,7 @@ $('#works').on('click', ()=>{
 	$(this).css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
-	$(this).children('a').css({'color': 'black'});
+	$('#works a').css({'color': 'black', 'font-weight': 'bold'});
 	
 	$('#works-child li').children('a').css({'color': 'white', 'font-weight': 'bold'});
 	if($(window).width() < 700){
