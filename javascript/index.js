@@ -24,10 +24,11 @@ When I click on Works in the menu, I can see the submenu
 */
 $('#works').on('click', ()=>{
 	console.log('the element clicked is: ' + $(this));
-	$('#works').css({'background-color': 'white',
+	/*$('#works').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
 	$('#works a').css({'color': 'black', 'font-weight': 'bold'});
+	*/
 	$('#works-child li > a').css({'color': 'white'});
 	if($(window).width() < 700){
 	$('#works-child').slideToggle();
