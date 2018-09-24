@@ -179,6 +179,11 @@ button {
 box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
 }
 
+button:active{
+	-webkit-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+}
 
 .slider {
 	display: flex;
