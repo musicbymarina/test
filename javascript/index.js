@@ -5,6 +5,7 @@ $('#portfolio').on('click', ()=>{
 	$('#portfolio a').css({'color': 'black'});
 	if($(window).width() < 700){
 	$('#portfolio-child').slideToggle();
+	$('#portfolio-child a').css({'color': 'white'});
 	$('#works').toggle();
 	$('#news').toggle();
 	$('#contact').toggle();
@@ -22,6 +23,7 @@ $('#works').on('click', ()=>{
 	$('#works a').css({'color': 'black'});
 	if($(window).width() < 700){
 	$('#works-child').slideToggle();
+	$('#works-child a').css({'color': 'white'});
 	$('#news').toggle();
 	$('#contact').toggle();
 	} else {
