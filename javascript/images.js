@@ -49,15 +49,15 @@ Je cree un titre
 const creerTitre = (liste) =>{
 	switch(liste) {
 		case 'electroList':
-		$('h2').html('DJs');
+		$('h2').html('Photographer for DJs');
 		break;
 		
 		case 'rockList':
-		$('h2').html('Rock bands');
+		$('h2').html('Photographer for Rock bands');
 		break;
 		
 		default:
-		$('h2').html('Photographe');
+		$('h2').html('Photographer');
 	}
 }
 
