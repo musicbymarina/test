@@ -28,8 +28,9 @@ $('#works').on('click', ()=>{
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	
 	$('#works a').css({'color': 'black', 'font-weight': 'bold'});
-	*/
+	
 	$('#works-child li > a').css({'color': 'white'});
+	*/
 	if($(window).width() < 700){
 	$('#works-child').slideToggle();
 	$('#news').toggle();
