@@ -33,7 +33,6 @@ $('#burger div').on('mouseenter', ()=>{
 });
 
 $('#burger').on('click', ()=>{
-	$('.parent-menu').toggle();
-		$('.parent-menu').show();
+	$('nav').toggle();
 });
 
