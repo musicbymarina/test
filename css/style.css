@@ -67,6 +67,7 @@ h1, li {
 
 nav{
 	display: none;
+	width: 100%;
 }
 
 ul.parent-menu, ul.child-menu, ul#insert {
@@ -76,7 +77,9 @@ ul.parent-menu, ul.child-menu, ul#insert {
 }
 
 ul.parent-menu {
-	margin: 100px;
+	padding: 100px;
+	display: flex;
+	flex-direction: row;
 }
 
 ul.parent-menu > li, ul.child-menu > li {
@@ -89,6 +92,8 @@ ul.parent-menu > li {
 	display: inline-block;
 	position: relative;
 	width: 18%;
+	padding: 0 1em 1em 1em;
+	margin-left: 1em;
 }
 
 
