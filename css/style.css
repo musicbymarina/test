@@ -1,8 +1,6 @@
 /*COLORS:
-- dark grey: #414143 (background body)
-- powder pink: #A67E77 (menu background / hover color)
-- light grey: #8F8780 (hover menu background)
-- mushroom color: #E2DCD9 (color body)
+- dark : black (background body + menu hover)
+- light : white (hover menu background + color)
 */
 
 * {
@@ -96,28 +94,11 @@ ul.parent-menu > li {
 	margin-left: 1em;
 }
 
-ul.parent-menu > li:hover,
-ul.child-menu > li:hover,
-ul.parent-menu > li:active,
-ul.child-menu > li:active {
-	background-color: white;
-	border-radius: 50px 20px;
-	border-left-color: grey;
-}
-
 ul.parent-menu > li a, ul.child-menu > li a {
 	text-decoration: none;
 	display: block;
 	padding: 1em;
 	height: 1em;
-}
-
-.parent-menu > li a:hover,
-.child-menu > li a:hover,
-.parent-menu > li a:active,
-.child-menu > li a:active{
-	color: black;
-	font-weight: bold;
 }
 
 ul.child-menu {
@@ -134,9 +115,26 @@ ul.child-menu > li {
 	padding-bottom: 1em;
 }
 
-.parent-menu a,
-.child-menu a{
+.parent-menu > li a,
+.child-menu > li a{
 	color: white;
+}
+
+ul.parent-menu > li:hover,
+ul.child-menu > li:hover,
+ul.parent-menu > li:active,
+ul.child-menu > li:active {
+	background-color: white;
+	border-radius: 50px 20px;
+	border-left-color: grey;
+}
+
+.parent-menu > li a:hover,
+.child-menu > li a:hover,
+.parent-menu > li a:active,
+.child-menu > li a:active{
+	color: black;
+	font-weight: bold;
 }
 
 
