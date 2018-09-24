@@ -41,9 +41,11 @@ $('#burger').on('click', ()=>{
 });
 
 $('.parent-menu li').on('mouseenter', ()=>{
-	$('.parent-menu li').children().css({'color': 'black'});
+	$(this).css({'background-color': 'white'});
+	$(this).children('a').css({'color': 'black'});
 })
 
 $('.child-menu li').on('mouseenter', ()=>{
-	$('.child-menu li').children().css({'color': 'black'});
+	$(this).css({'background-color': 'white'});
+	$(this).children('a').css({'color': 'black'});
 })
