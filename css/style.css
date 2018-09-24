@@ -38,7 +38,7 @@ header h3{
 
 #burger{
 	width: 40%;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	margin: 1em 0;
 	align-content: flex-start;
@@ -168,6 +168,10 @@ button {
 	border: 5px solid black;
 	border-radius: 50px;
 	margin: 0 auto;
+	width: 30%;
+	height: 60px;
+	font-weight: bolder;
+	font-size: 1em;
 	width: 30%;
 }
 
@@ -358,7 +362,7 @@ figcaption {
 	}
 	
 	#burger{
-		display: none;
+		display: flex;
 	}
 	
 	nav{
@@ -375,23 +379,6 @@ figcaption {
 		flex-direction: column;
 		display: flex;
 	}
-	
-	main{
-		width: 100%;
-	}
-	
-	#buttons{
-		display: flex;
-		width: 100%;
-		margin: 0 auto;
-		flex-direction: row;
-	}
-	
-	button {
-		height: 60px;
-		font-weight: bolder;
-		font-size: 1em;
-		width: 30%;
-	}
+
 	
 }
