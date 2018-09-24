@@ -98,14 +98,12 @@ ul.parent-menu > li {
 
 
 ul.parent-menu > li:hover,
- ul.child-menu > li:hover,
- ul.parent-menu a:hover,
-  ul.child-menu a:hover  {
+ul.parent-menu > li:active,
+ul.child-menu > li:hover,
+ul.child-menu > li:active {
 	background-color: white;
 	border-radius: 50px 20px;
 	border-left-color: grey;
-	color: black;
-	font-weight: bold;
 }
 
 ul.parent-menu > li a, ul.child-menu > li a {
