@@ -129,6 +129,11 @@ ul.child-menu > li {
 	padding-bottom: 1em;
 }
 
+.parent-menu a,
+.child-menu a{
+	color: white;
+}
+
 
 /*EXTRAIT IMAGES*/
 
