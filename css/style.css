@@ -99,7 +99,10 @@ ul.parent-menu > li {
 
 ul.parent-menu > li:hover,
  ul.child-menu > li:hover {
-	background-color: #8F8780;
+	background-color: white;
+	color: black;
+	border-radius: 50px 20px;
+	border-left-color: grey;
 }
 
 ul.parent-menu > li a, ul.child-menu > li a {
@@ -119,8 +122,8 @@ ul.child-menu {
 
 ul.child-menu > li {
 	width: inherit;
-	margin-top: 1px;
-	padding: 1em 0;
+	margin-top: 30px;
+	padding-bottom: 1em;
 }
 
 /*EXTRAIT IMAGES*/
