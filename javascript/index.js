@@ -2,11 +2,13 @@
 When I click on Portfolio in the menu, I can see the submenu
 */
 $('#portfolio').on('click', ()=>{
-	$('#portfolio li').css({'background-color': 'white'});
-	$('#portfolio li').children('a').css({'color': 'black'});
+	$(this).css({'background-color': 'white',
+	'border-radius': '50px 20px', 'border-left-color': 'grey'});
+	
+	$(this).children('a').css({'color': 'black'});
+	$('#portfolio-child li').children('a').css({'color': 'white', 'font-weight': 'bold'});
 	if($(window).width() < 700){
 	$('#portfolio-child').slideToggle();
-	$('#portfolio-child li').children('a').css({'color': 'white'});
 	$('#works').toggle();
 	$('#news').toggle();
 	$('#contact').toggle();
@@ -21,11 +23,14 @@ $('#portfolio').on('click', ()=>{
 When I click on Works in the menu, I can see the submenu
 */
 $('#works').on('click', ()=>{
-	$('#works li').css({'background-color': 'white'});
-	$('#works li').children('a').css({'color': 'black'});
+	$(this).css({'background-color': 'white',
+	'border-radius': '50px 20px', 'border-left-color': 'grey'});
+	
+	$(this).children('a').css({'color': 'black'});
+	
+	$('#works-child li').children('a').css({'color': 'white', 'font-weight': 'bold'});
 	if($(window).width() < 700){
 	$('#works-child').slideToggle();
-	$('#works-child li').children('a').css({'color': 'white'});
 	$('#news').toggle();
 	$('#contact').toggle();
 	} else {
@@ -42,12 +47,14 @@ $('#burger').on('click', ()=>{
 	$('nav').toggle();
 });
 
+/* Si je hover sur un li du menu principal:
+- au lieu d'avoir le color white et background noir,
+
+*/
 $('.parent-menu li').on('mouseenter', ()=>{
-	$(this).css({'background-color': 'white'});
-	$(this).children('a').css({'color': 'black'});
+	$(this).children('a').css({'color': 'black', 'font-weight': 'bold'});
 })
 
 $('.child-menu li').on('mouseenter', ()=>{
-	$(this).css({'background-color': 'white'});
-	$(this).children('a').css({'color': 'black'});
+	$(this).children('a').css({'color': 'black', 'font-weight': 'bold'});
 })
