@@ -38,3 +38,10 @@ $('#burger').on('click', ()=>{
 	$('nav').toggle();
 });
 
+$('.parent-menu li').on('mouseenter', ()=>{
+	$('.parent-menu li').children().css({'color': 'black'});
+})
+
+$('.child-menu li').on('mouseenter', ()=>{
+	$('.child-menu li').children().css({'color': 'black'});
+})
