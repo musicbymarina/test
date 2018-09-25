@@ -178,11 +178,6 @@ button {
 	box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
 }
 
-button:hover{
-	background-color: #57595B;
-	color: white;
-}
-
 button:focus{
 	outline: 0;
 }
@@ -365,7 +360,7 @@ figcaption {
 		width: 90%;
 	}
 	
-	.parent-menu{
+	ul.parent-menu{
 		display: flex;
 		flex-direction: column;
 		padding: 1em;
