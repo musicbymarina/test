@@ -80,7 +80,7 @@ ul.parent-menu, ul.child-menu, ul#insert {
 }
 
 ul.parent-menu {
-	padding: 100px;
+	padding: 1em;
 	display: flex;
 	flex-direction: row;
 }
@@ -213,6 +213,10 @@ button:active{
 	flex-wrap: wrap;
 	margin: auto;
 	display: none;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
 }
 
 #slider img {
@@ -224,40 +228,10 @@ button:active{
 
 #slider figure.active {
 	display: block;
-	animation: fadeImg 0.8s;
-	-webkit-animation: fadeImg 0.8s;
-	-moz-animation: fadeImg 0.8s;
+	height: auto;
+	opacity: 1;
 }
 
-@-webkit-keyframes
-fadeImg {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes
-fadeImg {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes
-fadeImg {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
 
 figcaption {
 	text-align: center;
@@ -390,7 +364,7 @@ figcaption {
 	}
 	
 	.parent-menu{
-		padding: 80px 10px 80px 0;
+		padding: 1em;
 		width: 100%;
 		box-sizing: content-box;
 	}
@@ -398,7 +372,9 @@ figcaption {
 	.parent-menu > li{
 		display: flex;
 		flex-direction: column;
-		width: 40%;
+		width: 50%;
+		padding: 0 1em 1em 1em;
+		margin-left: 1em;
 	}
 	
 	.child-menu{
