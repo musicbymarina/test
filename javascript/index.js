@@ -43,11 +43,11 @@ $('#burger div').on('mouseenter', ()=>{
 	$('header h3').show('slow');
 });
 
-$('#burger').on('click', ()=>{
-	if($('nav').css('visibility': 'hidden')){
-		$('nav').css({'visibility': 'visible'});
+$('#burger').on('click', () => {
+	if($('header nav').css({'visibility': 'hidden'}) === true){
+		$('header nav').css({'visibility': 'visible'});
 	} else{
-		$('nav').css({'visibility': 'hidden'});
+		$('header nav').css({'visibility': 'hidden'});
 	}
 	
 });
