@@ -44,7 +44,12 @@ $('#burger div').on('mouseenter', ()=>{
 });
 
 $('#burger').on('click', ()=>{
-	$('nav').css({'visibility': 'visible'});
+	if($('nav').css('visibility': 'hidden')){
+		$('nav').css({'visibility': 'visible'});
+	} else{
+		$('nav').css({'visibility': 'hidden'});
+	}
+	
 });
 
 
