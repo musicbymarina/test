@@ -286,17 +286,8 @@ $('#thumbnail').click(choosePhoto);
 - si je clique sur le close (.close), le modal se ferme
 */
 
-$('.active img').on('click', (event) => {
-	const image = event.target;
-	console.log('the image is: ', image);
-	console.log('the src of the image is', image.src);
-	console.log('the alt of the image is', image.alt);
-	console.log(contenu);
-	const contenu = `
-	<img src=${image.src} alt=${image.alt}>
-	<figcaption>${image.alt}</figcaption>
-	`;
-	$('#modal-figure').prepend(contenu);
+$('.active figure').on('click', () => {
+	$('.active figure').clone().appendTo('.modal-content')
 	$('#myModal').show();
 	$('html').addClass('force');
 });
