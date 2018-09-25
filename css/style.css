@@ -217,9 +217,16 @@ button:active{
 
 #slider img {
 	max-width: 100%;
+	transition: transform .6s;
 	-webkit-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
 	-moz-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
 	box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+}
+
+#slider img:hover{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 #slider figure.active {
