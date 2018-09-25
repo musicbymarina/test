@@ -36,6 +36,7 @@ header h3{
 }
 
 #logo h1{
+	font-family: 'Notable', sans-serif;
 	color: white;
 	text-align: center;
 }
