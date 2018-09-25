@@ -112,7 +112,7 @@ $('#thumbnail figure').css({'margin': '1em'});
 	
 //je cache le figcaption du thumbnail
 $('#thumbnail figcaption').hide();
-$('#thumbnail figure').css('box-shadow': '0');
+$('#thumbnail figure').css('box-shadow': 'none');
 
 // Je crÃ©e mon titre
 creerTitre(liste);
@@ -201,7 +201,6 @@ const showNextOrPreviousPicture = (whichOne) => {
 	}
 	else {
 		console.log('ceci etait la derniere toff du slider');
-		$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15)'});
 	}
 }
 
@@ -222,7 +221,6 @@ $('#electro').click(()=>{
 	cleanMySlider();
 	// je montre les photos du slider et thumbnail correspondantes aux djs
 	fetchPhotos(electroList);
-	$('h2').html('Photos de djs');
 	// je mets mon fameux border blanc sur le thumbnail
 	displayThumbnail();
 });
@@ -236,7 +234,6 @@ $('#rock').click(()=>{
 	cleanMySlider();
 	// je montre les photos du slider et thumbnail correspondantes aux rock bands
 	fetchPhotos(rockList);
-	$('h2').html('Photos de groupes de pop/rock');
 	// je mets mon fameux border blanc sur le thumbnail
 	displayThumbnail();
 });
