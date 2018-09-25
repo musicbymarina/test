@@ -112,7 +112,7 @@ $('#thumbnail figure').css({'margin': '1em'});
 	
 //je cache le figcaption du thumbnail
 $('#thumbnail figcaption').hide();
-$('#thumbnail figure').css({'box-shadow': 'none'});
+$('#thumbnail figure').css({'box-shadow': 'none', 'padding':'0', 'background-color':'black'});
 
 // Je crÃ©e mon titre
 creerTitre(liste);
