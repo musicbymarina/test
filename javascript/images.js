@@ -180,7 +180,7 @@ const showNextOrPreviousPicture = (whichOne) => {
 		cacherPhotoActuelleSlider();
 		// je rÃ©cupÃ¨re la prochaine photo du slider et je la montre
 		const prochainePhoto = $('#slider li')[indexProchainePhoto];
-		$('#slider li')[indexProchainePhoto].fadeIn('slow');
+		prochainePhoto.fadeIn('slow');
 		prochainePhoto.classList.add('active');
 		prochainePhoto.classList.remove('hidden');
 		// je mets un border blanc sur la photo choisie dans le thumbnail
@@ -189,7 +189,7 @@ const showNextOrPreviousPicture = (whichOne) => {
 		cacherPhotoActuelleSlider();
 		// je rÃ©cupÃ¨re la prochaine photo du slider et je la montre
 		const prochainePhoto = $('#slider li')[indexProchainePhoto];
-		$('#slider li')[indexProchainePhoto].fadeIn('slow');
+		prochainePhoto.fadeIn('slow');
 		prochainePhoto.classList.add('active');
 		prochainePhoto.classList.remove('hidden');
 		
