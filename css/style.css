@@ -366,6 +366,8 @@ figcaption {
 	}
 	
 	.parent-menu{
+		display: flex;
+		flex-direction: column;
 		padding: 1em;
 		width: 100%;
 		box-sizing: content-box;
@@ -395,6 +397,7 @@ figcaption {
 	button{
 		width: inherit;
 	}
+	
 	
 	#thumbnail{
 		flex-direction: column;
