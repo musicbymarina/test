@@ -61,6 +61,12 @@ const creerTitre = (liste) =>{
 	}
 }
 
+const displayLikePola = () =>{
+	$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
+	'padding': '20px', 'background-color': 'white'});
+	$('.active img').css({'border': 'solid 1px #e8e6e6'});
+}
+
 /**
 Je montre les photos de la liste choisie dans le slider et le thumbnail en mÃªme temps
 paramÃ¨tre: la liste
@@ -94,9 +100,7 @@ autresLiSlider.addClass('hidden');
 
 // j'arrange l'image du slider pour qu'elle soit au milieu
 $('#slider').css({'margin': 'auto', 'list-style-type' : 'none'});
-$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
-	'padding': '20px', 'background-color': 'white'});
-$('.active img').css({'border': 'solid 1px #e8e6e6'});
+displayLikePola();
 
 // je fais un effet avec le figcaption
 $('#slider figcaption').fadeIn('slow');
@@ -195,6 +199,7 @@ const showNextOrPreviousPicture = (whichOne) => {
 		const prochainePhoto = $('#slider li')[indexProchainePhoto];
 		prochainePhoto.classList.add('active');
 		prochainePhoto.classList.remove('hidden');
+		displayLikePola();
 		
 		// je mets un border blanc sur la photo choisie dans le thumbnail
 		displayThumbnail();
@@ -278,6 +283,7 @@ const choosePhoto = (event) =>{
 		photoCorrespondante.classList.remove('hidden');
 		// je mets un border blanc sur la photo choisie dans le thumbnail
 		displayThumbnail();
+		displayLikePola();
 	}
 }
 
@@ -291,8 +297,8 @@ $('#thumbnail').click(choosePhoto);
 
 $('.active img').on('click', (event)=>{
 	const image = event.target;
-	const contenu = 
-	$('.modal-content figure').html()
+	console.log(image);
+	$('.modal-content figure').html(image);
 	$('#myModal').show();
 	
 })
