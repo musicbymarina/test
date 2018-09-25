@@ -32,9 +32,6 @@ $('#works').on('click', ()=>{
 		$('#works-child').slideToggle();
 	}
 	
-	console.log('the element clicked is: ' + $(this));
-	const worksPrincipal = $('#works a');
-	console.log('Le <a> du works principal a comme color' + worksPrincipal.style.color);
 	/*$('#works').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	$('#works-child li > a').css({'color': 'white'});
