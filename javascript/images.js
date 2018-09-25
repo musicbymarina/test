@@ -49,15 +49,15 @@ Je cree un titre
 const creerTitre = (liste) =>{
 	switch(liste) {
 		case 'electroList':
-		$('h2').html('Photographer for DJs');
+		$('h3').html('Photographer for DJs');
 		break;
 		
 		case 'rockList':
-		$('h2').html('Photographer for Rock bands');
+		$('h3').html('Photographer for Rock bands');
 		break;
 		
 		default:
-		$('h2').html('Photographer');
+		$('h3').html('');
 	}
 }
 
@@ -94,6 +94,9 @@ autresLiSlider.addClass('hidden');
 
 // j'arrange l'image du slider pour qu'elle soit au milieu
 $('#slider').css({'margin': 'auto', 'list-style-type' : 'none'});
+
+// je fais un effet avec le figcaption
+$('#slider figcaption').fadeIn('slow');
 
 // j'arrange la liste de mon thumbnail
 $('#thumbnail').css({'margin': 'auto'});
@@ -195,6 +198,7 @@ const showNextOrPreviousPicture = (whichOne) => {
 	}
 	else {
 		console.log('ceci etait la derniere toff du slider');
+		$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15)'});
 	}
 }
 
