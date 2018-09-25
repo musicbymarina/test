@@ -44,7 +44,7 @@ $('#burger div').on('mouseenter', ()=>{
 });
 
 $('#burger').on('click', ()=>{
-	$('nav').toggle();
+	$('nav').css({'visibility': 'visible'});
 });
 
 
