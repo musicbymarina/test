@@ -124,8 +124,7 @@ ul.child-menu > li {
 
 ul.parent-menu > li:hover,
 ul.child-menu > li:hover,
-ul.parent-menu > li:active,
-ul.child-menu > li:active {
+ul.parent-menu > li:active {
 	background-color: white;
 	border-radius: 50px 20px;
 	border-left-color: grey;
@@ -133,8 +132,7 @@ ul.child-menu > li:active {
 
 .parent-menu > li a:hover,
 .child-menu > li a:hover,
-.parent-menu > li a:active,
-.child-menu > li a:active{
+.parent-menu > li a:active{
 	color: black;
 	font-weight: bold;
 }
@@ -182,6 +180,10 @@ button {
 button:hover{
 	background-color: #57595B;
 	color: white;
+}
+
+button:focus{
+	outline: 0;
 }
 
 button:active{
@@ -370,16 +372,27 @@ figcaption {
 }
 
 @media screen and (max-width: 500px) {
+	#logo{
+		width: 3%;
+	}
+	
 	header h3{
-		display: block;
+		display: none;
 	}
 	
 	#burger{
-		display: flex;
+		display: none;
 	}
 	
 	header nav{
-		display: none;
+		display: block;
+		width: 90%;
+	}
+	
+	.parent-menu{
+		padding: 80px 10px 80px 0;
+		width: 100%;
+		box-sizing: content-box;
 	}
 	
 	.parent-menu > li{
@@ -391,6 +404,10 @@ figcaption {
 	.child-menu{
 		flex-direction: column;
 		display: flex;
+	}
+	
+	main{
+		margin: 1em 0;
 	}
 	
 	#thumbnail{
