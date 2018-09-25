@@ -75,7 +75,7 @@ if(liste) {
 		artiste.photosPath.map((photo)=>{
 			const content = 
 			`<li>
-				<figure style='0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15); padding: 20px; background-color: white'>
+				<figure style='box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15); padding: 20px; background-color: white'>
 					<img src='${photo}' alt='${artiste.name} at ${artiste.venue}' style='border: solid 1px #e8e6e6'>
 					<figcaption>${artiste.name} at ${artiste.venue}</figcaption>
 				</figure>
@@ -112,7 +112,7 @@ $('#thumbnail figure').css({'margin': '1em'});
 	
 //je cache le figcaption du thumbnail
 $('#thumbnail figcaption').hide();
-//$('#thumbnail figure').css('box-shadow': 'none');
+$('#thumbnail figure').css({'box-shadow': 'none'});
 
 // Je crÃ©e mon titre
 creerTitre(liste);
