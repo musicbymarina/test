@@ -99,7 +99,8 @@ ul.parent-menu > li {
 	margin-left: 1em;
 }
 
-ul.parent-menu > li a, ul.child-menu > li a {
+ul.parent-menu > li a, 
+ul.child-menu > li a {
 	color: white;
 	text-decoration: none;
 	display: block;
@@ -123,16 +124,14 @@ ul.child-menu > li {
 
 
 ul.parent-menu > li:hover,
-ul.child-menu > li:hover,
-ul.parent-menu > li:active {
+ul.child-menu > li:hover {
 	background-color: white;
 	border-radius: 50px 20px;
 	border-left-color: grey;
 }
 
 .parent-menu > li a:hover,
-.child-menu > li a:hover,
-.parent-menu > li a:active{
+.child-menu > li a:hover{
 	color: black;
 	font-weight: bold;
 }
