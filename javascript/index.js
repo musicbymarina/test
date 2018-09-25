@@ -44,12 +44,7 @@ $('#burger div').on('mouseenter', ()=>{
 });
 
 $('#burger').on('click', () => {
-	if($('header nav').css({'visibility': 'hidden'}) === true){
-		$('header nav').css({'visibility': 'visible'});
-	} else{
-		$('header nav').css({'visibility': 'hidden'});
-	}
-	
+	$('header nav').css('visibility', $('header nav').css('visibility') == 'hidden' ? 'visible' : 'hidden');
 });
 
 
