@@ -10,7 +10,7 @@
 }
 
 body {
-	background-color: black;
+	background-color: white;
 }
 
 /*MENU*/
@@ -19,6 +19,7 @@ header {
 	display: flex;
 	flex-direction:row;
 	width: 100%;
+	margin: 0 auto;
 }
 
 header h3{
@@ -34,6 +35,7 @@ header h3{
 }
 
 #logo h1{
+	color: white;
 	text-align: center;
 }
 
@@ -141,7 +143,7 @@ ul.child-menu > li:hover {
 
 main {
 	width: 100%;
-	margin: 2em 0;
+	margin: 2em auto;
 	padding: 0 2em;
 	box-sizing: border-box;
 	display: flex;
@@ -217,10 +219,7 @@ button:active{
 
 #slider img {
 	max-width: 100%;
-	transition: transform .6s;
-	-webkit-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
-	-moz-box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
-	box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+	border: solid 1px #e8e6e6;
 }
 
 #slider img:hover{
@@ -234,10 +233,26 @@ button:active{
 	height: auto;
 	margin: auto;
 	opacity: 1;
+	background-color: #eee;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 30px;
+	border: solid 1px #eee;
 }
 
 
 figcaption {
+	color: #fff;
+	font-family: 'Indie Flower', cursive;
 	text-align: center;
 	text-transform: capitalize;
 	font-size: 1.2em;
@@ -364,7 +379,7 @@ figcaption {
 	
 	header nav{
 		display: block;
-		width: 90%;
+		width: 80%;
 	}
 	
 	ul.parent-menu{
@@ -389,7 +404,7 @@ figcaption {
 	}
 	
 	main{
-		margin: 1em 0;
+		margin: 1em auto;
 	}
 	
 	#buttons{
