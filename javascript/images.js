@@ -149,7 +149,6 @@ displayThumbnail();
  quand je clique dans le thumbnail ou sur les boutons next/previous
  */
 const cacherPhotoActuelleSlider = () => {
-		$('#slider').find('.active').fadeOut('slow');
 		$('#slider').find('.active').addClass('hidden');
 		$('#slider').find('.active').removeClass('active');
 }
@@ -180,7 +179,6 @@ const showNextOrPreviousPicture = (whichOne) => {
 		cacherPhotoActuelleSlider();
 		// je rÃ©cupÃ¨re la prochaine photo du slider et je la montre
 		const prochainePhoto = $('#slider li')[indexProchainePhoto];
-		prochainePhoto.fadeIn('slow');
 		prochainePhoto.classList.add('active');
 		prochainePhoto.classList.remove('hidden');
 		// je mets un border blanc sur la photo choisie dans le thumbnail
@@ -189,7 +187,6 @@ const showNextOrPreviousPicture = (whichOne) => {
 		cacherPhotoActuelleSlider();
 		// je rÃ©cupÃ¨re la prochaine photo du slider et je la montre
 		const prochainePhoto = $('#slider li')[indexProchainePhoto];
-		prochainePhoto.fadeIn('slow');
 		prochainePhoto.classList.add('active');
 		prochainePhoto.classList.remove('hidden');
 		
