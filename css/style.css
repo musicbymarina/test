@@ -360,7 +360,7 @@ THUMBNAIL
 }
 
 /*MODAL*/
-#mymodal{
+#myModal{
 		display: none;
 		position: fixed;
 		z-index: 1;
