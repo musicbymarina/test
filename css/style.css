@@ -27,7 +27,7 @@ header h3{
 }
 
 #logo{
-	width: 80%;
+	width: 20%;
 	display: flex;
 	flex-direction: column;
 	margin: 0 1em;
@@ -68,9 +68,9 @@ h1, li {
 	margin: 1em auto;
 }
 
-nav{
+header nav{
 	display: block;
-	width: 100%;
+	width: 70%;
 }
 
 ul.parent-menu, ul.child-menu, ul#insert {
@@ -141,7 +141,9 @@ ul.child-menu > li:hover {
 
 main {
 	width: 100%;
-	margin: 1em 2em;
+	margin: 2em 0;
+	padding: 0 2em;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 }
@@ -226,8 +228,9 @@ button:active{
 }
 
 #slider figure.active {
-	display: block;
+	display: flex;
 	height: auto;
+	margin: auto;
 	opacity: 1;
 }
 
@@ -383,6 +386,14 @@ figcaption {
 	
 	main{
 		margin: 1em 0;
+	}
+	
+	#buttons{
+		flex-direction: column;
+	}
+	
+	button{
+		width: inherit;
 	}
 	
 	#thumbnail{
