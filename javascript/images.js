@@ -94,6 +94,9 @@ autresLiSlider.addClass('hidden');
 
 // j'arrange l'image du slider pour qu'elle soit au milieu
 $('#slider').css({'margin': 'auto', 'list-style-type' : 'none'});
+$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
+	'padding': '20px', 'background-color': 'white'});
+$('.active img').css({'border': 'solid 1px #e8e6e6'});
 
 // je fais un effet avec le figcaption
 $('#slider figcaption').fadeIn('slow');
@@ -198,7 +201,13 @@ const showNextOrPreviousPicture = (whichOne) => {
 	}
 	else {
 		console.log('ceci etait la derniere toff du slider');
-		$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15)'});
+		if($('.active') === $('#slider li:last-child')) {
+			$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15)'});
+		} else {
+			$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
+	'padding': '20px', 'background-color': 'white'});
+		}
+		
 	}
 }
 
@@ -279,3 +288,17 @@ const choosePhoto = (event) =>{
 }
 
 $('#thumbnail').click(choosePhoto);
+
+/*SI JE CLIQUE SUR UNE PHOTO DU SLIDER EN MODE ACTIVE:
+- un modal s'ouvre
+- dans le modal (modal-content), j'ai l'image en grand écran
+- si je clique sur le close (.close), le modal se ferme
+*/
+
+$('.active img').on('click', (event)=>{
+	const image = event.target;
+	const contenu = 
+	$('.modal-content figure').html()
+	$('#myModal').show();
+	
+})
