@@ -291,6 +291,7 @@ $('#slider img').on('click', (event) => {
 	console.log('the image is: ', image);
 	console.log('the src of the image is', image.src);
 	console.log('the alt of the image is', image.alt);
+	console.log(contenu);
 	const contenu = `
 	<img src=${image.src} alt=${image.alt}>
 	<figcaption>${image.alt}</figcaption>
