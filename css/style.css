@@ -370,15 +370,15 @@ figcaption {
 	}
 	
 	header h3{
-		display: none;
+		display: block;
 	}
 	
 	#burger{
-		display: none;
+		display: block;
 	}
 	
 	header nav{
-		display: block;
+		display: none;
 		width: 80%;
 	}
 	
@@ -414,7 +414,7 @@ figcaption {
 	}
 	
 	button{
-		width: inherit;
+		width: 300px;
 	}
 	
 	.active{
