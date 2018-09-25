@@ -61,11 +61,6 @@ const creerTitre = (liste) =>{
 	}
 }
 
-const displayLikePola = () =>{
-	$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
-	'padding': '20px', 'background-color': 'white'});
-	$('.active img').css({'border': 'solid 1px #e8e6e6'});
-}
 
 /**
 Je montre les photos de la liste choisie dans le slider et le thumbnail en mÃªme temps
@@ -80,8 +75,8 @@ if(liste) {
 		artiste.photosPath.map((photo)=>{
 			const content = 
 			`<li>
-				<figure>
-					<img src='${photo}' alt='${artiste.name} at ${artiste.venue}'>
+				<figure style='0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15); padding: 20px; background-color: white'>
+					<img src='${photo}' alt='${artiste.name} at ${artiste.venue}' style='border: solid 1px #e8e6e6'>
 					<figcaption>${artiste.name} at ${artiste.venue}</figcaption>
 				</figure>
 			</li>`;
@@ -100,7 +95,6 @@ autresLiSlider.addClass('hidden');
 
 // j'arrange l'image du slider pour qu'elle soit au milieu
 $('#slider').css({'margin': 'auto', 'list-style-type' : 'none'});
-displayLikePola();
 
 // je fais un effet avec le figcaption
 $('#slider figcaption').fadeIn('slow');
@@ -118,6 +112,7 @@ $('#thumbnail figure').css({'margin': '1em'});
 	
 //je cache le figcaption du thumbnail
 $('#thumbnail figcaption').hide();
+$('#thumbnail figure').css('box-shadow': '0');
 
 // Je crÃ©e mon titre
 creerTitre(liste);
@@ -135,6 +130,7 @@ const displayThumbnail = () =>{
 	// je rÃ©cupere le li du thumbnail qui a le meme index que le li du slider actif
 	const thumbnailToDisplay = $('#thumbnail li')[indexSlider];
 	thumbnailToDisplay.style.border = 'solid 5px white';
+	
 }
 
 
@@ -199,7 +195,6 @@ const showNextOrPreviousPicture = (whichOne) => {
 		const prochainePhoto = $('#slider li')[indexProchainePhoto];
 		prochainePhoto.classList.add('active');
 		prochainePhoto.classList.remove('hidden');
-		displayLikePola();
 		
 		// je mets un border blanc sur la photo choisie dans le thumbnail
 		displayThumbnail();
@@ -283,7 +278,6 @@ const choosePhoto = (event) =>{
 		photoCorrespondante.classList.remove('hidden');
 		// je mets un border blanc sur la photo choisie dans le thumbnail
 		displayThumbnail();
-		displayLikePola();
 	}
 }
 
