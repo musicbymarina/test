@@ -269,8 +269,9 @@ figcaption {
 	font-family: 'Indie Flower', cursive;
 	text-align: center;
 	text-transform: capitalize;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	margin-top: 1em;
+	font-weight: bold;
 }
 
 .slider ul {
