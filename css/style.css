@@ -212,6 +212,19 @@ button:active{
 	flex-wrap: wrap;
 	width: 100%;
 	display: none;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 30px;
 }
 
 .hidden {
@@ -234,25 +247,12 @@ button:active{
 	height: auto;
 	margin: auto;
 	opacity: 1;
-	background-color: white;
-	box-shadow: 
-	/*Ombre de la 1ere couche:*/
-	0 1px 1px rgba(0,0,0,0.15),
-	/*2eme couche:*/
-	0 10px 0 -5px #eee,
-	/*Ombre de la 2eme couche:*/
-	0 10px 1px -4px rgba(0,0,0,0.15),
-	/*3eme couche:*/
-	0 20px 0 -10px #eee,
-	/*Ombre de la 3eme couche:*/
-	0 20px 1px -9px rgba(0, 0, 0, 0.15);
-	padding: 30px;
 	border: solid 1px #eee;
 }
 
 
 figcaption {
-	color: #fff;
+	color: black;
 	font-family: 'Indie Flower', cursive;
 	text-align: center;
 	text-transform: capitalize;
