@@ -144,7 +144,6 @@ ul.child-menu > li:hover {
 
 main {
 	width: 100%;
-	margin: 2em auto;
 	padding: 0 2em;
 	box-sizing: border-box;
 	display: flex;
@@ -221,12 +220,6 @@ button:active{
 #slider img {
 	max-width: 100%;
 	border: solid 1px #e8e6e6;
-}
-
-#slider img:hover{
-	-ms-transform: scale(1.5);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
 }
 
 #slider figure.active {
