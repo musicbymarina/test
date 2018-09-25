@@ -15,8 +15,8 @@ $('#portfolio').on('click', ()=>{
 	/*$('#portfolio').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	$('#portfolio-child li > a').css({'color': 'white'});
-	*/
 		$('#portfolio a').css({'color': 'black', 'font-weight': 'bold'});
+		*/
 });
 
 /*
@@ -35,8 +35,8 @@ $('#works').on('click', ()=>{
 	/*$('#works').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	$('#works-child li > a').css({'color': 'white'});
-	*/
 	$('#works a').css({'color': 'black', 'font-weight': 'bold'});
+	*/
 });
 
 $('#burger div').on('mouseenter', ()=>{
