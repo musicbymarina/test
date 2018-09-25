@@ -248,6 +248,19 @@ button:active{
 	margin: auto;
 	opacity: 1;
 	border: solid 1px #eee;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 20px;
 }
 
 
@@ -312,21 +325,17 @@ figcaption {
 }
 
 /*
-
 .tooltip .tooltiptext {
 	visibility: hidden;
 	color: white;
 	background-color: black;
 }
-
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 }
-
 #slides .tooltip {
 	position: relative;
 }
-
 #slides .tooltip .tooltiptext {
 	position: absolute;
 	text-align: center;
@@ -471,6 +480,10 @@ figcaption {
 		color: pink;
 		text-decoration: none;
 		cursor: pointer;
+	}
+	
+	#thumbnail{
+		display: none;
 	}
 	
 }
