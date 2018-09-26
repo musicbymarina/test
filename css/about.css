@@ -58,13 +58,25 @@ article{
 	background-color: #fff;
 	padding: 30px;
 	position: relative;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+	border: 1px solid black;
 }
 
-article,
 article::before,
 article::after{
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
-	border: 1px solid #bbb;
+	/*border: 1px solid #bbb;*/
 }
 
 article::before,
