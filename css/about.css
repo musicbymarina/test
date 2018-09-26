@@ -1,16 +1,27 @@
 .about,
-.bio {
-	border-radius: 25px;
-	border: solid 1px white;
+.bio,
+.exhibitions {
 	display: flex;
 	flex-direction: column;
+}
+
+.about{
+	border: solid 1px white;
+	background-color: white;
+	box-shadow: 0 -1px 1px rgba(0,0,0,0.15), 0 -10px 0 -5px #eee, 0 -10px 1px -4px rgba(0,0,0,0.15), 0 -20px 0 -10px #eee, 0 -20px 1px -9px rgba(0,0,0,0.15);
+	padding: 10px;
 }
 
 .about h3,
 .about p,
 .bio h3,
-.bio p {
+p {
 	padding: 1em;
+}
+
+.about h3,
+p{
+	color: black;
 }
 
 figure{
@@ -37,4 +48,44 @@ img{
 
 .about p{
 	font-size: 1.2em;
+}
+
+p{
+	font-family: 'Indie Flower', cursive;
+}
+
+article{
+	background-color: #fff;
+	padding: 30px;
+	position: relative;
+}
+
+article,
+article::before,
+article::after{
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+	border: 1px solid #bbb;
+}
+
+article::before,
+article::after{
+	content: "";
+	position: absolute;
+	height: 95%;
+	width: 99%;
+	background-color: #eee;
+}
+
+article::before{
+	right: 15px;
+	top: 0;
+	transform: rotate(-1deg);
+	z-index: -1;
+}
+
+article::after{
+	top: 5px;
+	right: -5px;
+	transform: rotate(1deg);
+	z-index: -2;
 }
