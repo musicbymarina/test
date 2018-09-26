@@ -20,7 +20,7 @@
 
 figure{
 	padding: 2px;
-	width: 90%;
+	width: 95%;
 	background-color: white;
 	box-shadow: 
 	/*Ombre de la 1ere couche:*/
@@ -96,6 +96,7 @@ article{
 .exhibitions > ul{
 	display: flex;
 	list-style-type: none;
+	padding-inline-start: 0;
 }
 
 
