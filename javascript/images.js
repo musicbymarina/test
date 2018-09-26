@@ -293,6 +293,7 @@ $('#electro').click(()=>{
 	fetchPhotos(electroList);
 	// je mets mon fameux border blanc sur le thumbnail
 	displayThumbnail();
+	agrandirPhoto();
 });
 
 /*
@@ -306,6 +307,7 @@ $('#rock').click(()=>{
 	fetchPhotos(rockList);
 	// je mets mon fameux border blanc sur le thumbnail
 	displayThumbnail();
+	agrandirPhoto();
 });
 
 /*
@@ -319,4 +321,5 @@ $('#all').click(()=>{
 	fetchPhotos(data);
 	// je mets mon fameux border blanc sur le thumbnail
 	displayThumbnail();
+	agrandirPhoto();
 });
