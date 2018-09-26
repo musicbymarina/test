@@ -4,12 +4,12 @@ When I click on Portfolio in the menu, I can see the submenu
 $('#portfolio').on('mouseenter', ()=>{
 
 	if($(window).width() < 700){
-		$('#portfolio-child').slideToggle();
+		$('#portfolio-child').show();
 		$('#works').toggle();
 		$('#contact').toggle();
 	} else {
 		$('#works-child').hide();
-		$('#portfolio-child').slideToggle();
+		$('#portfolio-child').show();
 	}
 	
 	$('#portfolio').css({'background-color': 'white',
@@ -27,11 +27,11 @@ When I click on Works in the menu, I can see the submenu
 $('#works').on('mouseenter', ()=>{
 	
 	if($(window).width() < 700){
-		$('#works-child').slideToggle();
+		$('#works-child').show();
 		$('#contact').toggle();
 	} else {
 		$('#portfolio-child').hide();
-		$('#works-child').slideToggle();
+		$('#works-child').show();
 	}
 	
 	$('#works').css({'background-color': 'white',
