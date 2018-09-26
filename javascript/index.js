@@ -1,3 +1,30 @@
+
+/*
+When I mouseenter about, works and portfolio are displayed if they were clicked before
+*/
+$('#about').on('mouseenter', ()=>{
+	$('#works').css({'background-color': 'black',
+	'border-radius': '0', 'border-left-color': 'black'});
+	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
+	
+	$('#portfolio').css({'background-color': 'black',
+	'border-radius': '0', 'border-left-color': 'black'});
+	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
+});
+
+/*
+When I mouseenter contact, works and portfolio are displayed if they were clicked before
+*/
+$('#contact').on('mouseenter', ()=>{
+	$('#works').css({'background-color': 'black',
+	'border-radius': '0', 'border-left-color': 'black'});
+	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
+	
+	$('#portfolio').css({'background-color': 'black',
+	'border-radius': '0', 'border-left-color': 'black'});
+	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
+});
+
 /*
 When I click on Portfolio in the menu, I can see the submenu
 */
@@ -43,6 +70,8 @@ $('#works').on('click', ()=>{
 	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
 	
 });
+
+
 
 $('#burger div').on('mouseenter', ()=>{
 	$('header h3').show('slow');
