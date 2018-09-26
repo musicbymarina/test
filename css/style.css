@@ -155,10 +155,10 @@ main {
 	flex-direction: column;
 }
 
-main h2{
+#titre{
 	width: 100%;
 	text-align: left;
-	margin: 1em auto;
+	margin: 0 1em;
 }
 
 section {
@@ -166,6 +166,9 @@ section {
 	width: 100%;
 }
 
+main > section{
+	margin: 4em auto;
+}
 
 #buttons {
 	display: flex;
