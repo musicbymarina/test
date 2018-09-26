@@ -61,6 +61,14 @@ figcaption{
 	color: black;
 }
 
+.about h3{
+	font-family: Roboto, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: none;
+	color: black;
+}
+
 .about h3,
 p, .exhibitions h4, {
 	padding: 0 2em;
