@@ -52,6 +52,8 @@ figcaption{
 
 .about p{
 	font-family: 'Caveat', cursive;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 .about h3,
@@ -91,5 +93,8 @@ article{
 .about h3,
 p{
 	padding: 0;
+	font-size: 1em;
+	font-weight: normal;
 }
+
 	}
