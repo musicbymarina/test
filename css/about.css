@@ -5,6 +5,10 @@
 	flex-direction: column;
 }
 
+.about *{
+	color: black;
+}
+
 .about{
 	border: solid 1px #eee;
 	background-color: white;
@@ -45,30 +49,20 @@ figcaption{
 	font-weight: bold;
 }
 
-
-figcaption{
-	font-family: 'Indie Flower', cursive;
-}
-
 .about p,
 ul.exhibitions > li,
-.about a{
-	font-family: 'Caveat', cursive;
+.about h3, .exhibitions h4,
+.about a,
+figcaption{
+	font-family: 'Indie Flower', cursive;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-transform: none;
-}
-
-.about h3,
-p, 
-ul.exhibitions > li,
-figcaption {
-	font-size: 1em;
 	color: black;
 }
 
 .about h3,
-p {
+p, .exhibitions h4, {
 	padding: 0 2em;
 }
 
@@ -91,6 +85,10 @@ article{
 	box-sizing: border-box;
 }
 
+.exhibitions > ul{
+	display: flex;
+}
+
 
 
 @media screen and (max-width: 500px) {
@@ -99,6 +97,10 @@ p{
 	padding: 0;
 	font-size: 1em;
 	font-weight: normal;
+}
+
+.exhibitions > ul{
+	display: flex;
 }
 
 	}
