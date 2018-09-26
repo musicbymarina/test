@@ -214,44 +214,4 @@ ul.child-menu > li:hover {
 		margin: 0 auto;
 	}
 	
-	/*BUTTONS*/
-	
-	#buttons{
-		flex-direction: column;
-		width: 90%;
-		margin: 2em auto;
-	}
-	
-	button{
-		width: 100%;
-		margin: 0 auto;
-		padding: 0;
-	}
-	
-	.active{
-		width: 90%;
-		padding: 0;
-		margin: 0;
-	}
-	
-	.active figure{
-		width: 100%;
-		margin: 1em 0;
-	}
-	
-	#thumbnail{
-		display: none;
-	}
-	
-	.force{
-		transform: rotate(-90deg);
-		transform-origin: left top;
-		width: 100vh;
-		height: 100vw;
-		overflow-x: hidden;
-		position: absolute;
-		top: 100%;
-		left: 0;
-	}
-	
 }
