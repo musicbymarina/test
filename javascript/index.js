@@ -12,11 +12,13 @@ $('#portfolio').on('click', ()=>{
 		$('#portfolio-child').slideToggle();
 	}
 	
-	/*$('#portfolio').css({'background-color': 'white',
+	$('#portfolio').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
-	$('#portfolio-child li > a').css({'color': 'white'});
-		$('#portfolio a').css({'color': 'black', 'font-weight': 'bold'});
-		*/
+	$('#portfolio-a').css({'color': 'black', 'font-weight': 'bold'});
+	
+	$('#works').css({'background-color': 'black',
+	'border-radius': '0', 'border-left-color': 'black'});
+	$('#works-a').css({'color': 'white', 'font-weight': 'normal'});
 });
 
 /*
@@ -32,11 +34,14 @@ $('#works').on('click', ()=>{
 		$('#works-child').slideToggle();
 	}
 	
-	/*$('#works').css({'background-color': 'white',
+	$('#works').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
-	$('#works-child li > a').css({'color': 'white'});
-	$('#works a').css({'color': 'black', 'font-weight': 'bold'});
-	*/
+	$('#works-a').css({'color': 'black', 'font-weight': 'bold'});
+	
+	$('#portfolio').css({'background-color': 'black',
+	'border-radius': '0', 'border-left-color': 'black'});
+	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
+	
 });
 
 $('#burger div').on('mouseenter', ()=>{
