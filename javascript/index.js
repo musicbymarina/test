@@ -1,15 +1,15 @@
 /*
 When I click on Portfolio in the menu, I can see the submenu
 */
-$('#portfolio').on('mouseenter', ()=>{
+$('#portfolio').on('click', ()=>{
 
 	if($(window).width() < 700){
-		$('#portfolio-child').show();
+		$('#portfolio-child').slideToggle();
 		$('#works').toggle();
 		$('#contact').toggle();
 	} else {
 		$('#works-child').hide();
-		$('#portfolio-child').show();
+		$('#portfolio-child').slideToggle();
 	}
 	
 	$('#portfolio').css({'background-color': 'white',
@@ -24,27 +24,7 @@ $('#portfolio').on('mouseenter', ()=>{
 /*
 When I click on Works in the menu, I can see the submenu
 */
-$('#works').on('mouseenter', ()=>{
-	
-	if($(window).width() < 700){
-		$('#works-child').show();
-		$('#contact').toggle();
-	} else {
-		$('#portfolio-child').hide();
-		$('#works-child').show();
-	}
-	
-	$('#works').css({'background-color': 'white',
-	'border-radius': '50px 20px', 'border-left-color': 'grey'});
-	$('#work-a').css({'color': 'black', 'font-weight': 'bold'});
-	
-	$('#portfolio').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
-	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
-	
-});
-
-$('#works').on('mouseenter', ()=>{
+$('#works').on('click', ()=>{
 	
 	if($(window).width() < 700){
 		$('#works-child').slideToggle();
