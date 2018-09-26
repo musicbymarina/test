@@ -376,15 +376,20 @@ THUMBNAIL
 	}
 
 	.modal-content{
-		background-color: black;
+		background-color: white;
 		margin: auto;
 		padding: 10px;
-		border: 1px solid white;
+		border: solid 3px white;
+		border-radius: 10px;
 		width: 95%;
 	}
 	
 	.close{
-		color: white;
+		border: solid 2px grey;
+		padding: 5px;
+		margin-bottom: 5px;
+		border-radius: 25px;
+		color: black;
 		font-weight: bolder;
 		font-size: 1.5em;
 		float: right;
