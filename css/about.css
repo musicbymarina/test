@@ -1,18 +1,38 @@
-picture{
-	width: 25%;
-}
-img{
-	width: 100%;
-}
-
-.about{
+.about,
+.bio {
 	border-radius: 25px;
 	border: solid 1px white;
+	display: flex;
+	flex-direction: column;
 }
 
 .about h3,
-.about p{
+.about p,
+.bio h3,
+.bio p {
 	padding: 1em;
+}
+
+figure{
+	width: 50%;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+}
+
+img{
+	width: 100%;
+	border: solid 1px #e8e6e6;
 }
 
 .about p{
