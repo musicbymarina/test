@@ -29,7 +29,7 @@ figure{
 	0 20px 0 -10px #eee,
 	/*Ombre de la 3eme couche:*/
 	0 20px 1px -9px rgba(0, 0, 0, 0.15);
-	margin: 0 auto;
+	margin: 1em auto;
 	border: solid 3px #eee;
 	box-sizing: border-box;
 }
@@ -57,6 +57,11 @@ figcaption {
 	color: black;
 }
 
+.about h3,
+p {
+	padding: 0 2em;
+}
+
 article{
 	background-color: #fff;
 	padding: 10px;
@@ -76,6 +81,11 @@ article{
 	box-sizing: border-box;
 }
 
+
+
+@media screen and (max-width: 500px) {
+.about h3,
 p{
 	padding: 0;
 }
+	}
