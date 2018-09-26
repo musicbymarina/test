@@ -1,0 +1,20 @@
+picture{
+	width: 25%;
+}
+img{
+	width: 100%;
+}
+
+.about{
+	border-radius: 25px;
+	border: solid 1px white;
+}
+
+.about h3,
+.about p{
+	padding: 1em;
+}
+
+.about p{
+	font-size: 1.2em;
+}
