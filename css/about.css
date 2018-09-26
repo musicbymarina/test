@@ -50,14 +50,17 @@ figcaption{
 	font-family: 'Indie Flower', cursive;
 }
 
-.about p{
+.about p,
+.exhibitions > li,
+.about a{
 	font-family: 'Caveat', cursive;
 	font-size: 1.2em;
 	font-weight: bold;
+	text-transform: none;
 }
 
 .about h3,
-p,
+p, .exhibitions > li,
 figcaption {
 	font-size: 1em;
 	color: black;
