@@ -45,9 +45,13 @@ figcaption{
 	font-weight: bold;
 }
 
-.about p,
+
 figcaption{
 	font-family: 'Indie Flower', cursive;
+}
+
+.about p{
+	font-family: 'Caveat', cursive;
 }
 
 .about h3,
