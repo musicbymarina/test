@@ -91,7 +91,8 @@ h1, h2 {
 	text-align: left;
 }
 
-h1, li {
+h1, 
+.parent-menu li {
 	text-transform: uppercase;
 }
 
