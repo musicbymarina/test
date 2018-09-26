@@ -3,6 +3,9 @@
 When I mouseenter about, works and portfolio are displayed if they were clicked before
 */
 $('#about').on('mouseenter', ()=>{
+	$('#works-child').hide();
+	$('#portfolio-child').hide();
+	
 	$('#works').css({'background-color': 'black',
 	'border-radius': '0', 'border-left-color': 'black'});
 	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
@@ -16,6 +19,9 @@ $('#about').on('mouseenter', ()=>{
 When I mouseenter contact, works and portfolio are displayed if they were clicked before
 */
 $('#contact').on('mouseenter', ()=>{
+	$('#works-child').hide();
+	$('#portfolio-child').hide();
+	
 	$('#works').css({'background-color': 'black',
 	'border-radius': '0', 'border-left-color': 'black'});
 	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
