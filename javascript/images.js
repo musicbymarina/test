@@ -212,6 +212,76 @@ $('.previous span').on('click', () =>{
 	showNextOrPreviousPicture(-1);
 });
 
+
+
+/*
+SI JE CLIQUE SUR LA PHOTO dans le thumbnail:
+1/ la photo correspondante doit avoir un border blanc
+2/ l'index de la photo doit correspondre a l'index de la photo du slider pour etre concordant
+parametre: event (pour rÃ©cupÃ©rer la zone choisie)
+*/
+
+const choosePhoto = (event) =>{
+	const photoChoisie = $(event.target);
+	console.log('la photo choisie est: ', photoChoisie);
+	if(photoChoisie.is('li')) {
+		// Je change le titre h2 par le figcaption de la photo
+		const titrePhotoChoisie = photoChoisie.find('figcaption').html();
+		$('#titre').html(`You chose to see ${titrePhotoChoisie}`);
+		// je trouve l'index de ma photo choisie dans le thumbnail
+		const indexPhotoChoisie = $('#thumbnail').find(photoChoisie).index();
+		// je cache la photo actuelle du slider
+		cacherPhotoActuelleSlider();
+		// je rÃ©cupÃ¨re l'index de la photo du slider qui correspond a la photo choisie et je la montre
+		const photoCorrespondante = $('#slider li')[indexPhotoChoisie];
+		photoCorrespondante.classList.add('active');
+		photoCorrespondante.classList.remove('hidden');
+		// je mets un border blanc sur la photo choisie dans le thumbnail
+		displayThumbnail();
+	}
+}
+
+$('#thumbnail').click(choosePhoto);
+
+const agrandirPhoto = () => {
+	
+/*SI JE CLIQUE SUR UNE PHOTO DU SLIDER :
+- un modal s'ouvre
+- dans le modal (modal-content), j'ai l'image en grand écran
+- si je clique sur le close (.close), le modal se ferme
+*/
+
+$('#slider img').on('click', (event) => {
+	$('.modal-content').html('');
+	const image = $(event.target)
+		console.log('the image is ', image);
+		console.log('le src est ', image.src);
+	
+	
+	
+	$('html').addClass('force');
+	$('.modal-content').html(`<span class="close">X</span>`);
+	$(event.target).clone().appendTo('.modal-content');
+	$('.modal-content img').css({'width':'100%'});
+	$('#myModal').show();
+	
+	$('.close').on('click', () =>{
+		$('#myModal').hide();
+		$('html').removeClass('force');
+});
+	
+});
+	
+}
+
+
+// Tester si c'est parce que le DOM est loadé ou parce que j'ai déplacé les events listeners
+$(function() {
+    console.log("c'est loadé");
+    agrandirPhoto();
+  }); // fin function quand le DOM est loadé
+
+
 /*
 SI JE CLIQUE SUR LE BOUTON ELECTRO:
 Je montre les photos correspondantes a ma liste dans le slider et thumbnail
@@ -250,66 +320,3 @@ $('#all').click(()=>{
 	// je mets mon fameux border blanc sur le thumbnail
 	displayThumbnail();
 });
-
-/*
-SI JE CLIQUE SUR LA PHOTO dans le thumbnail:
-1/ la photo correspondante doit avoir un border blanc
-2/ l'index de la photo doit correspondre a l'index de la photo du slider pour etre concordant
-parametre: event (pour rÃ©cupÃ©rer la zone choisie)
-*/
-
-const choosePhoto = (event) =>{
-	const photoChoisie = $(event.target);
-	console.log('la photo choisie est: ', photoChoisie);
-	if(photoChoisie.is('li')) {
-		// Je change le titre h2 par le figcaption de la photo
-		const titrePhotoChoisie = photoChoisie.find('figcaption').html();
-		$('#titre').html(`You chose to see ${titrePhotoChoisie}`);
-		// je trouve l'index de ma photo choisie dans le thumbnail
-		const indexPhotoChoisie = $('#thumbnail').find(photoChoisie).index();
-		// je cache la photo actuelle du slider
-		cacherPhotoActuelleSlider();
-		// je rÃ©cupÃ¨re l'index de la photo du slider qui correspond a la photo choisie et je la montre
-		const photoCorrespondante = $('#slider li')[indexPhotoChoisie];
-		photoCorrespondante.classList.add('active');
-		photoCorrespondante.classList.remove('hidden');
-		// je mets un border blanc sur la photo choisie dans le thumbnail
-		displayThumbnail();
-	}
-}
-
-$('#thumbnail').click(choosePhoto);
-
-
-$(function() {
-    console.log("c'est loadé");
-
-
-/*SI JE CLIQUE SUR UNE PHOTO DU SLIDER :
-- un modal s'ouvre
-- dans le modal (modal-content), j'ai l'image en grand écran
-- si je clique sur le close (.close), le modal se ferme
-*/
-
-$('#slider img').on('click', (event) => {
-	$('.modal-content').html('');
-	const image = $(event.target)
-		console.log('the image is ', image);
-		console.log('le src est ', image.src);
-	
-	
-	
-	$('html').addClass('force');
-	$('.modal-content').html(`<span class="close">X</span>`);
-	$(event.target).clone().appendTo('.modal-content');
-	$('.modal-content img').css({'width':'100%'});
-	$('#myModal').show();
-	
-	$('.close').on('click', () =>{
-		$('#myModal').hide();
-		$('html').removeClass('force');
-});
-	
-});
-
-  }); // fin function quand le DOM est loadé
