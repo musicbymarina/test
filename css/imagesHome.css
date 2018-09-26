@@ -1,0 +1,240 @@
+/*EXTRAIT IMAGES*/
+
+#buttons {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 2em auto;
+}
+
+button {
+	color: #57595B;
+	background-color: white;
+	text-transform: uppercase;
+	border: 5px solid black;
+	border-radius: 50px;
+	margin: 0 auto;
+	width: 30%;
+	height: 60px;
+	font-weight: bolder;
+	font-size: 1em;
+	width: 30%;
+	-webkit-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+	-moz-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+	box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+}
+
+button:focus{
+	outline: 0;
+}
+
+button:active{
+	background-color: #57595B;
+	color: white;
+	-webkit-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+	transform: translateY(4px);
+}
+
+
+.slider {
+	display: flex;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+}
+
+#slider > figure {
+	flex-wrap: wrap;
+	width: 100%;
+	display: none;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+}
+
+.hidden {
+	flex-wrap: wrap;
+	margin: auto;
+	display: none;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+#slider img {
+	max-width: 100%;
+	border: solid 1px #e8e6e6;
+}
+
+#slider figure.active {
+	display: flex;
+	height: auto;
+	margin: auto;
+	opacity: 1;
+	border: solid 1px #eee;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+}
+
+
+figcaption {
+	color: black;
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 1.5em;
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+.slider ul {
+	margin: auto;
+	width: 100%;
+}
+
+/*BOUTONS PREVIOUS ET NEXT*/
+
+.slider-nav {
+	margin: 1em auto;
+}
+
+.slider-nav ul {
+	font-size: xx-large;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.slider-nav li {
+	font-size: xx-large;
+	-webkit-box-flex: 2;
+	flex: 2;
+	text-align: center;
+	display: -webkit-box;
+	display: flex;
+}
+
+.slider-nav .arrow {
+	flex: 0 0 15%;
+	font-size: xx-large;
+}
+
+.slider-nav a {
+	font-size: xx-large;
+	flex-basis: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.slider-nav span {
+	font-size: 1.5em;
+	display: block;
+	width: 100%;
+	color: white;
+}
+
+/*
+THUMBNAIL
+*/
+
+.thumbnail {
+	width: 100%;
+}
+
+#thumbnail {
+	margin: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  	justify-content: center;
+}
+
+#thumbnail > li {
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 5px;
+}
+
+#thumbnail figure {
+	margin: auto;
+}
+
+#thumbnail li img {
+	max-width: 100%;
+	width: auto;
+	max-height: 100%;
+	height: auto;
+	margin: auto;
+}
+
+/*MODAL*/
+#myModal{
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 5px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: black;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.modal-content{
+		background-color: white;
+		margin: auto;
+		padding: 10px;
+		border: solid 3px white;
+		border-radius: 10px;
+		width: 95%;
+	}
+	
+	.close{
+		border: solid 2px grey;
+		padding: 5px;
+		margin-bottom: 5px;
+		border-radius: 25px;
+		color: black;
+		font-weight: bolder;
+		font-size: 1.5em;
+		float: right;
+	}
+	
+	.close:hover,
+	.close:focus{
+		color: grey;
+		text-decoration: none;
+		cursor: pointer;
+	}
