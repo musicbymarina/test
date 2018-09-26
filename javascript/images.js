@@ -286,8 +286,10 @@ $('#thumbnail').click(choosePhoto);
 - si je clique sur le close (.close), le modal se ferme
 */
 
-$('.active figure').on('click', () => {
-	$('.active figure').clone().appendTo('.modal-content')
+$('#slider figure').on('click', () => {
+	$('#fig').html('');
+	$('.active figure').clone().appendTo('#fig');
+	console.log($('.active figure').clone());
 	$('#myModal').show();
 	$('html').addClass('force');
 });
