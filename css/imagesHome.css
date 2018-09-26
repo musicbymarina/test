@@ -162,6 +162,19 @@ figcaption {
 	color: white;
 }
 
+.slider-nav span:hover,
+#slider img:hover,
+button:hover,
+#thumbnail li:hover {
+	cursor: pointer;
+}
+
+.slider-nav span:active{
+	color: cornsilk;
+}
+
+
+
 /*
 THUMBNAIL
 */
