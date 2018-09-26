@@ -280,7 +280,12 @@ const choosePhoto = (event) =>{
 
 $('#thumbnail').click(choosePhoto);
 
-/*SI JE CLIQUE SUR UNE PHOTO DU SLIDER EN MODE ACTIVE:
+
+$(function() {
+    console.log("c'est loadé");
+
+
+/*SI JE CLIQUE SUR UNE PHOTO DU SLIDER :
 - un modal s'ouvre
 - dans le modal (modal-content), j'ai l'image en grand écran
 - si je clique sur le close (.close), le modal se ferme
@@ -306,3 +311,5 @@ $('#slider img').on('click', (event) => {
 });
 	
 });
+
+  }); // fin function quand le DOM est loadé
