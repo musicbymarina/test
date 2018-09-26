@@ -437,10 +437,14 @@ THUMBNAIL
 		margin: 1em auto;
 	}
 	
+	#titre{
+		margin: 0 auto;
+	}
+	
 	#buttons{
 		flex-direction: column;
 		width: 90%;
-		margin: 0 auto;
+		margin: 2em auto;
 	}
 	
 	button{
