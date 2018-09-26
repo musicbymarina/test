@@ -13,14 +13,9 @@
 	box-sizing: border-box;
 }
 
-.about h3,
-.about p,
-.bio h3,
-p {
-	padding: 1em;
-}
 
 figure{
+	padding: 2px;
 	width: 90%;
 	background-color: white;
 	box-shadow: 
@@ -34,7 +29,7 @@ figure{
 	0 20px 0 -10px #eee,
 	/*Ombre de la 3eme couche:*/
 	0 20px 1px -9px rgba(0, 0, 0, 0.15);
-	padding: 20px;
+	margin: 0 auto;
 	border: solid 3px #eee;
 	box-sizing: border-box;
 }
@@ -45,25 +40,26 @@ img{
 }
 
 figcaption{
+	font-size: 1.5em;
 	text-align: center;
+	font-weight: bold;
 }
 
 .about p,
 figcaption{
 	font-family: 'Indie Flower', cursive;
-	font-weight: bold;
 }
 
 .about h3,
 p,
 figcaption {
-	font-size: 1.2em;
+	font-size: 1em;
 	color: black;
 }
 
 article{
 	background-color: #fff;
-	padding: 30px;
+	padding: 10px;
 	box-shadow: 
 	/*Ombre de la 1ere couche:*/
 	0 -1px 1px rgba(0,0,0,0.15),
@@ -75,7 +71,11 @@ article{
 	0 -20px 0 -10px #eee,
 	/*Ombre de la 3eme couche:*/
 	0 -20px 1px -9px rgba(0, 0, 0, 0.15);
-	margin: 2em 0;
+	margin: 1em 0;
 	border: solid 3px #eee;
 	box-sizing: border-box;
+}
+
+p{
+	padding: 0;
 }
