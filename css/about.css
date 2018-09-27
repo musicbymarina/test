@@ -97,8 +97,12 @@ article{
 	display: flex;
 	list-style-type: none;
 	padding-inline-start: 0;
+	flex-wrap: wrap;
 }
 
+.exhibitions > li{
+	width: 50%;
+}
 
 
 @media screen and (max-width: 500px) {
@@ -109,8 +113,8 @@ p{
 	font-weight: normal;
 }
 
-.exhibitions > ul{
-	display: flex;
+.exhibitions > li{
+	width: 100%;
 }
 
 	}
