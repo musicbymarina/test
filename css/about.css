@@ -98,7 +98,7 @@ article{
 	list-style-type: none;
 	padding-inline-start: 0;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	width: 100%;
 }
 
 ul.exhibitions li{
