@@ -186,16 +186,19 @@ THUMBNAIL
 #thumbnail {
 	margin: auto;
 	height: auto;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-  	justify-content: center;
+	align-items: stretch;
+  	justify-content: start;
+  	flex-wrap: wrap;
 }
 
 #thumbnail > li {
-	flex-wrap: wrap;
 	list-style-type: none;
-	margin: 5px;
+	margin: 10px;
+	box-sizing: border-box;
+	width: 15%;
 }
 
 #thumbnail figure {
