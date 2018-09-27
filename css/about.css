@@ -100,7 +100,7 @@ article{
 	flex-wrap: wrap;
 }
 
-.exhibitions > li{
+ul.exhibitions li{
 	width: 50%;
 }
 
@@ -113,7 +113,7 @@ p{
 	font-weight: normal;
 }
 
-.exhibitions > li{
+ul.exhibitions li{
 	width: 100%;
 }
 
