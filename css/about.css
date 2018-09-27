@@ -99,9 +99,10 @@ article{
 	padding-inline-start: 0;
 	flex-wrap: wrap;
 	width: 100%;
+	margin: 0 auto;
 }
 
-ul.exhibitions li{
+ul.exhibitions > li{
 	width: 50%;
 	margin: 0 auto;
 }
@@ -115,8 +116,8 @@ p{
 	font-weight: normal;
 }
 
-ul.exhibitions li{
-	width: 80%;
+ul.exhibitions > li{
+	width: 100%;
 	margin: 0 auto;
 }
 
