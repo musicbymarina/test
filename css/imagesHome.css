@@ -75,7 +75,7 @@ button:active{
 }
 
 #slider img {
-	max-width: 100%;
+	width: 100%;
 	border: solid 1px #e8e6e6;
 }
 
