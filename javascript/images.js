@@ -349,10 +349,10 @@ $('#thumbnail').css({'margin': 'auto'});
 
 // je calcule le width de chaque li selon la largeur de mon ul
 if(thumbnail !== undefined) {
-	console.log(thumbnail);
+	console.log('My thumbnail is ', thumbnail);
 }
 
-$('#thumbnail li').css({'margin': '5px', 'width': 'auto'});
+$('#thumbnail li').css({'margin': '10px', 'width': '15%'});
 $('#thumbnail figure').css({'margin': '1em'});
 	
 //je cache le figcaption du thumbnail
@@ -445,11 +445,12 @@ const showNextOrPreviousPicture = (whichOne) => {
 		displayThumbnail();
 	}
 	else {
-		console.log('ceci etait la derniere toff du slider');
+		console.log('This is the last photo of my slider');
 	}
 }
 
 $('.next span').on('click', () =>{
+	$('.next span').animate({'color':'#eee'}, 'slow');
 	showNextOrPreviousPicture(+1);
 });
 
@@ -468,7 +469,6 @@ parametre: event (pour rÃ©cupÃ©rer la zone choisie)
 
 const choosePhoto = (event) =>{
 	const photoChoisie = $(event.target);
-	console.log('la photo choisie est: ', photoChoisie);
 	if(photoChoisie.is('li')) {
 		// Je change le titre h2 par le figcaption de la photo
 		const titrePhotoChoisie = photoChoisie.find('figcaption').html();
@@ -498,12 +498,6 @@ const agrandirPhoto = () => {
 
 $('#slider img').on('click', (event) => {
 	$('.modal-content').html('');
-	const image = $(event.target)
-		console.log('the image is ', image);
-		console.log('le src est ', image.src);
-	
-	
-	
 	$('html').addClass('force');
 	$('.modal-content').html(`<span class="close">X</span>`);
 	$(event.target).clone().appendTo('.modal-content');
@@ -522,7 +516,6 @@ $('#slider img').on('click', (event) => {
 
 // Tester si c'est parce que le DOM est loadé ou parce que j'ai déplacé les events listeners
 $(function() {
-    console.log("c'est loadé");
     agrandirPhoto();
   }); // fin function quand le DOM est loadé
 
