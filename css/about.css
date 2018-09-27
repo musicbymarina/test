@@ -98,10 +98,12 @@ article{
 	list-style-type: none;
 	padding-inline-start: 0;
 	flex-wrap: wrap;
+	margin: 0 auto;
 }
 
 ul.exhibitions li{
 	width: 50%;
+	margin: 0 auto;
 }
 
 
@@ -114,7 +116,8 @@ p{
 }
 
 ul.exhibitions li{
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 	}
