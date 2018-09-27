@@ -20,7 +20,7 @@
 
 figure{
 	padding: 2px;
-	width: 95%;
+	width: 80%;
 	background-color: white;
 	box-shadow: 
 	/*Ombre de la 1ere couche:*/
@@ -103,8 +103,12 @@ article{
 }
 
 ul.exhibitions > li{
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
+}
+
+ul.exhibitions:first figure{
+	width: 50%;
 }
 
 
@@ -117,7 +121,7 @@ p{
 }
 
 ul.exhibitions > li{
-	width: 100%;
+	width: 75%;
 	margin: 0 auto;
 }
 
