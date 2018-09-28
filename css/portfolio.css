@@ -1,0 +1,48 @@
+.electronic{
+	width: 100%;
+	border: solid 5px white;
+	padding: 2em 0;
+}
+
+#letters{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#letters > li{
+	flex-wrap: wrap;
+	width: 25%;
+	border: solid 5px white;
+	margin: 2em auto;
+}
+
+main h3, h4, h5{
+	text-align: center;
+}
+
+#letters article{
+-webkit-box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
+-moz-box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
+box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
+height: 215px;
+}
+
+.artistes{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%
+}
+
+.liste-artistes{
+	flex-wrap: wrap;
+	width: 80%
+}
+
+.liste-artistes h5{
+	color: black;
+}
