@@ -17,6 +17,7 @@
 	width: 25%;
 	border: solid 5px white;
 	margin: 2em auto;
+	height: max-content;
 }
 
 main h3, h4, h5{
@@ -27,7 +28,6 @@ main h3, h4, h5{
 -webkit-box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
 -moz-box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
 box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
-height: 215px;
 }
 
 .artistes{
@@ -40,9 +40,21 @@ height: 215px;
 
 .liste-artistes{
 	flex-wrap: wrap;
-	width: 80%
+	width: 100%
 }
 
 .liste-artistes h5{
 	color: black;
 }
+	
+@media screen and (max-width: 700px) {
+#letters > li{
+	width: 40%;
+}
+	}
+	
+@media screen and (max-width: 500px) {
+#letters > li{
+	width: 80%;
+}
+	}
