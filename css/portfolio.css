@@ -10,6 +10,11 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
+	margin-block-start: 0;
+	padding-inline-start: 0;
+	margin-block-end: 0;
+	margin-inline-end: 0;
+	margin-inline-start: 0;
 }
 
 #letters > li{
@@ -30,12 +35,29 @@ main h3, h4, h5{
 box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
 }
 
+#letters article:hover{
+-webkit-box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
+-moz-box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
+box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
+}
+
+#letters article:active{
+-webkit-box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
+-moz-box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
+box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
+}
+
 .artistes{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%
+	margin-block-start: 0;
+	padding-inline-start: 0;
+	margin-block-end: 0;
+	margin-inline-end: 0;
+	margin-inline-start: 0;
 }
 
 .liste-artistes{
@@ -56,5 +78,6 @@ box-shadow: 22px -15px 2px 0px rgba(255,255,255,1);
 @media screen and (max-width: 500px) {
 #letters > li{
 	width: 80%;
+	margin: 1em 10px;
 }
 	}
