@@ -57,21 +57,9 @@ const addLetters = () =>{
 
 /*Fonction pour filtrer les noms*/
 
-const titres = $('.liste-artistes h5');
-const veriBoites = new Promise((resolve, reject) =>{
-
-	if(titres) {
-		resolve('Noms remplis dans les boites');
-	} else {
-		reject('Pas bien rempli, recheck ta fonction addLetters() meuf ');
-	}
-})
-
-veriBoites.then(()=>{
 addLetters();
-}).catch((error)=>{
-	console.warn('Check ton erreur dans la fonction fetchPhotos: ', error);
-})
+
+
 
 
 
