@@ -42,15 +42,15 @@ SI JE CLIQUE SUR LE BOUTON NEXT DU SLIDER:
 2/ Je montre la photo correspondante dans le slider sauf si c'est la derniere toff du thumbnail
 */
 const showNextOrPreviousPicture = (whichOne) => {
+	
 	// je recupere l'index de la photo actuellement active dans le slider
 	const indexPhotoActive = $('#slider').find('.active').index();
-	console.log('index de ma photo active', indexPhotoActive);
+	
 	// Je prepare l'index de ma prochaine photo
 	const indexProchainePhoto = indexPhotoActive + whichOne;
-	console.log('index de ma prochaine photo', indexProchainePhoto);
+	
 	// Je verifie si c'est pas la derniere toff du thumbnail
 	const longueurSlider = $('#thumbnail li').length;
-	console.log('la longueur de mon slider est ', longueurSlider);
 	if(whichOne === 1 && indexProchainePhoto < longueurSlider) {
 		cacherPhotoActuelleSlider();
 		// je recupere la prochaine photo du slider et je la montre
@@ -61,8 +61,9 @@ const showNextOrPreviousPicture = (whichOne) => {
 		displayThumbnail();
 	} else if(whichOne === -1 && indexProchainePhoto >= 0) {
 		cacherPhotoActuelleSlider();
-		// je rÃ©cupÃ¨re la prochaine photo du slider et je la montre
+		// je recupere la prochaine photo du slider et je la montre
 		const prochainePhoto = $('#slider li')[indexProchainePhoto];
+		
 		prochainePhoto.classList.add('active');
 		prochainePhoto.classList.remove('hidden');
 		
@@ -158,8 +159,27 @@ $(this).on('click', (event) => {
 			$('.active img').css({'border': 'solid 1px #e8e6e6'});
 			});
 	
-	// Si je clique pas sur le nom d'un artiste dans ma boite, je fais rien
+	// Si je clique sur une photo, je l'agrandis
+	} else if(target.is(".active img")) {
+		console.log('tu cliques sur une photo');
+			let image = event.target;
+			console.log(image);
+			$('.modal-content').html('');
+			$('html').addClass('force');
+			$('.modal-content').html(`<span class="close">X</span>`);
+			$(event.target).clone().appendTo('.modal-content');
+			$('.modal-content img').css({'width':'100%'});
+			$('#myModal').show();
+			
+	// Si je clique sur le bouton close, je ferme la photo agrandie
+	} else if(target.is(".close")) {
+			console.log('tu cliques sur le bouton pour fermer la photo agrandie');
+			$('#myModal').hide();
+			$('html').removeClass('force');
+			
+			// Si je clique pas sur le nom d'un artiste dans ma boite, je fais rien
 	} else {
+		console.log('ca ne sert à rien de cliquer, ca fonctionnera pas');
 		return;
 	}	
 });
@@ -179,3 +199,31 @@ $('#hidden button').on('click', ()=>{
 	$('.electronic').toggle();
 	$('#hidden').hide();
 })
+
+/*
+SI JE CLIQUE SUR LA PHOTO dans le thumbnail:
+1/ la photo correspondante doit avoir un border blanc
+2/ l'index de la photo doit correspondre a l'index de la photo du slider pour etre concordant
+parametre: event (pour rÃ©cupÃ©rer la zone choisie)
+*/
+
+const choosePhoto = (event) =>{
+	const photoChoisie = $(event.target);
+	if(photoChoisie.is('li')) {
+		// je trouve l'index de ma photo choisie dans le thumbnail
+		const indexPhotoChoisie = $('#thumbnail').find(photoChoisie).index();
+		// je cache la photo actuelle du slider
+		cacherPhotoActuelleSlider();
+		// je rÃ©cupÃ¨re l'index de la photo du slider qui correspond a la photo choisie et je la montre
+		const photoCorrespondante = $('#slider li')[indexPhotoChoisie];
+		photoCorrespondante.classList.add('active');
+		photoCorrespondante.classList.remove('hidden');
+		// je mets un border blanc sur la photo choisie dans le thumbnail
+		displayThumbnail();
+	}
+}
+
+$('#thumbnail').click(choosePhoto);
+
+
+
