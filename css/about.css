@@ -104,6 +104,10 @@ article{
 	margin: 0 auto;
 }
 
+.liste{
+	width: 50%;
+}
+
 ul.exhibitions > li{
 	width: 60%;
 	margin: 0 auto;
@@ -126,9 +130,9 @@ ul.exhibitions{
 	margin: 0;
 }
 
-ul.exhibitions > li{
+.liste{
 	width: 75%;
-	margin: 1em 10px;
+	margin: 1em 0px;
 }
 
 	}
