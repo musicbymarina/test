@@ -11,8 +11,10 @@ const ordreAlphabetique = (artist1, artist2) =>{
 
 /*Fonction pour ajouter les lettres et les artistes dedans*/
 const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
 const addLetters = () =>{
 	let lettersContenu;
+	// Creer le contenu de mes "boites aux lettres"
 	alphabet.map((letter)=>{
 		lettersContenu = `
 		<li id=${letter}>
@@ -22,44 +24,48 @@ const addLetters = () =>{
 		${
 			//Fonction pour ajouter chaque artiste dans la lettre associée
 			fetch(imagesUrl).then(response=>response.json()).then((data)=>{
-				console.log(data);
 				const photos = data.photos.sort(ordreAlphabetique);
 				const electroList = photos.filter((photo) => photo.type === 'electro');
 
 				electroList.map((photo)=>{
-				if(photo.name.startsWith(letter)) {
 				const listeArtistes = `
 				<li class='liste-artistes'>
 				<h5 id='${photo.name}'>${photo.name}</h5>
 				</li>
 				`;
 				const artistes = $(`#${letter} .artistes`);
-				// si la lettre dans mon article correspond à la 1ere lettre du nom du dj, je mets le nom dedans
+				// si la lettre de ma boite correspond à la 1ere lettre du nom du dj, je mets le nom dedans
 				if(photo.name[0] === letter) {
-					artistes.prepend(listeArtistes);
-				} 
-				// Supprimer les artistes doublons
-				$('.liste-artistes').each(function () {
-      				$('.liste-artistes:contains("' + $(this).text() + '"):gt(0)').remove();  
- 				});
-			}
-		})
-	})	
+					$(`#${letter} .artistes`).prepend(listeArtistes);
+					// Supprimer les artistes doublons
+					$('.liste-artistes').each(function () {					
+      					$('.liste-artistes:contains("' + $(this).text() + '"):gt(0)').remove(); 
+ 					});
+				}
+				})
+			})
 		}
 		</ul>
 		</article>
 		</li>
 		`;
 		$('#letters').append(lettersContenu);
-	});
+	});	
 }
 
 
-/*Fonction pour filtrer les noms*/
+// Creer une promise pour ensuite fetcher par defaut toutes mes lettres et noms de djs dans les boites
+const ajouterLettres = new Promise((resolve, reject) =>{
+	const listeArtistes = $('.liste-artistes h5');
+	if(listeArtistes) {
+		resolve('Alphabet et djs bien remplis dans les boites');
+	} else {
+		reject('Pas bien rempli, recheck ta fonction addLetters meuf ');
+	}
+})
 
+ajouterLettres.then(()=>{
 addLetters();
-
-
-
-
-
+}).catch((error)=>{
+	console.warn('Check ton erreur dans la fonction addLetters: ', error);
+});
