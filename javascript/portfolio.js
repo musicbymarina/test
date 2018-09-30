@@ -5,6 +5,34 @@ paramÃ¨tre: la liste
 const slider = $('#slider');
 const thumbnail = $('#thumbnail');
 
+const cssFigureOrdi = {
+				'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
+				'padding': '20px', 
+				'background-color': 'white', 
+				'box-sizing':'border-box',
+				'width': '50%',
+				'margin': '0 auto'
+			}
+			const cssFigureMobile = {
+				'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
+				'padding': '20px', 
+				'background-color': 'white', 
+				'box-sizing':'border-box',
+				'width': '90%',
+				'margin': '0 auto'
+			}
+			
+			const WidthChange = (mobileSize) => {
+				mobileSize.matches ? $('.active figure').css(cssFigureMobile) : $('.active figure').css(cssFigureOrdi);
+			}
+
+			if(matchMedia) {
+				const mobileSize = window.matchMedia("(max-width: 700px)");
+				mobileSize.addListener(WidthChange);
+				WidthChange(mobileSize);
+			
+			
+
 /* J'ajoute un border blanc dans le thumbnail qui correspond a la photo du slider
 A chaque fois qu'une photo sera vue dans le slider, chaque photo vue aura ce border
 Et je cache le figcaption dedans (pas esthetique)
@@ -71,14 +99,7 @@ const showNextOrPreviousPicture = (whichOne) => {
 		displayThumbnail();
 	}
 	else {
-		console.log('ceci etait la derniere toff du slider');
-		if($('.active') === $('#slider li:last-child')) {
-			$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15)'});
-		} else {
-			$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
-	'padding': '20px', 'background-color': 'white'});
-		}
-		
+		console.log('ceci etait la derniere toff du slider');		
 	}
 }
 
@@ -152,11 +173,11 @@ $(this).on('click', (event) => {
 				$('.slider-nav').hide();
 				}
 				
-			//FINALEMENT POUR TOUS, j'arrange l'image du slider pour qu'elle soit au milieu
+			//FINALEMENT POUR TOUS, j'arrange l'image du slider pour qu'elle soit au milieu et soit responsive
 			$('#slider').css({'margin': 'auto', 'list-style-type' : 'none'});
-			$('.active figure').css({'box-shadow': '0 1px 1px rgba(0,0,0,0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0,0,0,0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15)',
-			'padding': '20px', 'background-color': 'white'});
-			$('.active img').css({'border': 'solid 1px #e8e6e6'});
+			WidthChange(mobileSize);
+			
+			
 			});
 	
 	// Si je clique sur une photo, je l'agrandis
@@ -187,11 +208,13 @@ $(this).on('click', (event) => {
 // Si je clique sur le bouton next
 $('.next span').on('click', () =>{
 	showNextOrPreviousPicture(+1);
+	WidthChange(mobileSize);
 });
 
 // si je clique sur le bouton previous
 $('.previous span').on('click', () =>{
 	showNextOrPreviousPicture(-1);
+	WidthChange(mobileSize);
 });
 
 // Si je clique sur le bouton back, je remontre ma boites aux lettres et je cache mon slider
@@ -220,6 +243,7 @@ const choosePhoto = (event) =>{
 		photoCorrespondante.classList.remove('hidden');
 		// je mets un border blanc sur la photo choisie dans le thumbnail
 		displayThumbnail();
+		WidthChange(mobileSize);
 	}
 }
 
@@ -227,3 +251,4 @@ $('#thumbnail').click(choosePhoto);
 
 
 
+}
