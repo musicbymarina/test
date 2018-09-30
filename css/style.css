@@ -62,7 +62,7 @@ header h3{
 }
 
 #logo{
-	width: 20%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	margin: 0 1em;
@@ -112,7 +112,6 @@ h1,
 
 header nav{
 	display: block;
-	width: 70%;
 }
 
 ul.parent-menu, ul.child-menu, ul#insert {
@@ -125,6 +124,8 @@ ul.parent-menu {
 	padding: 1em;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	
 }
 
 ul.parent-menu > li, ul.child-menu > li {
@@ -178,6 +179,23 @@ ul.child-menu > li:hover {
 	font-weight: bold;
 }
 
+figure{
+	border: solid 1px #eee;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+}
+
 
 @media screen and (max-width: 500px) {
 	#logo{
@@ -221,6 +239,41 @@ ul.child-menu > li:hover {
 	
 	#titre{
 		margin: 0 auto;
+	}
+	
+}
+
+@media screen and (max-width: 869px) {
+	#logo{
+		width: 3%;
+		margin: 0 1em;
+	}
+	
+	header nav{
+		display: block;
+		width: 80%;
+		margin: 6em auto;
+	}
+	
+	ul.parent-menu{
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		width: 80%;
+		box-sizing: content-box;
+	}
+	
+	ul.parent-menu > li{
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		padding: 0 1em 1em 1em;
+		margin-left: 1em;
+	}
+	
+	.child-menu{
+		flex-direction: column;
+		display: flex;
 	}
 	
 }

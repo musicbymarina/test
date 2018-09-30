@@ -47,7 +47,7 @@ button:active{
 
 #slider > figure {
 	flex-wrap: wrap;
-	width: 100%;
+	width: 50%;
 	display: none;
 	background-color: white;
 	box-shadow: 
@@ -62,6 +62,8 @@ button:active{
 	/*Ombre de la 3eme couche:*/
 	0 20px 1px -9px rgba(0, 0, 0, 0.15);
 	padding: 20px;
+	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 .hidden {
@@ -82,10 +84,11 @@ button:active{
 #slider figure.active {
 	display: flex;
 	height: auto;
-	margin: auto;
+	margin: 0 auto;
 	opacity: 1;
 	border: solid 1px #eee;
 	background-color: white;
+	width: 50%;
 	box-shadow: 
 	/*Ombre de la 1ere couche:*/
 	0 1px 1px rgba(0,0,0,0.15),
@@ -98,6 +101,10 @@ button:active{
 	/*Ombre de la 3eme couche:*/
 	0 20px 1px -9px rgba(0, 0, 0, 0.15);
 	padding: 20px;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 
@@ -190,7 +197,7 @@ THUMBNAIL
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-  	justify-content: start;
+  	justify-content: space-around;
   	flex-wrap: wrap;
 }
 
@@ -202,8 +209,24 @@ THUMBNAIL
 }
 
 #thumbnail figure {
-	margin: auto;
+	margin: 0 auto;
+	width: auto;
+	border: solid 1px #eee;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	padding: 20px;
 }
+
 
 #thumbnail li img {
 	max-width: 100%;
@@ -279,7 +302,7 @@ THUMBNAIL
 	}
 	
 	.active figure{
-		width: 100%;
+		width: 90%;
 		margin: 1em 0;
 	}
 	
