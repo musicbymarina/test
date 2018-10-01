@@ -1,13 +1,13 @@
 {
-	"photos": [{
+	"photos":[
+{
 		"name": "Daniel Avery",
 		"type": "electro",
 		"venue": "Peacock Society",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/12694544_1266530113380843_4985876799365095477_o.jpg?_nc_cat=0&oh=6f17468d494366a774cc6b9a22ae856b&oe=5C38C229",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/12513567_1266530373380817_5352358043785360024_o.jpg?_nc_cat=0&oh=6ba152bdd02c55c4aed6edde07a116e6&oe=5C29989F"
-		],
-		"quote": "Marina is always able to capture those genuine and true moments of a night that stay with you forever. The moments that made you fall in love with going out in the first place."
+		]
 	},
 	{
 		"name": "Charlotte Dewitte",
@@ -15,8 +15,7 @@
 		"venue": "Les Nuits Secretes",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20374318_1822810407752808_1877065120652995610_n.jpg?_nc_cat=104&oh=d9985f7381319e3125ed0eba35f92c58&oe=5C1C7C68"
-		],
-		"quote": ""
+		]
 	}, {
 		"name": "Future Islands",
 		"type": "rock",
@@ -24,8 +23,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20988142_1848119431888572_7853142409318929387_o.jpg?_nc_cat=109&oh=db31158cddf5338b7afa1a4e887f4de1&oe=5C58085B",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953274_1848117411888774_2632753822658262238_n.jpg?_nc_cat=107&oh=7f44d9e279400c155d8ffae778893c3f&oe=5C2BF455"
-		],
-		"quote": ""
+		]
 	}, {
 		"name": "Daniel Avery",
 		"type": "electro",
@@ -34,8 +32,7 @@
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/19983225_1804355029598346_115432396056039031_o.jpg?_nc_cat=101&oh=36baa63f11395dfa392e6823522354af&oe=5C5D8C0F",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20023964_1804355119598337_76681915083011696_o.jpg?_nc_cat=101&oh=91e03dd302c3121df543e31624c45f7a&oe=5C617BAE",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/19983711_1804355252931657_4480254019045170697_o.jpg?_nc_cat=108&oh=8e3287910abd7a637d326993bdc6cb03&oe=5C1ACB20"
-		],
-		"quote": ""
+		]
 	},
 	 {
 		"name": "Soulwax",
@@ -49,8 +46,7 @@
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20023906_1804353406265175_8796716457919785304_o.jpg?_nc_cat=105&oh=b63e598548c972ad071b4e471e93bd00&oe=5C1C1927",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20121598_1804353482931834_8810195983920818241_o.jpg?_nc_cat=100&oh=5009922c237c71a5b7456c9f52c0a9e3&oe=5C56476A",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20017762_1804353522931830_1369783493095418626_o.jpg?_nc_cat=103&oh=94d683dfbac8c950b99491774e0791a3&oe=5C63400F"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "The Black Lips",
@@ -58,8 +54,7 @@
 		"venue": "La Route du Rock 2017",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20992719_1848119938555188_875053328793085943_n.jpg?_nc_cat=110&oh=2b21651acbc8334edce5cf30dc143823&oe=5C1C7300"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Tale Of Us",
@@ -68,8 +63,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953730_1848137035220145_5240297380175116851_n.jpg?_nc_cat=106&oh=025fa887688cde634be5c920cafaf01c&oe=5C555DF3",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/21055005_1848137348553447_7008999819805387696_o.jpg?_nc_cat=107&oh=324128c29442b721c471fac012af6a1f&oe=5C605B55"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Maceo Plex",
@@ -78,8 +72,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/22382265_1896246910409157_5529228962642450673_o.jpg?_nc_cat=101&oh=947f00335b7660d9e1bf7c3220e5f5ff&oe=5C1CB1A7",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/22459168_1896246913742490_963753968985645795_o.jpg?_nc_cat=105&oh=4ba6ebb095cb9707ad6dfc21b012b47b&oe=5C2BC1EC"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "DJ Hell",
@@ -87,8 +80,7 @@
 		"venue": "France Culture radio with Busy P",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/18238536_1720664684634048_3682292693235675974_o.jpg?_nc_cat=109&oh=832b8b39aeec2fcfe41929a37398249a&oe=5C20D48E"
-		],
-		"quote": "I love Marina. She's a great wonderful charming lady, her photos shows the inside and the personality of any artist she worked with, so for me she's the Helmut Newton of Festival Night & club-culture ! In her photos you can feel the magic and mystery of this secret Dark World ! Love Hell"
+		]
 	},
 	{
 		"name": "Andrew Weatherall and Sean Johnston (ALFOS)",
@@ -98,8 +90,7 @@
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/13268497_1354575337909653_3817655469017880834_o.jpg?_nc_cat=109&oh=b6a30db7c2024e3affb6aedcc9de7c56&oe=5C6319C5",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/13323317_1354573544576499_6497401619432996351_o.jpg?_nc_cat=104&oh=8e0f1b587ff51a70ed3a6b74e7c25c92&oe=5C1FB5BA",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/13268232_1354573324576521_8628060229601627751_o.jpg?_nc_cat=108&oh=43427cc292fdf0ca19baf16b51f6dfcc&oe=5C20C2A8"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Andrew Weatherall",
@@ -109,8 +100,7 @@
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/11875026_1163434270357095_7961119025596258426_o.jpg?_nc_cat=106&oh=0e2338d780b3542737529644c3bc810f&oe=5C5E8BAB",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/11145193_1163400997027089_1106042898997374326_o.jpg?_nc_cat=104&oh=3f9c15c4595abeb34572170a4722c910&oe=5C2896EC",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/11872305_1163394370361085_711304899324945322_o.jpg?_nc_cat=105&oh=9c8b8578cd29ecaf713c57241f35b039&oe=5C547AAB"
-		],
-		"quote": "I've had people take pictures of me for 30 years now and nearly all my favourite images have been made by Marina. I'd employ her as my permanent photographer if only she wasn't so busy taking great shots of other people."
+		]
 	},
 	{
 		"name": "Andrew Weatherall and Sean Johnston (ALFOS)",
@@ -118,8 +108,7 @@
 		"venue": "Andrew Weatherall festival in Carcassonne",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/11893720_1163397603694095_5466678552479022794_o.jpg?_nc_cat=104&oh=74666eaa861b0bc2ff5bdd8ed1432e82&oe=5C284E7E"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Nina Kraviz",
@@ -127,8 +116,7 @@
 		"venue": "The Tribes festival",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10401873_827273990639793_2492174799175675776_n.jpg?_nc_cat=105&oh=3710a3cd2a538b9801b9e91a49ab73eb&oe=5C59636E"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Erol Alkan",
@@ -136,8 +124,7 @@
 		"venue": "I Love Techno festival",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1492737_700998713267322_859434998_o.jpg?_nc_cat=109&oh=31297e01ceacb418f7007014832d8711&oe=5C23FCE7"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Goldfrapp",
@@ -145,8 +132,7 @@
 		"venue": "Le Trianon",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1450105_686013618099165_179827359_n.jpg?_nc_cat=102&oh=8168879b4e9949d7c51485d90c81d667&oe=5C22F45A"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Sisy Ey",
@@ -155,8 +141,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/564689_740926912607835_644611150_n.jpg?_nc_cat=109&oh=e8a8f1391aada0351b29dfc95cc3afd0&oe=5C178E46",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1909220_740926665941193_790709462_o.jpg?_nc_cat=108&oh=671bc7010f581ca8b13a3ac3efcfb0a5&oe=5C591C13"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Optimo",
@@ -164,8 +149,7 @@
 		"venue": "La Cite de la Mode",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1467294_681826771851183_2081172392_n.jpg?_nc_cat=109&oh=c8f8ae66a18e90e34e941f84d7748570&oe=5C24025F"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Sebastien Tellier",
@@ -174,8 +158,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1048781_609540369079824_94557295_o.jpg?_nc_cat=110&oh=3bec6a0a7d101cb7a3cb99edf7a63639&oe=5C20815C",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1005590_609531965747331_1605835238_n.jpg?_nc_cat=103&oh=30d64544210105030aae547b2cf2267f&oe=5C24CA01"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Totally Enormous Extinct Dinosaurs (TEED)",
@@ -183,8 +166,7 @@
 		"venue": "Showcase",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1888839_764353863598473_1992132639_o.jpg?_nc_cat=103&oh=0495bf997d50b322083e4d750ade90b0&oe=5C5654AA"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "WhoMadeWho",
@@ -192,8 +174,7 @@
 		"venue": "Le Trabendo",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/891935_781438308556695_823055010578276049_o.jpg?_nc_cat=101&oh=8aa4448989e429f0454ad19bc451c573&oe=5C5596E8"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "The Savages",
@@ -202,8 +183,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10153827_781862181847641_2278343077452192134_n.jpg?_nc_cat=100&oh=e25fe8281df72c8cde2c302399143f36&oe=5C2702D1",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10247466_781861368514389_2866555725478156576_n.jpg?_nc_cat=110&oh=812e8df00e7bbf58c3109e03e9e4c256&oe=5C1F4114"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "James Blake",
@@ -211,8 +191,7 @@
 		"venue": "Worldwide festival",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11745940_1139284749438714_2014866442035201329_n.jpg?_nc_cat=104&oh=a7e951e1e3f37f63e3cc136c3aafb0e3&oe=5C1800EF"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Andrew Weatherall",
@@ -221,8 +200,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/11874998_1163214867045702_4754276215341951137_o.jpg?_nc_cat=103&oh=8d1220988a34b449489080d6ba17833a&oe=5C1D20BD",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11181564_1163412720359250_1912755138955807799_n.jpg?_nc_cat=109&oh=e9a9048496bd2d54f770d57139988947&oe=5C60F554"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Busy P",
@@ -230,8 +208,7 @@
 		"venue": "France Culture radio with DJ Hell",
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/18238536_1720664684634048_3682292693235675974_o.jpg?_nc_cat=109&oh=832b8b39aeec2fcfe41929a37398249a&oe=5C20D48E"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Ty Segall",
@@ -240,8 +217,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/21034531_1848129308554251_3799297742902904146_n.jpg?_nc_cat=103&oh=9b3cd0dcdfedcb59a0c9090c476e516c&oe=5C18C83B",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953149_1848129641887551_7652735417763967610_n.jpg?_nc_cat=101&oh=7e283ac13b26d2074b49898e60515636&oe=5C629D11"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "The Moonlandingz",
@@ -253,8 +229,7 @@
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953766_1848127835221065_2779536650542889960_n.jpg?_nc_cat=102&oh=0894be995d4a199790361b0421173d81&oe=5C2C2A87",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20993040_1848127528554429_7568548934685083589_n.jpg?_nc_cat=106&oh=3c542148d2e9c10405c3b68dd2346bad&oe=5C2023E6",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953820_1848128531887662_8652699055340737132_n.jpg?_nc_cat=110&oh=c771c626b6421a06697fde7a6e998508&oe=5C2B03B4"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Interpol",
@@ -263,8 +238,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953469_1848126461887869_6987525465866021951_n.jpg?_nc_cat=107&oh=905b0546d4fca3b51d2ad23ab74f06ac&oe=5C229D66",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/21077470_1848126198554562_56781583389725967_n.jpg?_nc_cat=104&oh=e93d8f7db3a18e66b119482cc29567ba&oe=5C57F296"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "Soulwax",
@@ -278,8 +252,7 @@
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20989308_1848122968554885_2826476389731704418_o.jpg?_nc_cat=106&oh=a1c897c8c9c4f1e10504f7cf67edcf05&oe=5C1BECC9",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20993995_1848123211888194_673138721013648479_n.jpg?_nc_cat=104&oh=3a2f8884d71e3596b98b71ecd456c2e3&oe=5C5E05B0",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953202_1848123745221474_7289341402195865649_n.jpg?_nc_cat=100&oh=0807c694a243ab043ed14fd750dadc3d&oe=5C2BDD7D"
-		],
-		"quote": "Marina has an eye for the unexpected, and knows how to put herself in the middle of what goes around her... She not only captures the mood of what exactly is going on but brings her own aesthetic to those moments, she frames nightlife like no-one else, and captures a moment in time for everyone to see !"
+		]
 	},
 	{
 		"name": "The Black Lips",
@@ -289,8 +262,7 @@
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/23632116_1934358369931344_7426729873053806612_o.jpg?_nc_cat=0&oh=d4a0d3b0d6f8d877ed18660d1a1a1591&oe=5C34A018",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/23509258_1934358429931338_2292833924781772992_o.jpg?_nc_cat=0&oh=8367aa7bc48d97abc450e2989704f2e7&oe=5C2DB3F5",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/23517831_1934359216597926_5576395402958645362_n.jpg?_nc_cat=0&oh=74e9c6e16408ffe3d39ddb645a86918a&oe=5C1CF98E"
-		],
-		"quote": ""
+		]
 	},
 	{
 		"name": "The Jesus and Mary Chain",
@@ -299,7 +271,7 @@
 		"photosPath": [
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/21054900_1848116595222189_3410498097011115445_o.jpg?_nc_cat=0&oh=ce3ef5832bc1d6f57ccf9ed94bda2d33&oe=5C2DD375",
 		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20992966_1848116818555500_4471541284690943894_n.jpg?_nc_cat=0&oh=610a4ddc733871437864844cb5c131d2&oe=5C1F6471"
-	],
-		"quote": ""
+	]
 }
-	]}
+	]
+}
