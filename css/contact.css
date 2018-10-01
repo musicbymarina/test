@@ -12,7 +12,7 @@ section > article *{
 	color: black;
 }
 
-article{
+.contact article{
 	border: solid 5px black;
 	margin: 2em 0;
 }
@@ -23,7 +23,10 @@ figure{
 	margin: 1em auto;
 }
 
-main h3{
+.contact article h3,
+.way h3,
+.quotes h3,
+.others h4,{
 	margin: 2em;
 	padding: 0 2em;
 }
@@ -34,31 +37,31 @@ img{
 	border: solid 1px #e8e6e6;
 }
 
-figcaption{
+.contact figcaption{
 	font-size: 1.5em;
 	text-align: center;
 	font-weight: bold;
 }
 
 
-main p,
-main li,
-main h4,
-main a,
-figcaption{
+.contact p,
+.contact li,
+.contact a,
+.contact figcaption,
+quote{
 	font-family: 'Indie Flower', cursive;
 	font-size: 1.2em;
 	text-transform: none;
 }
 
-p{
+.contact p{
 	font-weight: bold;
 	padding: 1em 6em;
 }
 
 
 
-main ul, ol{
+.contact ul, .contact ol{
 	list-style: none;
 	margin: 1em auto;
 	display: flex;
@@ -67,25 +70,65 @@ main ul, ol{
 	justify-content: space-around;
 }
 
-main ul > li,
-main ol > li{
+.contact ul > li,
+.contact ol > li{
 	flex-wrap: wrap;
 		justify-content: space-around;
 		margin: 0 auto;
 }
 
+#downloadVCF{
+	display: flex;
+	flex-direction: column;
+}
+
+.way p{
+	margin: 1em auto;
+}
+.way a{
+	padding: 1em;
+	font-weight: bold;
+	font-family: Roboto, sans-serif;
+	text-decoration: none;
+	color: #57595B;
+	background-color: white;
+	text-transform: uppercase;
+	border: 5px solid black;
+	border-radius: 50px;
+	margin: 1em auto;
+	width: 50%;
+	height: 60px;
+	font-weight: bolder;
+	font-size: 1em;
+	width: 30%;
+	text-align: center;
+	-webkit-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+	-moz-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+	box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
+}
+
+.way a:hover{
+	background-color: black;
+	color: white;
+}
+
+.way a:active{
+	background-color: white;
+	color: black;
+}
+
 @media screen and (max-width: 500px) {
-main h3,
-p{
+.contact h3,
+.contact p{
 	font-size: 1em;
 }
 
-main li{
+.contact li{
 	width: 100%;
 	margin: 1em auto;
 }
 
-figure{
+.contact figure{
 	width: 90%;
 }
 
@@ -93,17 +136,17 @@ figure{
 	
 @media screen and (max-width: 700px) {
 
-p,
-figcaption{
+.contact p,
+.contact figcaption{
 	font-size: 1em;
 }
 
-article p{
+.contact p{
 	width: 100%;
 	padding: 1em;
 }
 
-figure{
+.contact figure{
 	width: 70%;
 }
 
