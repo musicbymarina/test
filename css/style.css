@@ -197,6 +197,21 @@ figure{
 }
 
 
+/*FOOTER*/
+footer{
+		border: solid 5px white;
+}
+summary{
+		font-weight: bold;
+	padding: 1em 6em;
+	outline: white;
+}
+
+summary:active{
+	outline: white;
+}
+
+
 @media screen and (max-width: 500px) {
 	#logo{
 		width: 3%;

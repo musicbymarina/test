@@ -87,6 +87,7 @@ box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
 
 .liste-artistes h5{
 	color: black;
+	font-size: 1.2em;
 }
 
 .liste-artistes h5:hover{
@@ -96,14 +97,7 @@ box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
 #hidden{
 	display: none;
 }
-	
-@media screen and (max-width: 700px) {
-#letters > li{
-	width: 80%;
-	margin: 1em 2em 1em 2em;
-}
-	}
-	
+
 @media screen and (max-width: 500px) {
 	.active figure{
 		width: 90%;
@@ -111,11 +105,25 @@ box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
 	}
 
 	#letters > li{
+	padding: 0;
 	width: 80%;
-	margin: 1em 2em 1em 10px;
+	margin: 1em 5px;
 	}
 
 	.thumbnail{
 	display: none;
 	}
 }
+	
+@media screen and (max-width: 700px) {
+#letters > li{
+	width: 80%;
+	margin: 1em auto;
+}
+
+liste-artistes h5{
+	font-size: 1.1em;
+	}
+}
+	
+

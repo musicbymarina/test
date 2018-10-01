@@ -17,27 +17,6 @@
 	box-sizing: border-box;
 }
 
-
-figure{
-	padding: 2px;
-	width: 90%;
-	background-color: white;
-	box-shadow: 
-	/*Ombre de la 1ere couche:*/
-	0 1px 1px rgba(0,0,0,0.15),
-	/*2eme couche:*/
-	0 10px 0 -5px #eee,
-	/*Ombre de la 2eme couche:*/
-	0 10px 1px -4px rgba(0,0,0,0.15),
-	/*3eme couche:*/
-	0 20px 0 -10px #eee,
-	/*Ombre de la 3eme couche:*/
-	0 20px 1px -9px rgba(0, 0, 0, 0.15);
-	margin: 1em auto;
-	border: solid 3px #eee;
-	box-sizing: border-box;
-}
-
 img{
 	width: 100%;
 	border: solid 1px #e8e6e6;
@@ -108,6 +87,31 @@ article{
 	width: 50%;
 }
 
+
+
+figure{
+	padding: 20px;
+	width: 50%;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	margin: 1em auto;
+	box-sizing: border-box;
+}
+
+.liste figure{
+	width: 90%;
+}
+
 ul.exhibitions > li{
 	width: 60%;
 	margin: 0 auto;
@@ -123,7 +127,6 @@ ul.exhibitions:first figure{
 p{
 	padding: 0;
 	font-size: 1em;
-	font-weight: normal;
 }
 
 ul.exhibitions{
@@ -131,12 +134,28 @@ ul.exhibitions{
 }
 
 .liste{
-	width: 90%;
+	width: 100%;
 	margin: 1em 0px;
 }
 
-.liste figure{
+figure{
+	width: 90%;
+}
+
+	}
+	
+@media screen and (max-width: 700px) {
+
+.liste{
 	width: 100%;
+}
+p,
+figcaption{
+	font-size: 1em;
+}
+
+figure{
+	width: 70%;
 }
 
 	}
