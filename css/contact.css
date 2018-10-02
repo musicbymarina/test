@@ -18,9 +18,10 @@ section > article *{
 }
 
 
-figure{
+.contact figure{
 	width: 50%;
 	margin: 1em auto;
+	box-sizing: border-box;
 }
 
 .contact article h3,
@@ -68,6 +69,7 @@ quote{
 	flex-direction: column;
 	width: 100%;
 	justify-content: space-around;
+	padding-inline-start:0;
 }
 
 .contact ul > li,
@@ -117,24 +119,9 @@ quote{
 	color: black;
 }
 
-@media screen and (max-width: 500px) {
-.contact h3,
-.contact p{
-	font-size: 1em;
-}
 
-.contact li{
-	width: 100%;
-	margin: 1em auto;
-}
-
-.contact figure{
-	width: 90%;
-}
-
-	}
 	
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 869px) {
 
 .contact ul > li,
 .contact ol > li{
@@ -157,9 +144,9 @@ quote{
 
 #downloadVCF a{
 	font-weight: normal;
-	width: 90%;
+	width: 50%;
 	box-sizing: border-box;
-	margin: 1em 0;
+	margin: 1em auto;
 	}
 
 .quotes ul{
@@ -172,3 +159,61 @@ quote{
 }
 
 }
+
+@media screen and (max-width: 500px) {
+.contact h3,
+.contact p{
+	font-size: 1em;
+}
+
+.contact h3{
+	margin: 1em 2em;
+}
+
+.contact li{
+	width: 100%;
+	margin: 0 10px;
+}
+
+.contact figure{
+	width: 90%;
+}
+
+.contact p{
+	padding: 1em 10px;
+}
+.contact ol > li{
+	margin: 0 10px;
+}
+
+.contact ul > li{
+	margin: 0 10px;
+}
+
+.contact ul,
+.contact ol{
+	margin: 1em 0;
+}	
+
+#downloadVCF a{
+	width: 70%;
+	padding: 1em 0;
+}
+
+#downloadVCF a:first-child{
+	width: 95%;
+}
+
+.quotes ul{
+	margin: 1em 0;
+}
+
+.quotes ul > li{
+	margin: 1em 0;
+}
+
+quote{
+	font-size: 0.8em;
+}
+
+	}

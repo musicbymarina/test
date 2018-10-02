@@ -98,6 +98,10 @@ box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
 	display: none;
 }
 
+#hidden button{
+	margin: 1em auto;
+}
+
 @media screen and (max-width: 500px) {
 	.active figure{
 		width: 90%;
