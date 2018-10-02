@@ -13,7 +13,7 @@ REV:${Date.now()}
 END:VCARD
 	`;
 	
-	const buttonDownload = `<a href='data:text/plain;charset=utf-8, encodeURIComponent(${text})' download='Music_by_Marina.vcf'> + me in your contacts</a>`;	
+	const buttonDownload = `<a href='data:text/plain;charset=utf-8, encodeURIComponent(${text})' download='Music_by_Marina.vcf'> +ME IN YOUR CONTACTS</a>`;	
 	$('#downloadVCF').prepend(buttonDownload);
 }
 
@@ -21,7 +21,7 @@ END:VCARD
 
 const downloadContact = (mobileSize) => {
 	download();
-	mobileSize.matches ?  $('#downloadVCF').hide(): $('#downloadVCF').show();
+	mobileSize.matches ?  $('#downloadVCF').show(): $('#downloadVCF a:first').hide();
 }
 
 if(matchMedia) {
@@ -30,6 +30,8 @@ if(matchMedia) {
 	downloadContact(mobileSize);
 	
 }
+
+
 
  const quotesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/quotes.json";
  
