@@ -136,6 +136,11 @@ quote{
 	
 @media screen and (max-width: 700px) {
 
+.contact ul > li,
+.contact ol > li{
+	margin: 0 2em;
+}
+
 .contact p,
 .contact figcaption{
 	font-size: 1em;
@@ -150,4 +155,20 @@ quote{
 	width: 70%;
 }
 
+#downloadVCF a{
+	font-weight: normal;
+	width: 90%;
+	box-sizing: border-box;
+	margin: 1em 0;
 	}
+
+.quotes ul{
+	margin: 1em 0;
+}
+
+quote{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+}
