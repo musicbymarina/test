@@ -1,90 +1,71 @@
+const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/data.json";
+let contenuLettres = $('#letters');
 
-/*
-When I mouseenter about, works and portfolio are displayed if they were clicked before
-*/
-$('#about').on('mouseenter', ()=>{
-	$('#works-child').hide();
-	$('#portfolio-child').hide();
-	
-	$('#works').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
-	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
-	
-	$('#portfolio').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
-	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
-});
+/*Fonction pour mettre dans l'ordre alphabetique les noms des artistes*/
+const ordreAlphabetique = (artist1, artist2) =>{
+	if(artist1.name < artist2.name) return -1;
+	if(artist1.name > artist2.name) return 1;
+	return 0;
+}
 
-/*
-When I mouseenter contact, works and portfolio are displayed if they were clicked before
-*/
-$('#contact').on('mouseenter', ()=>{
-	$('#works-child').hide();
-	$('#portfolio-child').hide();
-	
-	$('#works').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
-	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
-	
-	$('#portfolio').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
-	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
-});
 
-/*
-When I click on Portfolio in the menu, I can see the submenu
-*/
-$('#portfolio').on('click', ()=>{
+/*Fonction pour ajouter les lettres et les artistes dedans*/
+const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-	if($(window).width() < 700){
-		$('#portfolio-child').slideToggle();
-		$('#works').toggle();
-		$('#contact').toggle();
+const addLetters = () =>{
+	let lettersContenu;
+	// Creer le contenu de mes "boites aux lettres"
+	alphabet.map((letter)=>{
+		lettersContenu = `
+		<li id=${letter}>
+		<article style='background-color: white; border: solid 5px black'>
+		<h4 style='color: black'>${letter.toUpperCase()}</h4>
+		<ul class='artistes'>
+		${
+			//Fonction pour ajouter chaque artiste dans la lettre associée
+			fetch(imagesUrl).then(response=>response.json()).then((data)=>{
+				const photos = data.photos.sort(ordreAlphabetique);
+				const electroList = photos.filter((photo) => photo.type === 'electro');
+
+				electroList.map((photo)=>{
+				const listeArtistes = `
+				<li class='liste-artistes'>
+				<h5 id='${photo.name}'>${photo.name}</h5>
+				</li>
+				`;
+				const artistes = $(`#${letter} .artistes`);
+				// si la lettre de ma boite correspond à la 1ere lettre du nom du dj, je mets le nom dedans
+				if(photo.name[0] === letter) {
+					$(`#${letter} .artistes`).prepend(listeArtistes);
+					// Supprimer les artistes doublons
+					$('.liste-artistes').each(function () {					
+      					$('.liste-artistes:contains("' + $(this).text() + '"):gt(0)').remove(); 
+ 					});
+				}
+				})
+			})
+		}
+		</ul>
+		</article>
+		</li>
+		`;
+		$('#letters').append(lettersContenu);
+	});	
+}
+
+
+// Creer une promise pour ensuite fetcher par defaut toutes mes lettres et noms de djs dans les boites
+const ajouterPhotos = new Promise((resolve, reject) =>{
+	const listeArtistes = $('.liste-artistes h5');
+	if(listeArtistes) {
+		resolve('Alphabet et djs bien remplis dans les boites');
 	} else {
-		$('#works-child').hide();
-		$('#portfolio-child').slideToggle();
+		reject('Pas bien rempli, recheck ta fonction addLetters meuf ');
 	}
-	
-	$('#portfolio').css({'background-color': 'white',
-	'border-radius': '50px 20px', 'border-left-color': 'grey'});
-	$('#portfolio-a').css({'color': 'black', 'font-weight': 'bold'});
-	
-	$('#works').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
-	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
+})
+
+ajouterPhotos.then(()=>{
+addLetters();
+}).catch((error)=>{
+	console.warn('Check ton erreur dans la fonction addLetters: ', error);
 });
-
-/*
-When I click on Works in the menu, I can see the submenu
-*/
-$('#works').on('click', ()=>{
-	
-	if($(window).width() < 700){
-		$('#works-child').slideToggle();
-		$('#contact').toggle();
-	} else {
-		$('#portfolio-child').hide();
-		$('#works-child').slideToggle();
-	}
-	
-	$('#works').css({'background-color': 'white',
-	'border-radius': '50px 20px', 'border-left-color': 'grey'});
-	$('#work-a').css({'color': 'black', 'font-weight': 'bold'});
-	
-	$('#portfolio').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
-	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
-	
-});
-
-
-
-$('#burger div').on('mouseenter', ()=>{
-	$('header h3').show('slow');
-});
-
-$('#burger').on('click', () => {
-	$('header nav').css('visibility', $('header nav').css('visibility') == 'hidden' ? 'visible' : 'hidden');
-});
-
-

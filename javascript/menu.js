@@ -1,4 +1,3 @@
-
 /*
 When I mouseenter about, works and portfolio are displayed if they were clicked before
 */
@@ -7,11 +6,11 @@ $('#about').on('mouseenter', ()=>{
 	$('#portfolio-child').hide();
 	
 	$('#works').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
+	'border-radius': '50px 20px', 'border-left-color': 'black'});
 	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
 	
 	$('#portfolio').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
+	'border-radius': '50px 20px', 'border-left-color': 'black'});
 	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
 });
 
@@ -23,11 +22,11 @@ $('#contact').on('mouseenter', ()=>{
 	$('#portfolio-child').hide();
 	
 	$('#works').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
+	'border-radius': '50px 20px', 'border-left-color': 'black'});
 	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
 	
 	$('#portfolio').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
+	'border-radius': '50px 20px', 'border-left-color': 'black'});
 	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
 });
 
@@ -50,7 +49,7 @@ $('#portfolio').on('click', ()=>{
 	$('#portfolio-a').css({'color': 'black', 'font-weight': 'bold'});
 	
 	$('#works').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
+	'border-radius': '50px 20px', 'border-left-color': 'black'});
 	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
 });
 
@@ -72,7 +71,7 @@ $('#works').on('click', ()=>{
 	$('#work-a').css({'color': 'black', 'font-weight': 'bold'});
 	
 	$('#portfolio').css({'background-color': 'black',
-	'border-radius': '0', 'border-left-color': 'black'});
+	'border-radius': '50px 20px', 'border-left-color': 'black'});
 	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
 	
 });
@@ -86,5 +85,4 @@ $('#burger div').on('mouseenter', ()=>{
 $('#burger').on('click', () => {
 	$('header nav').css('visibility', $('header nav').css('visibility') == 'hidden' ? 'visible' : 'hidden');
 });
-
 

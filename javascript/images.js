@@ -28,11 +28,107 @@ const cssFigureOrdi = {
 	const WidthChange = (mobileSize) => {
 		mobileSize.matches ? $('.active figure').css(cssFigureMobile) : $('.active figure').css(cssFigureOrdi);
 	}
+	
+const displayLaptop = () => {
+	
+	const pubRock = {
+		nom: 'rock',
+		texte: 'Check the pictures of Rock bands',
+		image: "https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/23509258_1934358429931338_2292833924781772992_o.jpg?_nc_cat=0&oh=8367aa7bc48d97abc450e2989704f2e7&oe=5C2DB3F5",
+		lien: "./html/rock.html"
+	}
+	
+	const pubElectro = {
+		nom: 'electro',
+		texte: 'Check the pictures of djs',
+		image: "https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1909220_740926665941193_790709462_o.jpg?_nc_cat=108&oh=671bc7010f581ca8b13a3ac3efcfb0a5&oe=5C591C13",
+		lien: "./html/electronic.html"
+	}
+	//const contenuPub = [pubRock, pubElectro];
+	
+	const favoritePics = [
+	{
+		type: 'electro',
+		nom: 'Daniel Avery',
+		delay: '0s',
+		url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20023964_1804355119598337_76681915083011696_o.jpg?_nc_cat=101&oh=91e03dd302c3121df543e31624c45f7a&oe=5C617BAE'
+	},
+	{
+		type: 'electro',
+		nom: 'Erol Alkan',
+		delay: '6s',
+		url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1492737_700998713267322_859434998_o.jpg?_nc_cat=109&oh=31297e01ceacb418f7007014832d8711&oe=5C23FCE7'
+	},
+	{
+		type: 'electro',
+		nom: 'Maceo Plex',
+		delay: '12s',
+		url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/22459168_1896246913742490_963753968985645795_o.jpg?_nc_cat=105&oh=4ba6ebb095cb9707ad6dfc21b012b47b&oe=5C2BC1EC'
+	},
+	{
+		type: 'electro',
+		nom: 'TEED',
+		delay: '18s',
+		url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1888839_764353863598473_1992132639_o.jpg?_nc_cat=103&oh=0495bf997d50b322083e4d750ade90b0&oe=5C5654AA'
+	},
+	{
+		type: 'electro',
+		nom: 'Sisy Ey',
+		delay: '24s',
+		url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1909220_740926665941193_790709462_o.jpg?_nc_cat=108&oh=671bc7010f581ca8b13a3ac3efcfb0a5&oe=5C591C13'
+	},
+	{
+		type: 'rock',
+		nom: 'The Black Lips',
+		delay: '30s',
+		url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/23509258_1934358429931338_2292833924781772992_o.jpg?_nc_cat=0&oh=8367aa7bc48d97abc450e2989704f2e7&oe=5C2DB3F5'
+	},
+		{
+		type: 'rock',
+		nom: 'The Black Lips',
+		delay: '36s',
+		url: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/23632116_1934358369931344_7426729873053806612_o.jpg?_nc_cat=0&oh=d4a0d3b0d6f8d877ed18660d1a1a1591&oe=5C34A018'
+	}];
+	
+	favoritePics.map((favorite)=>{
+		const content = `<li>
+		<span style='background-image: url("${favorite.url}"); animation-delay: ${favorite.delay}; -webkit-animation-delay: ${favorite.delay};
+    	-moz-animation-delay: ${favorite.delay}; -o-animation-delay: ${favorite.delay}; -ms-animation-delay: ${favorite.delay};'>${favorite.type}</span>
+		<div>
+		<h2 style='text-align:right; text-transform: uppercase'>
+		<a href="./html/rock.html"> Check the pictures of Rock bands</a>
+		</h2>
+		<h2 style='text-align:right; text-transform: uppercase'>
+		<a href="./html/electronic.html"> Check the pictures of djs</a>
+		</h2>
+		</div>
+		</li>`;
+		
+		$('.pub').prepend(content);
+	})
+	
+		 $('#buttons').hide();
+		 $('.slider').hide();
+		 $('#arrows').hide();
+		 $('.thumbnail').hide();
+		 $('main').css({'height': '100vh'});
+		 
+}
+
+
+	
+	const hidePictures = (laptopSize) => {
+		laptopSize.matches ? displayLaptop() : $('main section').show();
+	}
 
 	if(matchMedia) {
 		const mobileSize = window.matchMedia("(max-width: 700px)");
 		mobileSize.addListener(WidthChange);
 		WidthChange(mobileSize);
+		
+		const laptopSize = window.matchMedia("(min-width:870px)");
+		laptopSize.addListener(hidePictures);
+		hidePictures(laptopSize);
 	
 
 /**
@@ -45,15 +141,15 @@ const thumbnail = $('#thumbnail');
 const addPhotos = (photos) =>{
 	photos.map(artiste=> {
 		artiste.photosPath.map((photo)=>{
-			const content = 
+			const photosContent = 
 			`<li>
 				<figure>
 					<img src='${photo}' alt='${artiste.name} at ${artiste.venue}' style='border: solid 1px #e8e6e6'>
 					<figcaption>${artiste.name} at ${artiste.venue}</figcaption>
 				</figure>
 			</li>`;
-		slider.prepend(content);
-		thumbnail.prepend(content);
+		slider.prepend(photosContent);
+		thumbnail.prepend(photosContent);
 		});
 	});
 }
@@ -125,11 +221,11 @@ const verifFetch = new Promise((resolve, reject) =>{
 	}
 })
 
-verifFetch.then(()=>{
+/*verifFetch.then(()=>{
 fetch(imagesUrl).then((response)=>response.json()).then(fetchPhotos).then(displayThumbnail)
 }).catch((error)=>{
 	console.warn('Check ton erreur dans la fonction fetchPhotos: ', error);
-})
+})*/
 
 /* utile pour cacher la photo actuelle du slider
  quand je clique dans le thumbnail ou sur les boutons next/previous
@@ -248,6 +344,30 @@ $('#slider img').on('click', (event) => {
 }
 
 
+
+const defiler = () => {
+	verifFetch.then(()=>{
+fetch(imagesUrl).then((response)=>response.json()).then(fetchPhotos).then(displayThumbnail)
+}).catch((error)=>{
+	console.warn('Check ton erreur dans la fonction fetchPhotos: ', error);
+})
+}
+
+
+
+// Si je suis sur mon ordi, un lien pour télécharger mon vcf apparait, je récupère ma carte vcf
+if(matchMedia) {
+	const mobileSize = window.matchMedia("(max-width: 869px)");
+	mobileSize.addListener(defiler);
+	defiler(mobileSize);
+	
+}
+
+const showCarousel = (mobileSize) => {
+	mobileSize.matches ?  defiler() : console.log("it's a computer") ;
+}
+
+
 // Tester si c'est parce que le DOM est loadé ou parce que j'ai déplacé les events listeners
 $(function() {
     agrandirPhoto();
@@ -303,3 +423,6 @@ $('#all').click(()=>{
 });
 
 }
+
+
+
