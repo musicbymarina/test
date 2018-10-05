@@ -36,6 +36,7 @@ main {
 	width: 100%;
 	text-align: left;
 	margin: 0 1em;
+	z-index: 1;
 }
 
 section {
@@ -66,6 +67,7 @@ header h3{
 	display: flex;
 	flex-direction: column;
 	margin: 0 1em;
+	z-index: 1;
 }
 
 #logo a{
@@ -135,6 +137,7 @@ ul.parent-menu > li, ul.child-menu > li {
 }
 
 ul.parent-menu > li {
+	border-radius: 50px 20px;
 	display: inline-block;
 	position: relative;
 	width: 18%;
@@ -160,6 +163,7 @@ ul.child-menu {
 }
 
 ul.child-menu > li {
+	border-radius: 50px 20px;
 	width: inherit;
 	margin-top: 30px;
 	padding-bottom: 1em;
@@ -256,6 +260,10 @@ summary:active{
 		margin: 0 auto;
 	}
 	
+	.pub{
+		display: none;
+	}
+	
 }
 
 @media screen and (max-width: 869px) {
@@ -289,6 +297,10 @@ summary:active{
 	.child-menu{
 		flex-direction: column;
 		display: flex;
+	}
+	
+	.pub{
+		display: none;
 	}
 	
 }
