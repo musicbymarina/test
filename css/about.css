@@ -33,7 +33,7 @@ ul.exhibitions > li,
 .about h3, .exhibitions h4,
 .about a,
 figcaption{
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-transform: none;
@@ -119,6 +119,33 @@ ul.exhibitions > li{
 
 ul.exhibitions:first figure{
 	width: 50%;
+}
+
+/*Accordeon*/
+
+
+.accordion{
+	cursor: pointer;
+	transition: 0.4s;
+	border: solid 5px black;
+	padding: 1em 2em;
+}
+
+.accordion:after{
+	content: '\02795';
+	font-size: 1em;
+	color: black;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after{
+	content: '\2796';
+}
+
+.accordion:hover{
+	background-color: black;
+	color: white;
 }
 
 

@@ -24,12 +24,42 @@ section > article *{
 	box-sizing: border-box;
 }
 
-.contact article h3,
 .way h3,
 .quotes h3,
 .others h4,{
 	margin: 2em;
 	padding: 0 2em;
+}
+
+.contact h3{
+	color: black;
+}
+
+/*Accordeon*/
+
+
+.accordion{
+	cursor: pointer;
+	transition: 0.4s;
+	border: solid 5px black;
+	padding: 1em 2em;
+}
+
+.accordion:after{
+	content: '\02795';
+	font-size: 1em;
+	color: black;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after{
+	content: '\2796';
+}
+
+.accordion:hover{
+	background-color: black;
+	color: white;
 }
 
 
@@ -50,7 +80,7 @@ img{
 .contact a,
 .contact figcaption,
 quote{
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 1.2em;
 	text-transform: none;
 }
@@ -118,8 +148,6 @@ quote{
 	background-color: white;
 	color: black;
 }
-
-
 	
 @media screen and (max-width: 869px) {
 
@@ -167,7 +195,7 @@ quote{
 }
 
 .contact h3{
-	margin: 1em 2em;
+	margin: 1em 0;
 }
 
 .contact li{
