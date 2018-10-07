@@ -84,6 +84,35 @@ fetch(quotesUrl).then((response)=>response.json()).then(fetchQuotes).then(displa
 	console.warn('Check ton erreur dans la fonction fetchQuotes: ', error);
 })
 
+$('#downloadVCF a').last().on('click', ()=>{
+	$('.way a').last().attr({"href": "mailto:info@musicbymarina.fr", "title": "Send an email"});
+});
+
+
+/* Si je clique sur un h3:
+- lui ajouter la classe active pour avoir le + qui se transforme en -
+- récuperer son index et l'utiliser dans l'article
+- mettre cet article en SlideDown et ajouter un toggleClass active(qui aura un display block)
+(De base les articles sont cachés)
+*/
+
+$('.contact article').hide();
+$(this).on('click', (event) => {
+	const target = $(event.target);
+	const parents = target.parent();
+
+	if(target.is(".accordion")){
+		target.toggleClass('active');
+
+		const index = parents.find(target).index('h3');
+		const article = $('.contact article');
+		if(article[index-1].style.display === 'block'){
+			article[index-1].style.display = 'none';
+		} else {
+			article[index-1].style.display = 'block';
+		}
+	}
+	})
 
 
 
