@@ -14,12 +14,15 @@ body {
 	color: white;
 }
 
-ul{
+ul, ol{
 	margin-block-start: 0;
 	padding-inline-start: 0;
 	margin-block-end: 0;
 	margin-inline-end: 0;
 	margin-inline-start: 0;
+	padding-left: 0;
+	margin: 0;
+	list-style-position: inside;
 }
 
 /*MAIN*/
@@ -66,7 +69,7 @@ header h3{
 	width: 30%;
 	display: flex;
 	flex-direction: column;
-	margin: 0 1em;
+	margin: 0;
 	z-index: 1;
 }
 
@@ -107,7 +110,7 @@ h1,
 }
 
 #titre{
-	display: inline-block;
+	display: block;
 	width: 100%;
 	margin: 1em auto;
 }
@@ -131,7 +134,7 @@ ul.parent-menu {
 }
 
 ul.parent-menu > li, ul.child-menu > li {
-	background-color: black;
+	background-color: transparent;
 	border-bottom: solid 4px white;
 	text-align: center;
 }
@@ -148,6 +151,7 @@ ul.parent-menu > li {
 ul.parent-menu > li a, 
 ul.child-menu > li a {
 	color: white;
+	font-weight: bold;
 	text-decoration: none;
 	display: block;
 	padding: 1em;
@@ -180,7 +184,7 @@ ul.child-menu > li:hover {
 .parent-menu > li a:hover,
 .child-menu > li a:hover{
 	color: black;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 figure{
@@ -204,6 +208,7 @@ figure{
 /*FOOTER*/
 footer{
 		border: solid 5px white;
+		margin: 2em 0 0 0;
 }
 summary{
 		font-weight: bold;
@@ -214,6 +219,7 @@ summary{
 summary:active{
 	outline: white;
 }
+
 
 
 @media screen and (max-width: 500px) {
@@ -263,6 +269,8 @@ summary:active{
 	.pub{
 		display: none;
 	}
+	
+
 	
 }
 
