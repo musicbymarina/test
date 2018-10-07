@@ -1,0 +1,188 @@
+.about,
+.bio,
+.exhibitions {
+	display: flex;
+	flex-direction: column;
+}
+
+.about *{
+	color: black;
+}
+
+.about{
+	border: solid 1px #eee;
+	background-color: white;
+	box-shadow: 0 -1px 1px rgba(0,0,0,0.15), 0 -10px 0 -5px #eee, 0 -10px 1px -4px rgba(0,0,0,0.15), 0 -20px 0 -10px #eee, 0 -20px 1px -9px rgba(0,0,0,0.15);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+img{
+	width: 100%;
+	border: solid 1px #e8e6e6;
+}
+
+figcaption{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.about p,
+ul.exhibitions > li,
+.about h3, .exhibitions h4,
+.about a,
+figcaption{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: none;
+	color: black;
+}
+
+.about h3{
+	font-family: Roboto, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: none;
+	color: black;
+}
+
+.about h3,
+p, .exhibitions h4, {
+	padding: 0 2em;
+}
+
+article{
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 -1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 -10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 -10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 -20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 -20px 1px -9px rgba(0, 0, 0, 0.15);
+	margin: 1em 0;
+	border: solid 3px #eee;
+	box-sizing: border-box;
+}
+
+.exhibitions > ul{
+	display: flex;
+	list-style-type: none;
+	padding-inline-start: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.liste{
+	width: 50%;
+}
+
+
+
+figure{
+	padding: 20px;
+	width: 50%;
+	background-color: white;
+	box-shadow: 
+	/*Ombre de la 1ere couche:*/
+	0 1px 1px rgba(0,0,0,0.15),
+	/*2eme couche:*/
+	0 10px 0 -5px #eee,
+	/*Ombre de la 2eme couche:*/
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*3eme couche:*/
+	0 20px 0 -10px #eee,
+	/*Ombre de la 3eme couche:*/
+	0 20px 1px -9px rgba(0, 0, 0, 0.15);
+	margin: 1em auto;
+	box-sizing: border-box;
+}
+
+.liste figure{
+	width: 90%;
+}
+
+ul.exhibitions > li{
+	width: 60%;
+	margin: 0 auto;
+}
+
+ul.exhibitions:first figure{
+	width: 50%;
+}
+
+/*Accordeon*/
+
+
+.accordion{
+	cursor: pointer;
+	transition: 0.4s;
+	border: solid 5px black;
+	padding: 1em 2em;
+}
+
+.accordion:after{
+	content: '\02795';
+	font-size: 1em;
+	color: black;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after{
+	content: '\2796';
+}
+
+.accordion:hover{
+	background-color: black;
+	color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+.about h3,
+p{
+	padding: 0;
+	font-size: 1em;
+}
+
+ul.exhibitions{
+	margin: 0;
+}
+
+.liste{
+	width: 100%;
+	margin: 1em 0px;
+}
+
+figure{
+	width: 90%;
+}
+
+	}
+	
+@media screen and (max-width: 700px) {
+
+.liste{
+	width: 100%;
+}
+p,
+figcaption{
+	font-size: 1em;
+}
+
+figure{
+	width: 70%;
+}
+
+	}
