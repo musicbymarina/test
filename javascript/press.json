@@ -288,6 +288,16 @@
 			"artiste": "The Black Madonna",
 			"media": "Instagram",
 			"pic": ["../images/works/press/social/the-black-madonna1.png", "../images/works/press/social/the-black-madonna2.png"]
+		},
+		{
+			"artiste": "The Black Lips",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/the-black-lips.png"]
+		},
+		{
+			"artiste": "The KVB",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/the-kvb.png"]
 		}
 	]
 }
