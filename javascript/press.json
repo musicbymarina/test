@@ -1,0 +1,286 @@
+{
+	"digital": [{
+			"name": "Magnetic Magazine",
+			"links": [{
+					"artiste": "DJ Harvey",
+					"url": "https://www.magneticmag.com/2016/04/ministry-of-sound-hosts-dj-harvey-all-night-long/"
+				},
+				{
+					"artiste": "DJ Harvey",
+					"url": "https://www.magneticmag.com/2014/01/sonar-adds-17-performers-to-2014-program-including-dj-harvey-uz-tiga-and-pretty-lights-edm-news/"
+				}
+			]
+		},
+		{
+			"name": "NPR Music",
+			"links": [{
+				"artiste": "DJ Harvey",
+				"url": "https://www.npr.org/2014/07/20/331353776/first-listen-wildest-dreams-wildest-dreams?t=1538928869809"
+			}]
+		},
+		{
+			"name": "Xlr8",
+			"links": [{
+				"artiste": "DJ Harvey",
+				"url": "https://www.xlr8r.com/features/20-questions-dj-harvey-talks-surfing-rock-n-roll-and-the-meaning-of-life"
+			}]
+		},
+		{
+			"name": "LA Weekly",
+			"links": [{
+				"artiste": "DJ Harvey",
+				"url": "https://www.laweekly.com/music/dj-harvey-bassetts-career-takes-unexpected-turns-4989128"
+			}]
+		},
+		{
+			"name": "Interview Magazine",
+			"links": [{
+				"artiste": "DJ Harvey",
+				"url": "https://www.interviewmagazine.com/music/dj-harvey-wildest-dreams"
+			}]
+		},
+		{
+			"name": "ResidentAdvisor",
+			"links": [{
+				"artiste": "DJ Harvey",
+				"url": "https://www.residentadvisor.net/news/39616"
+			}]
+		},
+		{
+			"name": "Mixmag",
+			"links": [{
+					"artiste": "About my exhibition",
+					"url": "https://mixmag.net/read/check-out-a-bunch-of-atmospheric-andrew-weatherall-portraits-blog"
+				},
+				{
+					"artiste": "Reportage",
+					"url": "https://mixmag.net/feature/paris-suburbs-rave"
+				}
+			]
+		},
+		{
+			"name": "DJ Mag",
+			"links": [{
+				"artiste": "About my exhibition",
+				"url": "https://djmag.com/content/new-andrew-weatherall-exhibition-open-france"
+			}]
+		},
+		{
+			"name": "Only Techno",
+			"links": [{
+				"artiste": "About my exhibition",
+				"url": "https://www.onlytechno.net/see-favorite-djs-captured-photographs-french-photographer-marina/"
+			}]
+		},
+		{
+			"name": "Skiddle",
+			"links": [{
+				"artiste": "DJ Hell",
+				"url": "https://www.skiddle.com/news/all/DJ-Hell-Interview-Power-and-innovation/26712/"
+			}]
+		},
+		{
+			"name": "Villa Schweppes",
+			"links": [{
+				"artiste": "About my exhibition",
+				"url": "http://www.villaschweppes.com/article/music-by-marina-la-portraitiste-de-djs-producteurs_a7179/1"
+			}]
+		},
+		{
+			"name": "L'Independant",
+			"links": [{
+				"artiste": "About my exhibition",
+				"url": "https://www.lindependant.fr/2015/09/23/carcassonne-a-la-veille-du-festival-convenanza-une-double-expo-photo-au-bloc-g,2088089.php"
+			}]
+		},
+		{
+			"name": "The Guardian",
+			"links": [{
+				"artiste": "Roman Fluegel",
+				"url": "https://www.theguardian.com/music/2014/apr/11/roman-flugel-favourite-tracks"
+			}]
+		},
+		{
+			"name": "Vogue",
+			"links": [{
+				"artiste": "The Soft Moon",
+				"url": "https://en.vogue.fr/fashion-culture/fashion-music/diaporama/anders-trentemollers-digital-playlist/13473"
+			}]
+		},
+		{
+			"name": "Inverted Audio",
+			"links": [{
+				"artiste": "Roman Fluegel",
+				"url": "https://inverted-audio.com/feature/roman-flugel/"
+			}]
+		},
+		{
+			"name": "Paris Match",
+			"links": [{
+					"artiste": "Tristesse Contemporaine / Hypnolove",
+					"url": "https://www.parismatch.com/Culture/Musique/Hypnolove-en-concert-Nouba-au-Nuba-513550"
+				},
+				{
+					"artiste": "Chromatics / Glass Candy",
+					"url": "https://www.parismatch.com/Culture/Musique/Les-Chromatics-et-Glass-Candy-enchantent-la-Cigale-517964"
+				},
+				{
+					"artiste": "Calexico",
+					"url": "https://www.parismatch.com/Culture/Musique/En-images/Calexico-en-concert-522321"
+				}
+			]
+		},
+		{
+			"name": "Elle Magazine",
+			"links": [{
+				"artiste": "Little Dragon",
+				"url": "http://www.dailyelle.fr/tout-dans-le-detail/le-chapeau-baptiste-viry-de-yukimi-34102"
+			}]
+		},
+		{
+			"name": "BBC",
+			"links": [{
+				"artiste": "DJ Tennis",
+				"url": "https://www.bbc.co.uk/programmes/b097cpy0"
+			}]
+		},
+		{
+			"name": "Thump Vice",
+			"links": [{
+				"artiste": "DJ Hell",
+				"url": "https://thump2.vice.com/en_uk/article/dj-hell-gives-us-the-lowdown-on-what-tom-of-finland-means-to-him-and-dance-music-at-large"
+			}]
+		}
+	],
+	"paper": [{
+			"name": "Modzik",
+			"images": [{
+					"artiste": "Goldfrapp",
+					"src": "../images/works/press/goldfrapp-modzik.png"
+				},
+				{
+					"artiste": "Chromatics / Glass Candy",
+					"src": "../images/works/press/chromatics-modzik.png"
+				}
+			]
+		},
+		{
+			"name": "Mixmag",
+			"images": [{
+					"artiste": "Daniel Avery",
+					"src": "../images/works/press/daniel-avery-mixmag.pdf"
+				},
+				{
+					"artiste": "DJ Harvey",
+					"src": "../images/works/press/dj-harvey-mixmag.pdf"
+				},
+				{
+					"artiste": "Reportage",
+					"src": "../images/works/press/rave-mixmag.pdf"
+				}
+			]
+		},
+		{
+			"name": "Tsugi",
+			"images": [{
+				"artiste": "Peacock Society",
+				"src": "../images/works/press/peacock-society-tsugi.pdf"
+			}]
+		},
+		{
+			"name": "La Marseillaise",
+			"images": [{
+				"artiste": "About my exhibition",
+				"src": "../images/works/press/expo-marseille.png"
+			}]
+		},
+		{
+			"name": "Floor Magazine",
+			"images": [{
+				"artiste": "DJ Harvey",
+				"src": "../images/works/press/floor-cover-dj-harvey.pdf"
+			}]
+		}
+	],
+	"social": [{
+			"artiste": "Brian Jonestown Massacre",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/bjm-portrait.png", "../images/works/press/social/bjm-rdr1.png", "../images/works/press/social/bjm-rdr2.png", "../images/works/press/social/bjm-rdr3.png", "../images/works/press/social/bjm-rdr4.png"]
+		},
+		{
+			"artiste": "Concrete Paris (promoter)",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/concrete-aw.png", "../images/works/press/social/concrete-dj-harvey.png"]
+		},
+		{
+			"artiste": "Daniel Avery",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/daniel-avery-bon-air.png", "../images/works/press/social/daniel-avery-eurockeennes.png", "../images/works/press/social/daniel-avery-made.png", "../images/works/press/social/daniel-avery-magazine.png", "../images/works/press/social/daniel-avery-nuits-sonores.png", "../images/works/press/social/daniel-avery-peacock1.png", "../images/works/press/social/daniel-avery-peacock2.png"]
+		},
+		{
+			"artiste": "Danny Daze",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/danny-daze.png"]
+		},
+		{
+			"artiste": "DJ Harvey",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/dj-harvey-portrait.png"]
+		},
+		{
+			"artiste": "DJ Tennis",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/dj-tennis.png"]
+		},
+		{
+			"artiste": "Haai",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/haai.png"]
+		},
+		{
+			"artiste": "John Maus",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/john-maus.png", "../images/works/press/social/john-maus2.png"]
+		},
+		{
+			"artiste": "John Talabot",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/john-talabot.png"]
+		},
+		{
+			"artiste": "Miley Serious",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/miley-serious.png"]
+		},
+		{
+			"artiste": "Mixmag (magazine)",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/mixmag-da.png", "../images/works/press/social/mixmag-rave.png"]
+		},
+		{
+			"artiste": "Nina Kraviz",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/nina-kraviz.png", "../images/works/press/social/nina-kraviz-dj-hell.png"]
+		},
+		{
+			"artiste": "Nuits Sonores (promoter)",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/nuits-sonores.png"]
+		},
+		{
+			"artiste": "Slowdive",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/slowdive.png"]
+		},
+		{
+			"artiste": "Soul Clap",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/soul-clap.png"]
+		},
+		{
+			"artiste": "The Black Madonna",
+			"media": "Instagram",
+			"pic": ["../images/works/press/social/the-black-madonna1.png", "../images/works/press/social/the-black-madonna2.png"]
+		}
+	]
+}
