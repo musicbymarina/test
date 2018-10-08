@@ -240,7 +240,7 @@ THUMBNAIL
 #myModal{
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 	padding-top: 5px;
 	left: 0;
 	top: 0;
@@ -291,6 +291,10 @@ THUMBNAIL
 .pub:after {
     content: '';
     background: transparent url(../images/pattern.png) repeat top left;
+}
+
+.pub{
+	list-style-type: none;
 }
 
 .pub li span {
