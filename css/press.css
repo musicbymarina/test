@@ -1,0 +1,145 @@
+.press{
+	color: black;
+	border: solid 1px #eee;
+	background-color: white;
+	box-shadow: 0 -1px 1px rgba(0,0,0,0.15), 0 -10px 0 -5px #eee, 0 -10px 1px -4px rgba(0,0,0,0.15), 0 -20px 0 -10px #eee, 0 -20px 1px -9px rgba(0,0,0,0.15);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+section > article *{
+	color: black;
+}
+
+.press article{
+	border: solid 5px black;
+	margin: 2em 0;
+}
+
+
+.press figure{
+	width: 50%;
+	margin: 1em auto;
+	box-sizing: border-box;
+}
+
+.press h3{
+	color: black;
+}
+
+img{
+	width: 100%;
+	border: solid 1px #e8e6e6;
+}
+
+.press figcaption{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.press p,
+.press li,
+.press a,
+.press figcaption {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 1.2em;
+	text-transform: none;
+}
+
+.press p{
+	font-weight: bold;
+	padding: 0;
+}
+
+
+
+.press ul, .press ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
+	padding-inline-start:0;
+}
+
+.press ul > li{
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+
+.press h4{
+	text-align: left;
+	padding: 0 1em;
+}
+
+#social h4{
+	text-align: center;
+	width: 100%;
+}
+
+#thumbnail{
+	display: flex;
+	flex-direction: row;
+	margin: 1em auto;
+}
+
+#thumbnail figure{
+	margin: 0 auto;
+	width: 30%;
+}
+
+/*Accordeon*/
+
+
+.accordion{
+	cursor: pointer;
+	transition: 0.4s;
+	border: solid 5px black;
+	padding: 1em 2em;
+}
+
+.accordion:after{
+	content: '\02795';
+	font-size: 1em;
+	color: black;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after{
+	content: '\2796';
+}
+
+.accordion:hover{
+	background-color: black;
+	color: white;
+}
+
+@media screen and (max-width: 500px){
+	.press h3{
+	font-size: 1em;
+	padding: 1em;
+	}
+
+	#thumbnail figure{
+		width: 80%;
+		margin: 0 0 1em 0;
+	}
+	
+	.force{
+		transform: rotate(-90deg);
+		transform-origin: left top;
+		width: 100vh;
+		height: 100vw;
+		overflow-x: hidden;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+}
