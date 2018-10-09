@@ -1,6 +1,6 @@
-const cacheName = 'v1';
+const cacheName = 'v2';
 
-const cacheFiles = [
+/*const cacheFiles = [
 '/', 
 '/index.html', 
 '/html/about.html', 
@@ -35,7 +35,9 @@ const cacheFiles = [
 'images/works/',
 'manifest.json',
  '/images/icon.png'
-];
+];*/
+
+const cacheFiles = ['index.html'];
 
 self.addEventListener('install', event => {
     console.log('[ServiceWorker] Installed');
@@ -66,16 +68,21 @@ self.addEventListener('fetch', event => {
   console.log('[ServiceWorker] Fetch event now', event.request.url);
 
   event.respondWith(
-    caches.open(cacheName).then(cache => {
-      return cache.match(event.request).then(response => {
-        console.log("[ServiceWorker] Found in Cache", event.request.url, response);
-        return response || fetch(event.request).then(response => {
-          console.log('[ServiceWorker] not Found in Cache, need to search in the network', event.request.url);
-          cache.put(event.request, response.clone());
-          console.log('[ServiceWorker] New Data Cached', event.request.url);
-          return response;
-        });
-      });
+    caches.open(cacheName)
+    .then(cache => {
+      	return cache.match(event.request)
+      	.then(response => {
+        	console.log("[ServiceWorker] Found in Cache", event.request.url, response);
+        	return response || fetch(event.request)
+        						.then(response => {
+          							console.log('[ServiceWorker] not Found in Cache, need to search in the network', event.request.url);
+          							cache.put(event.request, response.clone());
+          							console.log('[ServiceWorker] New Data Cached', event.request.url);
+          							return response;
+        						});
+      	}).catch((error)=>{
+      		return cache.match('/html/offline.html');
+      	})
     })
   );
 });
