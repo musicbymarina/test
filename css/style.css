@@ -66,7 +66,7 @@ header h3{
 }
 
 #logo{
-	width: 30%;
+	width: 20vw;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
@@ -111,12 +111,13 @@ h1,
 
 #titre{
 	display: block;
-	width: 100%;
-	margin: 1em auto;
+	width: 20vw;
+	margin: 1em 0;
 }
 
 header nav{
 	display: block;
+	width: 80vw;
 }
 
 ul.parent-menu, ul.child-menu, ul#insert {
@@ -209,19 +210,43 @@ figure{
 footer{
 		border: solid 5px white;
 		margin: 2em 0 0 0;
+		z-index: auto;
+}
+
+details{
+	background-color: white;
 }
 summary{
 		font-weight: bold;
 	padding: 1em 6em;
 	outline: white;
+	background-color: black;
 }
 
 summary:active{
 	outline: white;
 }
 
+details p{
+	padding: 0 1em;
+	color: black;
+}
 
+details p{
+	text-align: center;
+}
 
+details ul{
+	display: flex;
+	list-style-image: none;
+	align-content: center;
+	justify-content: space-around;
+	margin: 0;
+}
+
+details img{
+	width: 25%;
+}
 @media screen and (max-width: 500px) {
 	#logo{
 		width: 3%;
