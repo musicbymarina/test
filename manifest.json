@@ -1,0 +1,21 @@
+{
+  "short_name": "Marina",
+  "name": "Music by Marina",
+  "scope": "/",
+  "icons": [{
+    "src": "images/favicon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+{
+    "src": "images/favicon.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }],
+  "display": "standalone",
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "lang": "en-US",
+  "orientation": "portrait"
+}
