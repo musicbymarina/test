@@ -28,10 +28,12 @@ const cacheFiles = [
 '/javascript/press.js', 
 '/javascript/rock.js',
 '/images/', 
+'/images/facebook.png',
+'/images/instagram.png',
 '/images/about/', 
 '/images/contact/', 
 'images/works/',
- 'manifest.json',
+'manifest.json',
  '/images/icon.png'
 ];
 
