@@ -6,6 +6,8 @@
 
 * {
 	font-family: Roboto, sans-serif;
+	font-display: auto;
+	src: local('Roboto'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
 	color: white;
 }
 
