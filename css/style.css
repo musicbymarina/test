@@ -6,9 +6,13 @@
 
 * {
 	font-family: Roboto, sans-serif;
-	font-display: auto;
-	src: local('Roboto'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
 	color: white;
+}
+
+@font-face{
+	font-family: Roboto, sans-serif;
+	font-display: swap;
+	src: local('Roboto'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
 }
 
 body {
@@ -190,6 +194,10 @@ ul.child-menu > li:hover {
 	font-weight: bolder;
 }
 
+.no-border{
+	border: none;
+}
+
 figure{
 	border: solid 1px #eee;
 	background-color: white;
@@ -248,6 +256,7 @@ details ul{
 
 details img{
 	width: 25%;
+	filter: grayscale(100);
 }
 @media screen and (max-width: 500px) {
 	#logo{
