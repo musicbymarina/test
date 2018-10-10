@@ -54,9 +54,9 @@ p, .exhibitions h4, {
 }
 
 .about p{
-  line-height: 1.5em;
-  width: 70ch;
-  margin: 1em auto;
+  line-height: 1.8em;
+  width: 65ch;
+  margin: 2em auto;
 }
 
 article{
@@ -197,9 +197,10 @@ quote{
   }
   
 @media screen and (max-width: 500px) {
-p{
+.about p{
   padding: 0;
   font-size: 1em;
+  width: auto;
 }
 
 .about h3{
