@@ -1,43 +1,6 @@
-const cacheName = 'v2';
+const cacheName = 'v3';
 
-/*const cacheFiles = [
-'/', 
-'/index.html', 
-'/html/about.html', 
-'/html/offline.html', 
-'/html/lost.html',
-'/html/contact.html', 
-'/html/electronic.html', 
-'/html/press.html', 
-'/html/rock.html',
-'/css/about.css', 
-'/css/contact.css', 
-'/css/imagesHome.css', 
-'/css/portofolio.css', 
-'/css/press.css', 
-'/css/style.css',
-'/javascript/about.js', 
-'/javascript/contact.js', 
-'/javascript/json.json', 
-'/javascript/images.js', 
-'/javascript/electronic.js', 
-'/javascript/images.js', 
-'/javascript/index.js', 
-'/javascript/menu.js', 
-'/javascript/portofolio.js', 
-'/javascript/press.js', 
-'/javascript/rock.js',
-'/images/', 
-'/images/facebook.png',
-'/images/instagram.png',
-'/images/about/', 
-'/images/contact/', 
-'images/works/',
-'manifest.json',
- '/images/icon.png'
-];*/
-
-const cacheFiles = ['index.html'];
+const cacheFiles = ['index.html', '/html/about.html', '/html/contact.html', '/html/electronic.html', '/html/offline.html', '/html/lost.html', '/html/press.html', '/html/rock.html', '/css/style.css', '/css/imagesHome.css', '/css/about.css', '/css/contact.css', '/css/portfolio.css', '/css/press.css', '/javascript/about.js', '/javascript/contact.js', '/javascript/electronic.js', '/javascript/images.js', '/javascript/index.js', '/javascript/menu.js', '/javascript/portfolio.js', '/javascript/press.js', '/javascript/rock.js'];
 
 self.addEventListener('install', event => {
     console.log('[ServiceWorker] Installed');
