@@ -5,13 +5,13 @@ $('#about').on('mouseenter', ()=>{
 	$('#works-child').hide();
 	$('#portfolio-child').hide();
 	
-	$('#works').css({'background-color': 'black',
+	$('#works').css({'background-color': 'transparent',
 	'border-radius': '50px 20px', 'border-left-color': 'black'});
-	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
+	$('#work-a').css({'color': 'white', 'font-weight': 'bold'});
 	
-	$('#portfolio').css({'background-color': 'black',
+	$('#portfolio').css({'background-color': 'transparent',
 	'border-radius': '50px 20px', 'border-left-color': 'black'});
-	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
+	$('#portfolio-a').css({'color': 'white', 'font-weight': 'bold'});
 });
 
 /*
@@ -21,13 +21,13 @@ $('#contact').on('mouseenter', ()=>{
 	$('#works-child').hide();
 	$('#portfolio-child').hide();
 	
-	$('#works').css({'background-color': 'black',
+	$('#works').css({'background-color': 'transparent',
 	'border-radius': '50px 20px', 'border-left-color': 'black'});
-	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
+	$('#work-a').css({'color': 'white', 'font-weight': 'bold'});
 	
-	$('#portfolio').css({'background-color': 'black',
+	$('#portfolio').css({'background-color': 'transparent',
 	'border-radius': '50px 20px', 'border-left-color': 'black'});
-	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
+	$('#portfolio-a').css({'color': 'white', 'font-weight': 'bold'});
 });
 
 /*
@@ -35,22 +35,23 @@ When I click on Portfolio in the menu, I can see the submenu
 */
 $('#portfolio').on('click', ()=>{
 
-	if($(window).width() < 700){
-		$('#portfolio-child').slideToggle();
+	if($(window).width() < 869){
+		$('#portfolio-child').toggle();
 		$('#works').toggle();
-		$('#contact').toggle();
+		$('#contact-me').toggle();
+
 	} else {
 		$('#works-child').hide();
-		$('#portfolio-child').slideToggle();
+		$('#portfolio-child').toggle();
 	}
 	
 	$('#portfolio').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	$('#portfolio-a').css({'color': 'black', 'font-weight': 'bold'});
 	
-	$('#works').css({'background-color': 'black',
+	$('#works').css({'background-color': 'transparent',
 	'border-radius': '50px 20px', 'border-left-color': 'black'});
-	$('#work-a').css({'color': 'white', 'font-weight': 'normal'});
+	$('#work-a').css({'color': 'white', 'font-weight': 'bold'});
 });
 
 /*
@@ -58,21 +59,21 @@ When I click on Works in the menu, I can see the submenu
 */
 $('#works').on('click', ()=>{
 	
-	if($(window).width() < 700){
-		$('#works-child').slideToggle();
-		$('#contact').toggle();
+	if($(window).width() < 869){
+		$('#works-child').toggle();
+		$('#contact-me').toggle();
 	} else {
 		$('#portfolio-child').hide();
-		$('#works-child').slideToggle();
+		$('#works-child').toggle();
 	}
 	
 	$('#works').css({'background-color': 'white',
 	'border-radius': '50px 20px', 'border-left-color': 'grey'});
 	$('#work-a').css({'color': 'black', 'font-weight': 'bold'});
 	
-	$('#portfolio').css({'background-color': 'black',
+	$('#portfolio').css({'background-color': 'transparent',
 	'border-radius': '50px 20px', 'border-left-color': 'black'});
-	$('#portfolio-a').css({'color': 'white', 'font-weight': 'normal'});
+	$('#portfolio-a').css({'color': 'white', 'font-weight': 'bold'});
 	
 });
 
