@@ -163,11 +163,13 @@
 			"name": "Modzik",
 			"images": [{
 					"artiste": "Goldfrapp",
-					"src": "../images/works/press/goldfrapp-modzik.png"
+					"src": "../images/works/press/goldfrapp-modzik.png",
+					"webp": "../images/works/press/goldfrapp-modzik.webp"
 				},
 				{
 					"artiste": "Chromatics / Glass Candy",
-					"src": "../images/works/press/chromatics-modzik.png"
+					"src": "../images/works/press/chromatics-modzik.png",
+					"webp": "../images/works/press/chromatics-modzik.webp"
 				}
 			]
 		},
@@ -198,7 +200,8 @@
 			"name": "La Marseillaise",
 			"images": [{
 				"artiste": "About my exhibition",
-				"src": "../images/works/press/expo-marseille.png"
+				"src": "../images/works/press/expo-marseille.png",
+				"webp": "../images/works/press/expo-marseille.webp"
 			}]
 		},
 		{
@@ -212,92 +215,110 @@
 	"social": [{
 			"artiste": "Brian Jonestown Massacre",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/bjm-portrait.png", "../images/works/press/social/bjm-rdr1.png", "../images/works/press/social/bjm-rdr2.png", "../images/works/press/social/bjm-rdr3.png", "../images/works/press/social/bjm-rdr4.png"]
+			"pic": ["../images/works/press/social/bjm-portrait.png", "../images/works/press/social/bjm-rdr1.png", "../images/works/press/social/bjm-rdr2.png", "../images/works/press/social/bjm-rdr3.png", "../images/works/press/social/bjm-rdr4.png"],
+			"webp": ["../images/works/press/social/bjm-portrait.webp", "../images/works/press/social/bjm-rdr1.webp", "../images/works/press/social/bjm-rdr2.webp", "../images/works/press/social/bjm-rdr3.webp", "../images/works/press/social/bjm-rdr4.webp"]
 		},
 		{
 			"artiste": "Concrete Paris (promoter)",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/concrete-aw.png", "../images/works/press/social/concrete-dj-harvey.png"]
+			"pic": ["../images/works/press/social/concrete-aw.png", "../images/works/press/social/concrete-dj-harvey.png"],
+			"webp": ["../images/works/press/social/concrete-aw.webp", "../images/works/press/social/concrete-dj-harvey.webp"]
 		},
 		{
 			"artiste": "Daniel Avery",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/daniel-avery-bon-air.png", "../images/works/press/social/daniel-avery-eurockeennes.png", "../images/works/press/social/daniel-avery-made.png", "../images/works/press/social/daniel-avery-magazine.png", "../images/works/press/social/daniel-avery-nuits-sonores.png", "../images/works/press/social/daniel-avery-peacock1.png", "../images/works/press/social/daniel-avery-peacock2.png"]
+			"pic": ["../images/works/press/social/daniel-avery-bon-air.png", "../images/works/press/social/daniel-avery-eurockeennes.png", "../images/works/press/social/daniel-avery-made.png", "../images/works/press/social/daniel-avery-magazine.png", "../images/works/press/social/daniel-avery-nuits-sonores.png", "../images/works/press/social/daniel-avery-peacock1.png", "../images/works/press/social/daniel-avery-peacock2.png"],
+			"pic": ["../images/works/press/social/daniel-avery-bon-air.webp", "../images/works/press/social/daniel-avery-eurockeennes.webp", "../images/works/press/social/daniel-avery-made.webp", "../images/works/press/social/daniel-avery-magazine.webp", "../images/works/press/social/daniel-avery-nuits-sonores.webp", "../images/works/press/social/daniel-avery-peacock1.webp", "../images/works/press/social/daniel-avery-peacock2.webp"]
 		},
 		{
 			"artiste": "Danny Daze",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/danny-daze.png"]
+			"pic": ["../images/works/press/social/danny-daze.png"],
+			"webp": ["../images/works/press/social/danny-daze.webp"]
 		},
 		{
 			"artiste": "DJ Harvey",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/dj-harvey-portrait.png"]
+			"pic": ["../images/works/press/social/dj-harvey-portrait.png"],
+			"webp": ["../images/works/press/social/dj-harvey-portrait.webp"]
 		},
 		{
 			"artiste": "DJ Tennis",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/dj-tennis.png"]
+			"pic": ["../images/works/press/social/dj-tennis.png"],
+			"webp": ["../images/works/press/social/dj-tennis.webp"]
 		},
 		{
 			"artiste": "Haai",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/haai.png"]
+			"pic": ["../images/works/press/social/haai.png"],
+			"webp": ["../images/works/press/social/haai.webp"]
 		},
 		{
 			"artiste": "John Maus",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/john-maus.png", "../images/works/press/social/john-maus2.png"]
+			"pic": ["../images/works/press/social/john-maus.png", "../images/works/press/social/john-maus2.png"],
+			"webp": ["../images/works/press/social/john-maus.webp", "../images/works/press/social/john-maus2.webp"]
 		},
 		{
 			"artiste": "John Talabot",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/john-talabot.png"]
+			"pic": ["../images/works/press/social/john-talabot.png"],
+			"webp": ["../images/works/press/social/john-talabot.webp"]
 		},
 		{
 			"artiste": "Miley Serious",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/miley-serious.png"]
+			"pic": ["../images/works/press/social/miley-serious.png"],
+			"webp": ["../images/works/press/social/miley-serious.webp"]
 		},
 		{
 			"artiste": "Mixmag (magazine)",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/mixmag-da.png", "../images/works/press/social/mixmag-rave.png"]
+			"pic": ["../images/works/press/social/mixmag-da.png", "../images/works/press/social/mixmag-rave.png"],
+			"webp": ["../images/works/press/social/mixmag-da.webp", "../images/works/press/social/mixmag-rave.webp"]
 		},
 		{
 			"artiste": "Nina Kraviz",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/nina-kraviz.png", "../images/works/press/social/nina-kraviz-dj-hell.png"]
+			"pic": ["../images/works/press/social/nina-kraviz.png", "../images/works/press/social/nina-kraviz-dj-hell.png"],
+			"webp": ["../images/works/press/social/nina-kraviz.webp", "../images/works/press/social/nina-kraviz-dj-hell.webp"]
 		},
 		{
 			"artiste": "Nuits Sonores (promoter)",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/nuits-sonores.png"]
+			"pic": ["../images/works/press/social/nuits-sonores.png"],
+			"webp": ["../images/works/press/social/nuits-sonores.webp"]
 		},
 		{
 			"artiste": "Slowdive",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/slowdive.png"]
+			"pic": ["../images/works/press/social/slowdive.png"],
+			"webp": ["../images/works/press/social/slowdive.webp"]
 		},
 		{
 			"artiste": "Soul Clap",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/soul-clap.png"]
+			"pic": ["../images/works/press/social/soul-clap.png"],
+			"webp": ["../images/works/press/social/soul-clap.webp"]
 		},
 		{
 			"artiste": "The Black Madonna",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/the-black-madonna1.png", "../images/works/press/social/the-black-madonna2.png"]
+			"pic": ["../images/works/press/social/the-black-madonna1.png", "../images/works/press/social/the-black-madonna2.png"],
+			"webp": ["../images/works/press/social/the-black-madonna1.webp", "../images/works/press/social/the-black-madonna2.webp"]
 		},
 		{
 			"artiste": "The Black Lips",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/the-black-lips.png"]
+			"pic": ["../images/works/press/social/the-black-lips.png"],
+			"webp": ["../images/works/press/social/the-black-lips.webp"]
 		},
 		{
 			"artiste": "The KVB",
 			"media": "Instagram",
-			"pic": ["../images/works/press/social/the-kvb.png"]
+			"pic": ["../images/works/press/social/the-kvb.png"],
+			"webp": ["../images/works/press/social/the-kvb.webp"]
 		}
 	]
 }
