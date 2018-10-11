@@ -81,6 +81,10 @@ button:active{
 	border: solid 1px #e8e6e6;
 }
 
+#slider img:hover{
+	cursor: zoom-in;
+}
+
 #slider figure.active {
 	display: flex;
 	height: auto;
@@ -170,7 +174,6 @@ figcaption {
 }
 
 .slider-nav span:hover,
-#slider img:hover,
 button:hover,
 #thumbnail li:hover {
 	cursor: pointer;
