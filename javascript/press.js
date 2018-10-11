@@ -20,7 +20,28 @@ $(this).on('click', (event) => {
 		} else {
 			article[index-1].style.display = 'block';
 		}
-	}
+	} else if(target.is(".agrandir")) {
+		console.log('tu cliques sur une photo');
+			let image = event.target;
+			console.log(image);
+			$('.modal-content').html('');
+			$('html').addClass('force');
+			$('.modal-content').html(`<span class="close">X</span>`);
+			$(event.target).clone().appendTo('.modal-content');
+			$('.modal-content img').css({'width':'100%'});
+			$('#myModal').show();
+			
+	// Si je clique sur le bouton close, je ferme la photo agrandie
+	} else if(target.is(".close")) {
+			console.log('tu cliques sur le bouton pour fermer la photo agrandie');
+			$('#myModal').hide();
+			$('html').removeClass('force');
+			
+			// Si je clique pas sur le nom d'un artiste dans ma boite, je fais rien
+	} else {
+		console.log('ca ne sert à rien de cliquer, ca fonctionnera pas');
+		return;
+	}	
 	})
 
 
@@ -47,7 +68,7 @@ const addMagazines = (data) => {
 	
 	const social = data.social;
 	social.map((images)=>{
-		content = `<li id='thumbnail'><h4>${images.artiste}</h4></li>`;
+		content = `<li class='pile'><h4>${images.artiste}</h4></li>`;
 
 		$('#social ul').prepend(content);
 	})
@@ -83,8 +104,17 @@ const addPrintLinks = () =>{
 					listeMagazine.map((mag)=>{
 						const files = mag.images;
 						files.map((file)=>{
-							if(file.src.endsWith('.png')){
-								const content = `<li><p><img src=${file.src} alt=${mag.name} class='agrandir'> <figcaption>${file.artiste}</figcaption></p></li>`;
+							if(file.src.endsWith('.png') || file.src.endsWith('.webp')){
+								const content = `<li>
+								<figure>
+									<picture>
+										<source media='(min-width: 501px)' srcset=${file.src}>
+										<source media='(max-width: 500px)' srcset=${file.webp}>
+										<img src=${file.src} alt=${mag.name} class='agrandir'>
+									</picture> 
+								 	<figcaption>${file.artiste}</figcaption>
+								 </figure>
+								</li>`;
 								titre.innerHTML = titre.innerHTML + `<ul>${content}</ul>`;
 							} else if(file.src.endsWith('.pdf')){
 								const content = `<li><p>Subject: <a href=${file.src} target='_blank'>${file.artiste}</a></p></li>`;
@@ -105,8 +135,16 @@ const addSocialLinks = () =>{
 					const socialPosts = data.social.filter((post) => post.artiste === $('#social h4')[index].innerHTML);
 					socialPosts.map((socialPost)=>{
 						const pictures = socialPost.pic;
+						const picturesOptimized = socialPost.webp;
 						pictures.map((pic)=>{
-								const content = `<figure><img src=${pic} alt=${socialPost.artiste} class='agrandir'> <figcaption>${socialPost.artiste}</figcaption></figure>`;
+								const content = `<figure>
+								<picture>
+								<source media='(min-width: 501px)' srcset=${pic}>
+								<source media='(max-width: 500px)' srcset=${picturesOptimized}>
+								<img src=${pic} alt=${socialPost.artiste} class='agrandir'>
+								</picture> 
+								<figcaption>${socialPost.artiste}</figcaption>
+								</figure>`;
 								titre.innerHTML += content;
 							
 							})
