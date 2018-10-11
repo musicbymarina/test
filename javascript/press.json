@@ -228,7 +228,7 @@
 			"artiste": "Daniel Avery",
 			"media": "Instagram",
 			"pic": ["../images/works/press/social/daniel-avery-bon-air.png", "../images/works/press/social/daniel-avery-eurockeennes.png", "../images/works/press/social/daniel-avery-made.png", "../images/works/press/social/daniel-avery-magazine.png", "../images/works/press/social/daniel-avery-nuits-sonores.png", "../images/works/press/social/daniel-avery-peacock1.png", "../images/works/press/social/daniel-avery-peacock2.png"],
-			"pic": ["../images/works/press/social/daniel-avery-bon-air.webp", "../images/works/press/social/daniel-avery-eurockeennes.webp", "../images/works/press/social/daniel-avery-made.webp", "../images/works/press/social/daniel-avery-magazine.webp", "../images/works/press/social/daniel-avery-nuits-sonores.webp", "../images/works/press/social/daniel-avery-peacock1.webp", "../images/works/press/social/daniel-avery-peacock2.webp"]
+			"webp": ["../images/works/press/social/daniel-avery-bon-air.webp", "../images/works/press/social/daniel-avery-eurockeennes.webp", "../images/works/press/social/daniel-avery-made.webp", "../images/works/press/social/daniel-avery-magazine.webp", "../images/works/press/social/daniel-avery-nuits-sonores.webp", "../images/works/press/social/daniel-avery-peacock1.webp", "../images/works/press/social/daniel-avery-peacock2.webp"]
 		},
 		{
 			"artiste": "Danny Daze",
