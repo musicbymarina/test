@@ -1,4 +1,4 @@
-const cacheName = 'v4';
+const cacheName = 'v5';
 
 const cacheFiles = ['index.html', '/html/about.html', '/html/contact.html', '/html/electronic.html', '/html/offline.html', '/html/lost.html', '/html/press.html', '/html/rock.html', '/css/style.css', '/css/imagesHome.css', '/css/about.css', '/css/contact.css', '/css/portfolio.css', '/css/press.css', '/javascript/about.js', '/javascript/contact.js', '/javascript/electronic.js', '/javascript/images.js', '/javascript/index.js', '/javascript/menu.js', '/javascript/portfolio.js', '/javascript/press.js', '/javascript/rock.js'];
 
