@@ -6,8 +6,8 @@
 		"photosPath":
 		[
 			{
-				"jpg": ["../images/electronic/alfos1.jpg", "../images/electronic/alfos2.jpg"],
-				"webp": ["../images/electronic/alfos1.webp", "../images/electronic/alfos2.webp"]
+				"jpg": ["../images/electronic/alfos-musicbymarina1.jpg", "../images/electronic/alfos-musicbymarina2.jpg"],
+				"webp": ["../images/electronic/alfos-musicbymarina1.webp", "../images/electronic/alfos-musicbymarina2.webp"]
 			}
 		]
 	},
