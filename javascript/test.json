@@ -1,0 +1,397 @@
+{
+	"photos":[
+{
+		"name": "Andrew Weatherall and Sean Johnston (ALFOS)",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/alfos1.jpg", "../images/electronic/alfos2.jpg"],
+				"webp": ["../images/electronic/alfos1.webp", "../images/electronic/alfos2.webp"]
+			}
+		]
+	},
+{
+		"name": "Andrew Weatherall",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/andrew_weatherall-musicbymarina1.jpg", "../images/electronic/andrew_weatherall-musicbymarina2.jpg","../images/electronic/andrew_weatherall-musicbymarina3.jpg","../images/electronic/andrew_weatherall-musicbymarina4.jpg", "../images/electronic/andrew_weatherall-musicbymarina5.jpg", "../images/electronic/andrew_weatherall-musicbymarina6.jpg", "../images/electronic/andrew_weatherall-musicbymarina7.jpg", "../images/electronic/andrew_weatherall-tim_sweeney-musicbymarina.jpg"],
+				"webp": ["../images/electronic/andrew_weatherall-musicbymarina1.webp", "../images/electronic/andrew_weatherall-musicbymarina2.webp","../images/electronic/andrew_weatherall-musicbymarina3.webp","../images/electronic/andrew_weatherall-musicbymarina4.webp", "../images/electronic/andrew_weatherall-musicbymarina5.webp", "../images/electronic/andrew_weatherall-musicbymarina6.webp", "../images/electronic/andrew_weatherall-musicbymarina7.webp", "../images/electronic/andrew_weatherall-tim_sweeney-musicbymarina.webp"]
+			}
+		]
+	},
+
+{
+		"name": "Azari and III",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/azari_and_iii-musicbymarina.jpg"],
+				"webp": ["../images/electronic/azari_and_iii-musicbymarina.webp"]
+			}
+		]
+	},
+{
+		"name": "Carl Cox",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/carl_cox-musicbymarina.jpg"],
+				"webp": ["../images/electronic/carl_cox-musicbymarina.webp"]
+			}
+		]
+	},
+{
+		"name": "Catz and Dogz",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/catz_and_dogz-musicbymarina.jpg"],
+				"webp": ["../images/electronic/catz_and_dogz-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Charlotte Dewitte",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20374318_1822810407752808_1877065120652995610_n.jpg?_nc_cat=104&oh=d9985f7381319e3125ed0eba35f92c58&oe=5C1C7C68"]
+			}
+		]
+	},
+	{
+		"name": "Daniel Avery",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/andrew_weatherall-daniel_avery-musicbymarina.jpg"],
+				"webp": ["../images/electronic/andrew_weatherall-daniel_avery-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "DJ Hell",
+		"type": "electro",
+		"photosPath": [
+			{
+				"jpg": ["../images/electronic/dj_hell-musicbymarina.jpg"],
+				"webp": ["../images/electronic/dj_hell-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Future Islands",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20988142_1848119431888572_7853142409318929387_o.jpg?_nc_cat=109&oh=db31158cddf5338b7afa1a4e887f4de1&oe=5C58085B",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953274_1848117411888774_2632753822658262238_n.jpg?_nc_cat=107&oh=7f44d9e279400c155d8ffae778893c3f&oe=5C2BF455"]
+			}
+		]
+	},
+	 {
+		"name": "Soulwax",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20116962_1804353762931806_311229293326606129_o.jpg?_nc_cat=109&oh=07821bdff6c2695e934963ad3c78a616&oe=5C61FD86",
+			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/19983907_1804353689598480_6891517925522301163_o.jpg?_nc_cat=108&oh=8b95a95a08683e5a3cc1504f2567cc10&oe=5C1CD91E",
+			"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/19989242_1804353282931854_2578304558648092519_n.jpg?_nc_cat=109&oh=a959613cac1180ee2272c35a129f9376&oe=5C15AE5D",
+			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20017476_1804353319598517_5237878963603977233_o.jpg?_nc_cat=100&oh=b32af9628fc9fed0363dac107d843107&oe=5C60B951",
+			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20023906_1804353406265175_8796716457919785304_o.jpg?_nc_cat=105&oh=b63e598548c972ad071b4e471e93bd00&oe=5C1C1927",
+			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20121598_1804353482931834_8810195983920818241_o.jpg?_nc_cat=100&oh=5009922c237c71a5b7456c9f52c0a9e3&oe=5C56476A",
+			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20017762_1804353522931830_1369783493095418626_o.jpg?_nc_cat=103&oh=94d683dfbac8c950b99491774e0791a3&oe=5C63400F"]
+			}
+		]
+	},
+	{
+		"name": "The Black Lips",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20992719_1848119938555188_875053328793085943_n.jpg?_nc_cat=110&oh=2b21651acbc8334edce5cf30dc143823&oe=5C1C7300"]
+			}
+		]
+	},
+	{
+		"name": "Tale Of Us",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953730_1848137035220145_5240297380175116851_n.jpg?_nc_cat=106&oh=025fa887688cde634be5c920cafaf01c&oe=5C555DF3",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/21055005_1848137348553447_7008999819805387696_o.jpg?_nc_cat=107&oh=324128c29442b721c471fac012af6a1f&oe=5C605B55"]
+			}
+		]
+	},
+	{
+		"name": "Maceo Plex",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/22382265_1896246910409157_5529228962642450673_o.jpg?_nc_cat=101&oh=947f00335b7660d9e1bf7c3220e5f5ff&oe=5C1CB1A7",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/22459168_1896246913742490_963753968985645795_o.jpg?_nc_cat=105&oh=4ba6ebb095cb9707ad6dfc21b012b47b&oe=5C2BC1EC"]
+			}
+		]
+	},
+	{
+		"name": "Erol Alkan",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1492737_700998713267322_859434998_o.jpg?_nc_cat=109&oh=31297e01ceacb418f7007014832d8711&oe=5C23FCE7"]
+			}
+		]
+	},
+	{
+		"name": "Glass Candy",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/glass_candy-musicbymarina.jpg"],
+			"webp": ["../images/electronic/glass_candy-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Goldfrapp",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1450105_686013618099165_179827359_n.jpg?_nc_cat=102&oh=8168879b4e9949d7c51485d90c81d667&oe=5C22F45A"]
+			}
+		]
+	},
+	{
+		"name": "GusGus",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/gusgus-musicbymarina.jpg"],
+			"webp": ["../images/electronic/gusgus-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Interpol",
+		"type": "rock",
+		"photosPath":
+				[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953469_1848126461887869_6987525465866021951_n.jpg?_nc_cat=107&oh=905b0546d4fca3b51d2ad23ab74f06ac&oe=5C229D66",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/21077470_1848126198554562_56781583389725967_n.jpg?_nc_cat=104&oh=e93d8f7db3a18e66b119482cc29567ba&oe=5C57F296"]
+			}
+		]
+	}	,
+	{
+		"name": "James Blake",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11745940_1139284749438714_2014866442035201329_n.jpg?_nc_cat=104&oh=a7e951e1e3f37f63e3cc136c3aafb0e3&oe=5C1800EF"]
+			}
+		]
+	},
+	{
+		"name": "Jamie Jones",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/jamie_jones-musicbymarina.jpg"],
+			"webp": ["../images/electronic/jamie_jones-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Little Dragon",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/little_dragon-musicbymarina.jpg"],
+			"webp": ["../images/electronic/little_dragon-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Miss Kittin",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/miss_kittin-musicbymarina.jpg"],
+			"webp": ["../images/electronic/miss_kittin-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Nina Kraviz",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/nina_kraviz-musicbymarina.jpg"],
+				"webp": ["../images/electronic/nina_kraviz-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Optimo",
+		"type": "electro",
+		"photosPath": [
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1467294_681826771851183_2081172392_n.jpg?_nc_cat=109&oh=c8f8ae66a18e90e34e941f84d7748570&oe=5C24025F"
+		]
+	},
+	{
+		"name": "Ricardo Villalobos",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/ricardo_villalobos-musicbymarina.jpg"],
+			"webp": ["../images/electronic/ricardo_villalobos-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Richie Hawtin",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/richie_hawtin-musicbymarina1.jpg", "../images/electronic/richie_hawtin-musicbymarina2.jpg"],
+			"webp": ["../images/electronic/richie_hawtin-musicbymarina1.webp", "../images/electronic/richie_hawtin-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Sebastien Tellier",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1048781_609540369079824_94557295_o.jpg?_nc_cat=110&oh=3bec6a0a7d101cb7a3cb99edf7a63639&oe=5C20815C",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1005590_609531965747331_1605835238_n.jpg?_nc_cat=103&oh=30d64544210105030aae547b2cf2267f&oe=5C24CA01"]
+			}
+		]
+	},
+	{
+		"name": "Sisy Ey",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/564689_740926912607835_644611150_n.jpg?_nc_cat=109&oh=e8a8f1391aada0351b29dfc95cc3afd0&oe=5C178E46",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1909220_740926665941193_790709462_o.jpg?_nc_cat=108&oh=671bc7010f581ca8b13a3ac3efcfb0a5&oe=5C591C13"]
+			}
+		]
+	},
+	{
+		"name": "The Jesus and Mary Chain",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/21054900_1848116595222189_3410498097011115445_o.jpg?_nc_cat=0&oh=ce3ef5832bc1d6f57ccf9ed94bda2d33&oe=5C2DD375",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20992966_1848116818555500_4471541284690943894_n.jpg?_nc_cat=0&oh=610a4ddc733871437864844cb5c131d2&oe=5C1F6471"]
+			}
+		]
+	},
+	{
+		"name": "The Moonlandingz",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20989050_1848126815221167_9170648447692897966_o.jpg?_nc_cat=109&oh=503bd5bd38fc6fdb4112d7ef3b100274&oe=5C1AA5DD",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953541_1848127035221145_8297219656836242096_n.jpg?_nc_cat=102&oh=b790a323ffe338329fed67d73ee3c330&oe=5C21C43B",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953766_1848127835221065_2779536650542889960_n.jpg?_nc_cat=102&oh=0894be995d4a199790361b0421173d81&oe=5C2C2A87",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20993040_1848127528554429_7568548934685083589_n.jpg?_nc_cat=106&oh=3c542148d2e9c10405c3b68dd2346bad&oe=5C2023E6",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953820_1848128531887662_8652699055340737132_n.jpg?_nc_cat=110&oh=c771c626b6421a06697fde7a6e998508&oe=5C2B03B4"]
+			}
+		]
+	},
+	{
+		"name": "The Savages",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10153827_781862181847641_2278343077452192134_n.jpg?_nc_cat=100&oh=e25fe8281df72c8cde2c302399143f36&oe=5C2702D1",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10247466_781861368514389_2866555725478156576_n.jpg?_nc_cat=110&oh=812e8df00e7bbf58c3109e03e9e4c256&oe=5C1F4114"]
+			}
+		]
+	},
+	{
+		"name": "Tim Sweeney",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/andrew_weatherall-tim_sweeney-musicbymarina.jpg"],
+				"webp": ["../images/electronic/andrew_weatherall-tim_sweeney-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Todd Edwards",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/todd-edwards-musicbymarina-1.jpg"],
+			"webp": ["../images/electronic/todd-edwards-musicbymarina-1.webp"]
+			}
+		]
+	},
+	{
+		"name": "Totally Enormous Extinct Dinosaurs (TEED)",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1888839_764353863598473_1992132639_o.jpg?_nc_cat=103&oh=0495bf997d50b322083e4d750ade90b0&oe=5C5654AA"]
+			}
+		]
+	},
+	{
+		"name": "Ty Segall",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/21034531_1848129308554251_3799297742902904146_n.jpg?_nc_cat=103&oh=9b3cd0dcdfedcb59a0c9090c476e516c&oe=5C18C83B",
+		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953149_1848129641887551_7652735417763967610_n.jpg?_nc_cat=101&oh=7e283ac13b26d2074b49898e60515636&oe=5C629D11"]
+			}
+		]
+	},
+	{
+		"name": "WhoMadeWho",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/891935_781438308556695_823055010578276049_o.jpg?_nc_cat=101&oh=8aa4448989e429f0454ad19bc451c573&oe=5C5596E8"]
+			}
+		]
+	}
+	]
+}
