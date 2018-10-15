@@ -235,7 +235,7 @@
 		"photosPath":
 		[
 			{
-				"jpg": ["../images/rock/factory_floor-musicbymarina1.jpg"],
+				"jpg": ["../images/rock/factory_floor-musicbymarina.jpg"],
 				"webp": ["../images/rock/factory_floor-musicbymarina.webp"]
 			}
 		]
@@ -247,7 +247,7 @@
 		[
 			{
 				"jpg": ["../images/rock/future_island-musicbymarina1.jpg", "../images/rock/future_island-musicbymarina2.jpg"],
-				"webp": ["../images/rock/future_island-musicbymarina.webp", "../images/rock/future_island-musicbymarina2.webp"]
+				"webp": ["../images/rock/future_island-musicbymarina1.webp", "../images/rock/future_island-musicbymarina2.webp"]
 			}
 		]
 	},
@@ -281,8 +281,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/erol_alkan-musicbymarina1.jpg", "../images/electronic/maceo_plex-musicbymarina2.jpg", "../images/electronic/maceo_plex-musicbymarina3.jpg", "../images/electronic/maceo_plex-musicbymarina4.jpg"],
-			"webp": ["../images/electronic/erol_alkan-musicbymarina1.webp", "../images/electronic/maceo_plex-musicbymarina2.webp", "../images/electronic/maceo_plex-musicbymarina3.webp", "../images/electronic/maceo_plex-musicbymarina4.webp"]
+			"jpg": ["../images/electronic/erol_alkan-musicbymarina.jpg"],
+			"webp": ["../images/electronic/erol_alkan-musicbymarina.webp"]
 			}
 		]
 	},
@@ -652,8 +652,8 @@
 		"photosPath":
 		[
 			{
-				"jpg": ["../images/electronic/rone-musicbymarina1.jpg", "../images/electronic/rone-musicbymarina2.jpg", "../images/electronic/rone-musicbymarina3.jpg", "../images/electronic/rone-musicbymarina4.jpg"],
-				"webp": ["../images/electronic/rone-musicbymarina1.webp", "../images/electronic/rone-musicbymarina2.webp", "../images/electronic/rone-musicbymarina3.webp", "../images/electronic/rone-musicbymarina4.webp"]
+				"jpg": ["../images/electronic/rone-musicbymarina1.jpg", "../images/electronic/rone-musicbymarina2.jpg", "../images/electronic/rone-musicbymarina3.jpg"],
+				"webp": ["../images/electronic/rone-musicbymarina1.webp", "../images/electronic/rone-musicbymarina2.webp", "../images/electronic/rone-musicbymarina3.webp"]
 			}
 		]
 	},
@@ -740,8 +740,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/tale_of_us-musicbymarina1.jpg", "../images/electronic/tale_of_us-musicbymarina2.jpg"],
-			"webp": ["../images/electronic/tale_of_us-musicbymarina1.webp", "../images/electronic/tale_of_us-musicbymarina2.webp"]
+			"jpg": ["../images/electronic/tale_of_us-musicbymarina.jpg"],
+			"webp": ["../images/electronic/tale_of_us-musicbymarina.webp"]
 			}
 		]
 	},
@@ -762,8 +762,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/rock/the_black_lips-musicbymarina1.jpg", "../images/rock/the_black_lips-musicbymarina2.jpg"],
-			"webp": ["../images/rock/the_black_lips-musicbymarina1.webp", "../images/rock/the_black_lips-musicbymarina2.webp"]
+			"jpg": ["../images/rock/the_black_lips-musicbymarina1.jpg", "../images/rock/the_black_lips-musicbymarina2.jpg", "../images/rock/the_black_lips-musicbymarina3.jpg", "../images/rock/the_black_lips-musicbymarina4.jpg", "../images/rock/the_black_lips-musicbymarina5.jpg", "../images/rock/the_black_lips-musicbymarina6.jpg", "../images/rock/the_black_lips-musicbymarina7.jpg", "../images/rock/the_black_lips-musicbymarina8.jpg", "../images/rock/the_black_lips-musicbymarina9.jpg"],
+			"webp": ["../images/rock/the_black_lips-musicbymarina1.webp", "../images/rock/the_black_lips-musicbymarina2.webp", "../images/rock/the_black_lips-musicbymarina3.webp", "../images/rock/the_black_lips-musicbymarina4.webp", "../images/rock/the_black_lips-musicbymarina5.webp", "../images/rock/the_black_lips-musicbymarina6.webp", "../images/rock/the_black_lips-musicbymarina7.webp", "../images/rock/the_black_lips-musicbymarina8.webp", "../images/rock/the_black_lips-musicbymarina9.webp"]
 			}
 		]
 	},
