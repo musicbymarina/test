@@ -1,6 +1,39 @@
 {
 	"photos":[
-{
+		{
+		"name": "Adriatique",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/adriatique-musicbymarina1.jpg", "../images/electronic/adriatique-musicbymarina2.jpg"],
+				"webp": ["../images/electronic/adriatique-musicbymarina1.webp", "../images/electronic/adriatique-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Agoria",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/agoria-musicbymarina1.jpg", "../images/electronic/agoria-musicbymarina2.jpg", "../images/electronic/agoria-musicbymarina3.jpg"],
+				"webp": ["../images/electronic/agoria-musicbymarina1.webp", "../images/electronic/agoria-musicbymarina2.webp", "../images/electronic/agoria-musicbymarina3.webp"]
+			}
+		]
+	},
+	{
+		"name": "Alex Cameron",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/alex_cameron-musicbymarina1.jpg", "../images/rock/alex_cameron-musicbymarina2.jpg", "../images/rock/alex_cameron-musicbymarina3.jpg", "../images/rock/alex_cameron-musicbymarina4.jpg"],
+				"webp": ["../images/rock/alex_cameron-musicbymarina1.webp", "../images/rock/alex_cameron-musicbymarina2.webp", "../images/rock/alex_cameron-musicbymarina3.webp", "../images/rock/alex_cameron-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
 		"name": "Andrew Weatherall and Sean Johnston (ALFOS)",
 		"type": "electro",
 		"photosPath":
@@ -11,7 +44,7 @@
 			}
 		]
 	},
-{
+	{
 		"name": "Andrew Weatherall",
 		"type": "electro",
 		"photosPath":
@@ -22,8 +55,41 @@
 			}
 		]
 	},
+	{
+		"name": "Anna Calvi",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/anna_calvi-musicbymarina1.jpg", "../images/rock/anna_calvi-musicbymarina2.jpg", "../images/rock/anna_calvi-musicbymarina3.jpg", "../images/rock/anna_calvi-musicbymarina4.jpg"],
+				"webp": ["../images/rock/anna_calvi-musicbymarina1.webp", "../images/rock/anna_calvi-musicbymarina2.webp", "../images/rock/anna_calvi-musicbymarina3.webp", "../images/rock/anna_calvi-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "Ariel Pink",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/ariel_pink-musicbymarina1.jpg", "../images/rock/ariel_pink-musicbymarina2.jpg", "../images/rock/ariel_pink-musicbymarina3.jpg", "../images/rock/ariel_pink-musicbymarina4.jpg"],
+				"webp": ["../images/rock/ariel_pink-musicbymarina1.webp", "../images/rock/ariel_pink-musicbymarina2.webp", "../images/rock/ariel_pink-musicbymarina3.webp", "../images/rock/ariel_pink-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "Art Department",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/art_department-musicbymarina1.jpg", "../images/electronic/art_department-musicbymarina2.jpg"],
+				"webp": ["../images/electronic/art_department-musicbymarina1.webp", "../images/electronic/art_department-musicbymarina2.webp"]
+			}
+		]
+	},
 
-{
+	{
 		"name": "Azari and III",
 		"type": "electro",
 		"photosPath":
@@ -34,7 +100,51 @@
 			}
 		]
 	},
-{
+	{
+		"name": "Battles",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/battles-musicbymarina1.jpg", "../images/rock/battles-musicbymarina2.jpg", "../images/rock/battles-musicbymarina3.jpg", "../images/rock/battles-musicbymarina4.jpg", "../images/rock/battles-musicbymarina5.jpg", "../images/rock/battles-musicbymarina6.jpg", "../images/rock/battles-musicbymarina7.jpg", "../images/rock/battles-musicbymarina8.jpg", "../images/rock/battles-musicbymarina9.jpg"],
+				"webp": ["../images/rock/battles-musicbymarina1.webp", "../images/rock/battles-musicbymarina2.webp", "../images/rock/battles-musicbymarina3.webp", "../images/rock/battles-musicbymarina4.webp", "../images/rock/battles-musicbymarina5.webp", "../images/rock/battles-musicbymarina6.webp", "../images/rock/battles-musicbymarina7.webp", "../images/rock/battles-musicbymarina8.webp", "../images/rock/battles-musicbymarina9.webp"]
+			}
+		]
+	},
+	{
+		"name": "Benoit and Sergio",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/benoit_and_sergio-musicbymarina1.jpg", "../images/electronic/benoit_and_sergio-musicbymarina2.jpg", "../images/electronic/benoit_and_sergio-musicbymarina3.jpg", "../images/electronic/benoit_and_sergio-musicbymarina4.jpg"],
+				"webp": ["../images/electronic/benoit_and_sergio-musicbymarina1.webp", "../images/electronic/benoit_and_sergio-musicbymarina2.webp", "../images/electronic/benoit_and_sergio-musicbymarina3.webp", "../images/electronic/benoit_and_sergio-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "Black Coffee",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/black_coffee-musicbymarina.jpg"],
+				"webp": ["../images/electronic/black_coffee-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Boris Breja",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/boris_breja-musicbymarina1.jpg", "../images/electronic/boris_breja-musicbymarina2.jpg"],
+				"webp": ["../images/electronic/boris_breja-musicbymarina1.webp", "../images/electronic/boris_breja-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
 		"name": "Carl Cox",
 		"type": "electro",
 		"photosPath":
@@ -45,7 +155,7 @@
 			}
 		]
 	},
-{
+	{
 		"name": "Catz and Dogz",
 		"type": "electro",
 		"photosPath":
@@ -62,7 +172,19 @@
 		"photosPath":
 		[
 			{
-				"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20374318_1822810407752808_1877065120652995610_n.jpg?_nc_cat=104&oh=d9985f7381319e3125ed0eba35f92c58&oe=5C1C7C68"]
+				"jpg": ["../images/electronic/charlotte_dewitte-musicbymarina1.jpg", "../images/electronic/charlotte_dewitte-musicbymarina2.jpg", "../images/electronic/charlotte_dewitte-musicbymarina3.jpg", "../images/electronic/charlotte_dewitte-musicbymarina4.jpg", "../images/electronic/charlotte_dewitte-musicbymarina5.jpg", "../images/electronic/charlotte_dewitte-musicbymarina6.jpg"],
+				"webp": ["../images/electronic/charlotte_dewitte-musicbymarina1.webp", "../images/electronic/charlotte_dewitte-musicbymarina2.webp", "../images/electronic/charlotte_dewitte-musicbymarina3.webp", "../images/electronic/charlotte_dewitte-musicbymarina4.webp", "../images/electronic/charlotte_dewitte-musicbymarina5.webp", "../images/electronic/charlotte_dewitte-musicbymarina6.webp"]
+			}
+		]
+	},
+	{
+		"name": "Chocolat",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/chocolat-musicbymarina1.jpg", "../images/rock/chocolat-musicbymarina2.jpg", "../images/rock/chocolat-musicbymarina3.jpg", "../images/rock/chocolat-musicbymarina4.jpg", "../images/rock/chocolat-musicbymarina5.jpg"],
+				"webp": ["../images/rock/chocolat-musicbymarina1.webp", "../images/rock/chocolat-musicbymarina2.webp", "../images/rock/chocolat-musicbymarina3.webp", "../images/rock/chocolat-musicbymarina4.webp", "../images/rock/chocolat-musicbymarina5.webp"]
 			}
 		]
 	},
@@ -72,8 +194,18 @@
 		"photosPath":
 		[
 			{
-				"jpg": ["../images/electronic/andrew_weatherall-daniel_avery-musicbymarina.jpg"],
-				"webp": ["../images/electronic/andrew_weatherall-daniel_avery-musicbymarina.webp"]
+				"jpg": ["../images/electronic/andrew_weatherall-daniel_avery-musicbymarina.jpg", "../images/electronic/daniel_avery-musicbymarina1.jpg", "../images/electronic/daniel_avery-musicbymarina2.jpg", "../images/electronic/daniel_avery-musicbymarina3.jpg", "../images/electronic/daniel_avery-musicbymarina4.jpg", "../images/electronic/daniel_avery-musicbymarina5.jpg", "../images/electronic/daniel_avery-musicbymarina6.jpg", "../images/electronic/daniel_avery-musicbymarina7.jpg", "../images/electronic/daniel_avery-musicbymarina8.jpg",  "../images/electronic/daniel_avery-musicbymarina9.jpg", "../images/electronic/daniel_avery-musicbymarina10.jpg"],
+				"webp": ["../images/electronic/andrew_weatherall-daniel_avery-musicbymarina.webp", "../images/electronic/daniel_avery-musicbymarina1.webp", "../images/electronic/daniel_avery-musicbymarina2.webp", "../images/electronic/daniel_avery-musicbymarina3.webp", "../images/electronic/daniel_avery-musicbymarina4.webp", "../images/electronic/daniel_avery-musicbymarina5.webp", "../images/electronic/daniel_avery-musicbymarina6.webp", "../images/electronic/daniel_avery-musicbymarina7.webp", "../images/electronic/daniel_avery-musicbymarina8.webp",  "../images/electronic/daniel_avery-musicbymarina9.webp", "../images/electronic/daniel_avery-musicbymarina10.webp"]
+			}
+		]
+	},
+	{
+		"name": "DJ Harvey",
+		"type": "electro",
+		"photosPath": [
+			{
+				"jpg": ["../images/electronic/dj_harvey-musicbymarina1.jpg", "../images/electronic/dj_harvey-musicbymarina2.jpg"],
+				"webp": ["../images/electronic/dj_harvey-musicbymarina1.webp", "../images/electronic/dj_harvey-musicbymarina2.webp"]
 			}
 		]
 	},
@@ -82,8 +214,29 @@
 		"type": "electro",
 		"photosPath": [
 			{
-				"jpg": ["../images/electronic/dj_hell-musicbymarina.jpg"],
-				"webp": ["../images/electronic/dj_hell-musicbymarina.webp"]
+				"jpg": ["../images/electronic/dj_hell-musicbymarina1.jpg", "../images/electronic/dj_hell-musicbymarina2.jpg", "../images/electronic/dj_hell-musicbymarina3.jpg", "../images/electronic/dj_hell-musicbymarina4.jpg"],
+				"webp": ["../images/electronic/dj_hell-musicbymarina1.webp", "../images/electronic/dj_hell-musicbymarina2.webp", "../images/electronic/dj_hell-musicbymarina3.webp", "../images/electronic/dj_hell-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "DJ Tennis",
+		"type": "electro",
+		"photosPath": [
+			{
+				"jpg": ["../images/electronic/dj_tennis-musicbymarina1.jpg", "../images/electronic/dj_tennis-musicbymarina2.jpg", "../images/electronic/dj_tennis-musicbymarina3.jpg"],
+				"webp": ["../images/electronic/dj_tennis-musicbymarina1.webp", "../images/electronic/dj_tennis-musicbymarina2.webp", "../images/electronic/dj_tennis-musicbymarina3.webp"]
+			}
+		]
+	},
+	{
+		"name": "Factory Floor",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/factory_floor-musicbymarina1.jpg"],
+				"webp": ["../images/rock/factory_floor-musicbymarina.webp"]
 			}
 		]
 	},
@@ -93,56 +246,32 @@
 		"photosPath":
 		[
 			{
-				"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20988142_1848119431888572_7853142409318929387_o.jpg?_nc_cat=109&oh=db31158cddf5338b7afa1a4e887f4de1&oe=5C58085B",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953274_1848117411888774_2632753822658262238_n.jpg?_nc_cat=107&oh=7f44d9e279400c155d8ffae778893c3f&oe=5C2BF455"]
-			}
-		]
-	},
-	 {
-		"name": "Soulwax",
-		"type": "electro",
-		"photosPath":
-		[
-			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20116962_1804353762931806_311229293326606129_o.jpg?_nc_cat=109&oh=07821bdff6c2695e934963ad3c78a616&oe=5C61FD86",
-			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/19983907_1804353689598480_6891517925522301163_o.jpg?_nc_cat=108&oh=8b95a95a08683e5a3cc1504f2567cc10&oe=5C1CD91E",
-			"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/19989242_1804353282931854_2578304558648092519_n.jpg?_nc_cat=109&oh=a959613cac1180ee2272c35a129f9376&oe=5C15AE5D",
-			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20017476_1804353319598517_5237878963603977233_o.jpg?_nc_cat=100&oh=b32af9628fc9fed0363dac107d843107&oe=5C60B951",
-			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20023906_1804353406265175_8796716457919785304_o.jpg?_nc_cat=105&oh=b63e598548c972ad071b4e471e93bd00&oe=5C1C1927",
-			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20121598_1804353482931834_8810195983920818241_o.jpg?_nc_cat=100&oh=5009922c237c71a5b7456c9f52c0a9e3&oe=5C56476A",
-			"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20017762_1804353522931830_1369783493095418626_o.jpg?_nc_cat=103&oh=94d683dfbac8c950b99491774e0791a3&oe=5C63400F"]
+				"jpg": ["../images/rock/future_island-musicbymarina1.jpg", "../images/rock/future_island-musicbymarina2.jpg"],
+				"webp": ["../images/rock/future_island-musicbymarina.webp", "../images/rock/future_island-musicbymarina2.webp"]
 			}
 		]
 	},
 	{
-		"name": "The Black Lips",
-		"type": "rock",
-		"photosPath":
-		[
-			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20992719_1848119938555188_875053328793085943_n.jpg?_nc_cat=110&oh=2b21651acbc8334edce5cf30dc143823&oe=5C1C7300"]
-			}
-		]
-	},
-	{
-		"name": "Tale Of Us",
+		"name": "Helena Hauff",
 		"type": "electro",
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953730_1848137035220145_5240297380175116851_n.jpg?_nc_cat=106&oh=025fa887688cde634be5c920cafaf01c&oe=5C555DF3",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/21055005_1848137348553447_7008999819805387696_o.jpg?_nc_cat=107&oh=324128c29442b721c471fac012af6a1f&oe=5C605B55"]
+				"jpg": ["../images/electronic/helena_hauff-musicbymarina.jpg"],
+				"webp": ["../images/electronic/helena_hauff-musicbymarina.webp"]
 			}
 		]
 	},
+
+
 	{
 		"name": "Maceo Plex",
 		"type": "electro",
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/22382265_1896246910409157_5529228962642450673_o.jpg?_nc_cat=101&oh=947f00335b7660d9e1bf7c3220e5f5ff&oe=5C1CB1A7",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/22459168_1896246913742490_963753968985645795_o.jpg?_nc_cat=105&oh=4ba6ebb095cb9707ad6dfc21b012b47b&oe=5C2BC1EC"]
+			"jpg": ["../images/electronic/maceo_plex-musicbymarina1.jpg", "../images/electronic/maceo_plex-musicbymarina2.jpg", "../images/electronic/maceo_plex-musicbymarina3.jpg", "../images/electronic/maceo_plex-musicbymarina4.jpg"],
+			"webp": ["../images/electronic/maceo_plex-musicbymarina1.webp", "../images/electronic/maceo_plex-musicbymarina2.webp", "../images/electronic/maceo_plex-musicbymarina3.webp", "../images/electronic/maceo_plex-musicbymarina4.webp"]
 			}
 		]
 	},
@@ -152,7 +281,30 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1492737_700998713267322_859434998_o.jpg?_nc_cat=109&oh=31297e01ceacb418f7007014832d8711&oe=5C23FCE7"]
+			"jpg": ["../images/electronic/erol_alkan-musicbymarina1.jpg", "../images/electronic/maceo_plex-musicbymarina2.jpg", "../images/electronic/maceo_plex-musicbymarina3.jpg", "../images/electronic/maceo_plex-musicbymarina4.jpg"],
+			"webp": ["../images/electronic/erol_alkan-musicbymarina1.webp", "../images/electronic/maceo_plex-musicbymarina2.webp", "../images/electronic/maceo_plex-musicbymarina3.webp", "../images/electronic/maceo_plex-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "Follakzoid",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/rock/follakzoid-musicbymarina1.jpg", "../images/rock/follakzoid-musicbymarina2.jpg"],
+			"webp": ["../images/rock/follakzoid-musicbymarina1.webp", "../images/rock/follakzoid-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Four Tet",
+		"type": "electronic",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/four_tet-musicbymarina1.jpg", "../images/electronic/follakzoid-musicbymarina2.jpg"],
+			"webp": ["../images/electronic/four_tet-musicbymarina1.webp", "../images/electronic/follakzoid-musicbymarina2.webp"]
 			}
 		]
 	},
@@ -162,8 +314,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/glass_candy-musicbymarina.jpg"],
-			"webp": ["../images/electronic/glass_candy-musicbymarina.webp"]
+			"jpg": ["../images/rock/glass_candy-musicbymarina.jpg"],
+			"webp": ["../images/rock/glass_candy-musicbymarina.webp"]
 			}
 		]
 	},
@@ -173,7 +325,19 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1450105_686013618099165_179827359_n.jpg?_nc_cat=102&oh=8168879b4e9949d7c51485d90c81d667&oe=5C22F45A"]
+			"jpg": ["../images/rock/goldfrapp-musicbymarina.jpg"],
+			"webp": ["../images/rock/goldfrapp-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Grizzly Bear",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/rock/grizzly_bear-musicbymarina1.jpg", "../images/rock/grizzly_bear-musicbymarina2.jpg", "../images/rock/grizzly_bear-musicbymarina3.jpg", "../images/rock/grizzly_bear-musicbymarina4.jpg"],
+			"webp": ["../images/rock/grizzly_bear-musicbymarina1.webp", "../images/rock/grizzly_bear-musicbymarina2.webp", "../images/rock/grizzly_bear-musicbymarina3.webp", "../images/rock/grizzly_bear-musicbymarina4.webp"]
 			}
 		]
 	},
@@ -189,23 +353,57 @@
 		]
 	},
 	{
+		"name": "Hookworms",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/rock/hookworms-musicbymarina1.jpg", "../images/rock/hookworms-musicbymarina2.jpg", "../images/rock/grizzly_bear-musicbymarina3.jpg"],
+			"webp": ["../images/rock/hookworms-musicbymarina1.webp", "../images/rock/hookworms-musicbymarina2.webp", "../images/rock/grizzly_bear-musicbymarina3.webp"]
+			}
+		]
+	},
+	{
 		"name": "Interpol",
 		"type": "rock",
 		"photosPath":
 				[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953469_1848126461887869_6987525465866021951_n.jpg?_nc_cat=107&oh=905b0546d4fca3b51d2ad23ab74f06ac&oe=5C229D66",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/21077470_1848126198554562_56781583389725967_n.jpg?_nc_cat=104&oh=e93d8f7db3a18e66b119482cc29567ba&oe=5C57F296"]
+			"jpg": ["../images/rock/interpol-musicbymarina1.jpg", "../images/rock/interpol-musicbymarina2.jpg"],
+			"webp": ["../images/rock/interpol-musicbymarina1.webp", "../images/rock/interpol-musicbymarina2.webp"]
 			}
 		]
-	}	,
+	},
+	{
+		"name": "Ivan Smagghe",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/ivan_smagghe-musicbymarina.jpg"],
+			"webp": ["../images/electronic/ivan_smagghe-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Jagwar Ma",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/jagwar_ma-musicbymarina1.jpg", "../images/rock/jagwar_ma-musicbymarina2.jpg", "../images/rock/jagwar_ma-musicbymarina3.jpg", "../images/rock/jagwar_ma-musicbymarina4.jpg", "../images/rock/jagwar_ma-musicbymarina5.jpg", "../images/rock/jagwar_ma-musicbymarina6.jpg", "../images/rock/jagwar_ma-musicbymarina7.jpg"],
+				"webp": ["../images/rock/jagwar_ma-musicbymarina1.webp", "../images/rock/jagwar_ma-musicbymarina2.webp", "../images/rock/jagwar_ma-musicbymarina3.webp", "../images/rock/jagwar_ma-musicbymarina4.webp", "../images/rock/jagwar_ma-musicbymarina5.webp", "../images/rock/jagwar_ma-musicbymarina6.webp", "../images/rock/jagwar_ma-musicbymarina7.webp"]
+			}
+		]
+	},
 	{
 		"name": "James Blake",
 		"type": "electro",
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11745940_1139284749438714_2014866442035201329_n.jpg?_nc_cat=104&oh=a7e951e1e3f37f63e3cc136c3aafb0e3&oe=5C1800EF"]
+			"jpg": ["../images/electronic/james_blake-musicbymarina.jpg"],
+			"webp": ["../images/electronic/james_blake-musicbymarina.webp"]
 			}
 		]
 	},
@@ -221,24 +419,112 @@
 		]
 	},
 	{
+		"name": "John Maus",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/john_maus-musicbymarina1.jpg", "../images/rock/john_maus-musicbymarina2.jpg", "../images/rock/john_maus-musicbymarina3.jpg", "../images/rock/john_maus-musicbymarina4.jpg", "../images/rock/john_maus-musicbymarina5.jpg", "../images/rock/john_maus-musicbymarina6.jpg"],
+				"webp": ["../images/rock/john_maus-musicbymarina1.webp", "../images/rock/john_maus-musicbymarina2.webp", "../images/rock/john_maus-musicbymarina3.webp", "../images/rock/john_maus-musicbymarina4.webp", "../images/rock/john_maus-musicbymarina5.webp", "../images/rock/john_maus-musicbymarina6.webp"]
+			}
+		]
+	},
+	{
+		"name": "Jon Hopkins",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/jon_hopkins-musicbymarina1.jpg", "../images/electronic/jon_hopkins-musicbymarina2.jpg"],
+			"webp": ["../images/electronic/jon_hopkins-musicbymarina1.webp", "../images/electronic/jon_hopkins-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Josh T Pearson",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/josh_t_pearson-musicbymarina1.jpg", "../images/rock/josh_t_pearson-musicbymarina2.jpg"],
+				"webp": ["../images/rock/josh_t_pearson-musicbymarina1.webp", "../images/rock/josh_t_pearson-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "King Gizzard And The Lizard Wizard",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina1.jpg", "../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina2.jpg", "../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina3.jpg", "../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina4.jpg"],
+				"webp": ["../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina1.webp", "../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina2.webp", "../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina3.webp", "../images/rock/king_gizzard_and_the_lizard_wizard-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "LCD Soundsystem",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/rock/lcd_soundsystem-musicbymarina1.jpg", "../images/rock/lcd_soundsystem-musicbymarina2.jpg"],
+			"webp": ["../images/rock/lcd_soundsystem-musicbymarina1.webp", "../images/rock/lcd_soundsystem-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Liam Gallagher",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/rock/liam_gallagher-musicbymarina.jpg"],
+			"webp": ["../images/rock/liam_gallagher-musicbymarina.webp"]
+			}
+		]
+	},
+	{
 		"name": "Little Dragon",
 		"type": "rock",
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/little_dragon-musicbymarina.jpg"],
-			"webp": ["../images/electronic/little_dragon-musicbymarina.webp"]
+			"jpg": ["../images/rock/little_dragon-musicbymarina.jpg"],
+			"webp": ["../images/rock/little_dragon-musicbymarina.webp"]
 			}
 		]
 	},
 	{
-		"name": "Miss Kittin",
+		"name": "Loop",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/loop-musicbymarina1.jpg", "../images/rock/loop-musicbymarina2.jpg", "../images/rock/loop-musicbymarina3.jpg", "../images/rock/loop-musicbymarina4.jpg"],
+				"webp": ["../images/rock/loop-musicbymarina1.webp", "../images/rock/loop-musicbymarina2.webp", "../images/rock/loop-musicbymarina3.webp", "../images/rock/loop-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "Monika Kruse",
 		"type": "electro",
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/miss_kittin-musicbymarina.jpg"],
-			"webp": ["../images/electronic/miss_kittin-musicbymarina.webp"]
+			"jpg": ["../images/electronic/monika_kruse-musicbymarina.jpg"],
+			"webp": ["../images/electronic/monika_kruse-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Nils Frahm",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/nils_frahm-musicbymarina.jpg"],
+				"webp": ["../images/electronic/nils_frahm-musicbymarina.webp"]
 			}
 		]
 	},
@@ -248,8 +534,19 @@
 		"photosPath":
 		[
 			{
-				"jpg": ["../images/electronic/nina_kraviz-musicbymarina.jpg"],
-				"webp": ["../images/electronic/nina_kraviz-musicbymarina.webp"]
+				"jpg": ["../images/electronic/nina_kraviz-musicbymarina1.jpg", "../images/electronic/nina_kraviz-musicbymarina2.jpg", "../images/electronic/nina_kraviz-musicbymarina3.jpg", "../images/electronic/nina_kraviz-musicbymarina4.jpg"],
+				"webp": ["../images/electronic/nina_kraviz-musicbymarina1.webp", "../images/electronic/nina_kraviz-musicbymarina2.webp", "../images/electronic/nina_kraviz-musicbymarina3.webp", "../images/electronic/nina_kraviz-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "No Regular Play",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/no_regular_play-musicbymarina.jpg"],
+				"webp": ["../images/electronic/no_regular_play-musicbymarina.webp"]
 			}
 		]
 	},
@@ -257,7 +554,74 @@
 		"name": "Optimo",
 		"type": "electro",
 		"photosPath": [
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1467294_681826771851183_2081172392_n.jpg?_nc_cat=109&oh=c8f8ae66a18e90e34e941f84d7748570&oe=5C24025F"
+		{
+			"jpg": ["../images/electronic/optimo-musicbymarina.jpg"],
+			"webp": ["../images/electronic/optimo-musicbymarina.webp"]
+			}
+		]
+	},
+	{
+		"name": "Pachanga Boys (Superpitcher and Rebolledo)",
+		"type": "electro",
+		"photosPath": [
+		{
+				"jpg": ["../images/electronic/pachanga_boys-musicbymarina1.jpg", "../images/electronic/pachanga_boys-musicbymarina2.jpg"],
+				"webp": ["../images/electronic/pachanga_boys-musicbymarina1.webp", "../images/electronic/pachanga_boys-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Pan-Pot",
+		"type": "electro",
+		"photosPath": [
+		{
+				"jpg": ["../images/electronic/pan_pot-musicbymarina1.jpg", "../images/electronic/pan_pot-musicbymarina2.jpg", "../images/electronic/pan_pot-musicbymarina3.jpg"],
+				"webp": ["../images/electronic/pan_pot-musicbymarina1.webp", "../images/electronic/pan_pot-musicbymarina2.webp", "../images/electronic/pan_pot-musicbymarina3.webp"]
+			}
+		]
+	},
+		{
+		"name": "Thee Oh Sees",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/thee_oh_sees-musicbymarina1.jpg", "../images/rock/thee_oh_sees-musicbymarina2.jpg", "../images/rock/thee_oh_sees-musicbymarina3.jpg", "../images/rock/thee_oh_sees-musicbymarina4.jpg", "../images/rock/thee_oh_sees-musicbymarina5.jpg", "../images/rock/thee_oh_sees-musicbymarina6.jpg"],
+				"webp": ["../images/rock/thee_oh_sees-musicbymarina1.webp", "../images/rock/thee_oh_sees-musicbymarina2.webp", "../images/rock/thee_oh_sees-musicbymarina3.webp", "../images/rock/thee_oh_sees-musicbymarina4.webp", "../images/rock/thee_oh_sees-musicbymarina5.webp", "../images/rock/thee_oh_sees-musicbymarina6.webp"]
+			}
+		]
+	},
+	{
+		"name": "Patti Smith",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/patti_smith-musicbymarina1.jpg", "../images/rock/patti_smith-musicbymarina2.jpg"],
+				"webp": ["../images/rock/patti_smith-musicbymarina1.webp", "../images/rock/patti_smith-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Phoenix",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/phoenix-musicbymarina1.jpg", "../images/rock/phoenix-musicbymarina2.jpg", "../images/rock/phoenix-musicbymarina3.jpg", "../images/rock/phoenix-musicbymarina4.jpg", "../images/rock/phoenix-musicbymarina5.jpg"],
+				"webp": ["../images/rock/phoenix-musicbymarina1.webp", "../images/rock/phoenix-musicbymarina2.webp", "../images/rock/phoenix-musicbymarina3.webp", "../images/rock/phoenix-musicbymarina4.webp", "../images/rock/phoenix-musicbymarina5.webp"]
+			}
+		]
+	},
+	{
+		"name": "Ratatat",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/ratatat-musicbymarina1.jpg", "../images/rock/ratatat-musicbymarina2.jpg"],
+				"webp": ["../images/rock/ratatat-musicbymarina1.webp", "../images/rock/ratatat-musicbymarina2.webp"]
+			}
 		]
 	},
 	{
@@ -277,19 +641,30 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/richie_hawtin-musicbymarina1.jpg", "../images/electronic/richie_hawtin-musicbymarina2.jpg"],
-			"webp": ["../images/electronic/richie_hawtin-musicbymarina1.webp", "../images/electronic/richie_hawtin-musicbymarina2.webp"]
+			"jpg": ["../images/electronic/richie_hawtin-musicbymarina1.jpg", "../images/electronic/richie_hawtin-musicbymarina2.jpg", "../images/electronic/richie_hawtin-musicbymarina3.jpg", "../images/electronic/richie_hawtin-musicbymarina4.jpg", "../images/electronic/richie_hawtin-musicbymarina5.jpg", "../images/electronic/richie_hawtin-musicbymarina6.jpg", "../images/electronic/richie_hawtin-musicbymarina7.jpg"],
+			"webp": ["../images/electronic/richie_hawtin-musicbymarina1.webp", "../images/electronic/richie_hawtin-musicbymarina2.webp", "../images/electronic/richie_hawtin-musicbymarina3.webp", "../images/electronic/richie_hawtin-musicbymarina4.webp", "../images/electronic/richie_hawtin-musicbymarina5.webp", "../images/electronic/richie_hawtin-musicbymarina6.webp", "../images/electronic/richie_hawtin-musicbymarina7.webp"]
 			}
 		]
 	},
 	{
-		"name": "Sebastien Tellier",
+		"name": "Rone",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/rone-musicbymarina1.jpg", "../images/electronic/rone-musicbymarina2.jpg", "../images/electronic/rone-musicbymarina3.jpg", "../images/electronic/rone-musicbymarina4.jpg"],
+				"webp": ["../images/electronic/rone-musicbymarina1.webp", "../images/electronic/rone-musicbymarina2.webp", "../images/electronic/rone-musicbymarina3.webp", "../images/electronic/rone-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "Sarah Krebs",
 		"type": "rock",
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1048781_609540369079824_94557295_o.jpg?_nc_cat=110&oh=3bec6a0a7d101cb7a3cb99edf7a63639&oe=5C20815C",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/1005590_609531965747331_1605835238_n.jpg?_nc_cat=103&oh=30d64544210105030aae547b2cf2267f&oe=5C24CA01"]
+				"jpg": ["../images/rock/sarah_krebs-musicbymarina1.jpg", "../images/rock/sarah_krebs-musicbymarina2.jpg"],
+				"webp": ["../images/rock/sarah_krebs-musicbymarina1.webp", "../images/rock/sarah_krebs-musicbymarina2.webp"]
 			}
 		]
 	},
@@ -299,45 +674,196 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/564689_740926912607835_644611150_n.jpg?_nc_cat=109&oh=e8a8f1391aada0351b29dfc95cc3afd0&oe=5C178E46",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1909220_740926665941193_790709462_o.jpg?_nc_cat=108&oh=671bc7010f581ca8b13a3ac3efcfb0a5&oe=5C591C13"]
+				"jpg": ["../images/electronic/sisy_ey-musicbymarina1.jpg", "../images/electronic/sisy_ey-musicbymarina2.jpg"],
+				"webp": ["../images/electronic/sisy_ey-musicbymarina1.webp", "../images/electronic/sisy_ey-musicbymarina2.webp"]
 			}
 		]
 	},
 	{
-		"name": "The Jesus and Mary Chain",
+		"name": "Slowdive",
 		"type": "rock",
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/21054900_1848116595222189_3410498097011115445_o.jpg?_nc_cat=0&oh=ce3ef5832bc1d6f57ccf9ed94bda2d33&oe=5C2DD375",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20992966_1848116818555500_4471541284690943894_n.jpg?_nc_cat=0&oh=610a4ddc733871437864844cb5c131d2&oe=5C1F6471"]
+				"jpg": ["../images/rock/slowdive-musicbymarina1.jpg", "../images/rock/slowdive-musicbymarina2.jpg", "../images/rock/slowdive-musicbymarina3.jpg", "../images/rock/slowdive-musicbymarina4.jpg", "../images/rock/slowdive-musicbymarina5.jpg", "../images/rock/slowdive-musicbymarina6.jpg", "../images/rock/slowdive-musicbymarina7.jpg", "../images/rock/slowdive-musicbymarina8.jpg", "../images/rock/slowdive-musicbymarina9.jpg", "../images/rock/slowdive-musicbymarina10.jpg", "../images/rock/slowdive-musicbymarina11.jpg", "../images/rock/slowdive-musicbymarina12.jpg", "../images/rock/slowdive-musicbymarina13.jpg", "../images/rock/slowdive-musicbymarina14.jpg", "../images/rock/slowdive-musicbymarina15.jpg", "../images/rock/slowdive-musicbymarina16.jpg", "../images/rock/slowdive-musicbymarina17.jpg", "../images/rock/slowdive-musicbymarina18.jpg", "../images/rock/slowdive-musicbymarina19.jpg", "../images/rock/slowdive-musicbymarina20.jpg", "../images/rock/slowdive-musicbymarina21.jpg", "../images/rock/slowdive-musicbymarina22.jpg", "../images/rock/slowdive-musicbymarina23.jpg"],
+				"webp": ["../images/rock/slowdive-musicbymarina1.webp", "../images/rock/slowdive-musicbymarina2.webp", "../images/rock/slowdive-musicbymarina3.webp", "../images/rock/slowdive-musicbymarina4.webp", "../images/rock/slowdive-musicbymarina5.webp", "../images/rock/slowdive-musicbymarina6.webp", "../images/rock/slowdive-musicbymarina7.webp", "../images/rock/slowdive-musicbymarina8.webp", "../images/rock/slowdive-musicbymarina9.webp", "../images/rock/slowdive-musicbymarina10.webp", "../images/rock/slowdive-musicbymarina11.webp", "../images/rock/slowdive-musicbymarina12.webp", "../images/rock/slowdive-musicbymarina13.webp", "../images/rock/slowdive-musicbymarina14.webp", "../images/rock/slowdive-musicbymarina15.webp", "../images/rock/slowdive-musicbymarina16.webp", "../images/rock/slowdive-musicbymarina17.webp", "../images/rock/slowdive-musicbymarina18.webp", "../images/rock/slowdive-musicbymarina19.webp", "../images/rock/slowdive-musicbymarina20.webp", "../images/rock/slowdive-musicbymarina21.webp", "../images/rock/slowdive-musicbymarina22.webp", "../images/rock/slowdive-musicbymarina23.webp"]
 			}
 		]
 	},
 	{
-		"name": "The Moonlandingz",
+		"name": "Soft Moon (The)",
 		"type": "rock",
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/20989050_1848126815221167_9170648447692897966_o.jpg?_nc_cat=109&oh=503bd5bd38fc6fdb4112d7ef3b100274&oe=5C1AA5DD",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953541_1848127035221145_8297219656836242096_n.jpg?_nc_cat=102&oh=b790a323ffe338329fed67d73ee3c330&oe=5C21C43B",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953766_1848127835221065_2779536650542889960_n.jpg?_nc_cat=102&oh=0894be995d4a199790361b0421173d81&oe=5C2C2A87",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20993040_1848127528554429_7568548934685083589_n.jpg?_nc_cat=106&oh=3c542148d2e9c10405c3b68dd2346bad&oe=5C2023E6",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953820_1848128531887662_8652699055340737132_n.jpg?_nc_cat=110&oh=c771c626b6421a06697fde7a6e998508&oe=5C2B03B4"]
+				"jpg": ["../images/rock/the_soft_moon-musicbymarina1.jpg", "../images/rock/the_soft_moon-musicbymarina2.jpg", "../images/rock/the_soft_moon-musicbymarina3.jpg", "../images/rock/the_soft_moon-musicbymarina4.jpg", "../images/rock/the_soft_moon-musicbymarina5.jpg", "../images/rock/the_soft_moon-musicbymarina6.jpg", "../images/rock/the_soft_moon-musicbymarina7.jpg", "../images/rock/the_soft_moon-musicbymarina8.jpg", "../images/rock/the_soft_moon-musicbymarina9.jpg"],
+				"webp": ["../images/rock/the_soft_moon-musicbymarina1.webp", "../images/rock/the_soft_moon-musicbymarina2.webp", "../images/rock/the_soft_moon-musicbymarina3.webp", "../images/rock/the_soft_moon-musicbymarina4.webp", "../images/rock/the_soft_moon-musicbymarina5.webp", "../images/rock/the_soft_moon-musicbymarina6.webp", "../images/rock/the_soft_moon-musicbymarina7.webp", "../images/rock/the_soft_moon-musicbymarina8.webp", "../images/rock/the_soft_moon-musicbymarina9.webp"]
 			}
 		]
 	},
 	{
-		"name": "The Savages",
+		"name": "Soul Clap",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/soul_clap-musicbymarina1.jpg", "../images/electronic/soul_clap-musicbymarina2.jpg", "../images/electronic/soul_clap-musicbymarina3.jpg", "../images/electronic/soul_clap-musicbymarina4.jpg", "../images/electronic/soul_clap-musicbymarina5.jpg", "../images/electronic/soul_clap-musicbymarina6.jpg"],
+			"webp": ["../images/electronic/soul_clap-musicbymarina1.webp", "../images/electronic/soul_clap-musicbymarina2.webp", "../images/electronic/soul_clap-musicbymarina3.webp", "../images/electronic/soul_clap-musicbymarina4.webp", "../images/electronic/soul_clap-musicbymarina5.webp", "../images/electronic/soul_clap-musicbymarina6.webp"]
+			}
+		]
+	},
+	{
+		"name": "Soulwax",
 		"type": "rock",
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10153827_781862181847641_2278343077452192134_n.jpg?_nc_cat=100&oh=e25fe8281df72c8cde2c302399143f36&oe=5C2702D1",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/10247466_781861368514389_2866555725478156576_n.jpg?_nc_cat=110&oh=812e8df00e7bbf58c3109e03e9e4c256&oe=5C1F4114"]
+				"jpg": ["../images/rock/soulwax-musicbymarina1.jpg", "../images/rock/soulwax-musicbymarina2.jpg", "../images/rock/soulwax-musicbymarina3.jpg", "../images/rock/soulwax-musicbymarina4.jpg", "../images/rock/soulwax-musicbymarina5.jpg", "../images/rock/soulwax-musicbymarina6.jpg", "../images/rock/soulwax-musicbymarina7.jpg", "../images/rock/soulwax-musicbymarina8.jpg", "../images/rock/soulwax-musicbymarina9.jpg", "../images/rock/soulwax-musicbymarina10.jpg", "../images/rock/soulwax-musicbymarina11.jpg", "../images/rock/soulwax-musicbymarina12.jpg", "../images/rock/soulwax-musicbymarina13.jpg", "../images/rock/soulwax-musicbymarina14.jpg", "../images/rock/soulwax-musicbymarina15.jpg", "../images/rock/soulwax-musicbymarina16.jpg", "../images/rock/soulwax-musicbymarina17.jpg", "../images/rock/soulwax-musicbymarina18.jpg"],
+				"webp": ["../images/rock/soulwax-musicbymarina1.webp", "../images/rock/soulwax-musicbymarina2.webp", "../images/rock/soulwax-musicbymarina3.webp", "../images/rock/soulwax-musicbymarina4.webp", "../images/rock/soulwax-musicbymarina5.webp", "../images/rock/soulwax-musicbymarina6.webp", "../images/rock/soulwax-musicbymarina7.webp", "../images/rock/soulwax-musicbymarina8.webp", "../images/rock/soulwax-musicbymarina9.webp", "../images/rock/soulwax-musicbymarina10.webp", "../images/rock/soulwax-musicbymarina11.webp", "../images/rock/soulwax-musicbymarina12.webp", "../images/rock/soulwax-musicbymarina13.webp", "../images/rock/soulwax-musicbymarina14.webp", "../images/rock/soulwax-musicbymarina15.webp", "../images/rock/soulwax-musicbymarina16.webp", "../images/rock/soulwax-musicbymarina17.webp", "../images/rock/soulwax-musicbymarina18.webp"]
 			}
+		]
+	},
+	{
+		"name": "Talaboman (Axel Boman and John Talabot)",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/talaboman-musicbymarina1.jpg", "../images/electronic/talaboman-musicbymarina2.jpg"],
+			"webp": ["../images/electronic/talaboman-musicbymarina1.webp", "../images/electronic/talaboman-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Tale Of Us",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/tale_of_us-musicbymarina1.jpg", "../images/electronic/tale_of_us-musicbymarina2.jpg"],
+			"webp": ["../images/electronic/tale_of_us-musicbymarina1.webp", "../images/electronic/tale_of_us-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Black Angels (The) ",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/the_black_angels-musicbymarina1.jpg", "../images/rock/the_black_angels-musicbymarina2.jpg", "../images/rock/the_black_angels-musicbymarina3.jpg", "../images/rock/the_black_angels-musicbymarina4.jpg", "../images/rock/the_black_angels-musicbymarina5.jpg", "../images/rock/the_black_angels-musicbymarina6.jpg", "../images/rock/the_black_angels-musicbymarina7.jpg", "../images/rock/the_black_angels-musicbymarina8.jpg", "../images/rock/the_black_angels-musicbymarina9.jpg", "../images/rock/the_black_angels-musicbymarina10.jpg", "../images/rock/the_black_angels-musicbymarina11.jpg", "../images/rock/the_black_angels-musicbymarina12.jpg", "../images/rock/the_black_angels-musicbymarina13.jpg", "../images/rock/the_black_angels-musicbymarina14.jpg", "../images/rock/the_black_angels-musicbymarina15.jpg", "../images/rock/the_black_angels-musicbymarina16.jpg"],
+				"webp": ["../images/rock/the_black_angels-musicbymarina1.webp", "../images/rock/the_black_angels-musicbymarina2.webp", "../images/rock/the_black_angels-musicbymarina3.webp", "../images/rock/the_black_angels-musicbymarina4.webp", "../images/rock/the_black_angels-musicbymarina5.webp", "../images/rock/the_black_angels-musicbymarina6.webp", "../images/rock/the_black_angels-musicbymarina7.webp", "../images/rock/the_black_angels-musicbymarina8.webp", "../images/rock/the_black_angels-musicbymarina9.webp", "../images/rock/the_black_angels-musicbymarina10.webp", "../images/rock/the_black_angels-musicbymarina11.webp", "../images/rock/the_black_angels-musicbymarina12.webp", "../images/rock/the_black_angels-musicbymarina13.webp", "../images/rock/the_black_angels-musicbymarina14.webp", "../images/rock/the_black_angels-musicbymarina15.webp", "../images/rock/the_black_angels-musicbymarina16.webp"]
+			}
+		]
+	},
+	{
+		"name": "Black Lips (The)",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/rock/the_black_lips-musicbymarina1.jpg", "../images/rock/the_black_lips-musicbymarina2.jpg"],
+			"webp": ["../images/rock/the_black_lips-musicbymarina1.webp", "../images/rock/the_black_lips-musicbymarina2.webp"]
+			}
+		]
+	},
+	{
+		"name": "Black Madonna (The)",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/electronic/the_black_madonna-musicbymarina1.jpg", "../images/electronic/the_black_madonna-musicbymarina2.jpg", "../images/electronic/the_black_madonna-musicbymarina3.jpg", "../images/electronic/the_black_madonna-musicbymarina4.jpg", "../images/electronic/the_black_madonna-musicbymarina5.jpg"],
+			"webp": ["../images/electronic/the_black_madonna-musicbymarina1.webp", "../images/electronic/the_black_madonna-musicbymarina2.webp", "../images/electronic/the_black_madonna-musicbymarina3.webp", "../images/electronic/the_black_madonna-musicbymarina4.webp", "../images/electronic/the_black_madonna-musicbymarina5.webp"]
+			}
+		]
+	},
+	{
+		"name": "Brian Jonestown Massacre (The)",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/bjm-musicbymarina1.jpg", "../images/rock/bjm-musicbymarina2.jpg", "../images/rock/bjm-musicbymarina3.jpg", "../images/rock/bjm-musicbymarina4.jpg", "../images/rock/bjm-musicbymarina5.jpg", "../images/rock/bjm-musicbymarina6.jpg", "../images/rock/bjm-musicbymarina7.jpg", "../images/rock/bjm-musicbymarina8.jpg"],
+				"webp": ["../images/rock/bjm-musicbymarina1.webp", "../images/rock/bjm-musicbymarina2.webp", "../images/rock/bjm-musicbymarina3.webp", "../images/rock/bjm-musicbymarina4.webp", "../images/rock/bjm-musicbymarina5.webp", "../images/rock/bjm-musicbymarina6.webp", "../images/rock/bjm-musicbymarina7.webp", "../images/rock/bjm-musicbymarina8.webp"]
+			}
+		]
+	},
+	{
+		"name": "Chemical Brothers (The)",
+		"type": "electro",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/electronic/chemical_brothers-musicbymarina1.jpg", "../images/electronic/chemical_brothers-musicbymarina2.jpg", "../images/electronic/chemical_brothers-musicbymarina3.jpg", "../images/electronic/chemical_brothers-musicbymarina4.jpg", "../images/electronic/chemical_brothers-musicbymarina5.jpg", "../images/electronic/chemical_brothers-musicbymarina6.jpg", "../images/electronic/chemical_brothers-musicbymarina7.jpg"],
+				"webp": ["../images/electronic/chemical_brothers-musicbymarina1.webp", "../images/electronic/chemical_brothers-musicbymarina2.webp", "../images/electronic/chemical_brothers-musicbymarina3.webp", "../images/electronic/chemical_brothers-musicbymarina4.webp", "../images/electronic/chemical_brothers-musicbymarina5.webp", "../images/electronic/chemical_brothers-musicbymarina6.webp", "../images/electronic/chemical_brothers-musicbymarina7.webp"]
+			}
+		]
+	},
+	{
+		"name": "Jesus and Mary Chain (The)",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+				"jpg": ["../images/rock/the_jesus_and_mary_chain-musicbymarina1.jpg", "../images/rock/the_jesus_and_mary_chain-musicbymarina2.jpg", "../images/rock/the_jesus_and_mary_chain-musicbymarina3.jpg", "../images/rock/the_jesus_and_mary_chain-musicbymarina4.jpg"],
+				"webp": ["../images/rock/the_jesus_and_mary_chain-musicbymarina1.webp", "../images/rock/the_jesus_and_mary_chain-musicbymarina2.webp", "../images/rock/the_jesus_and_mary_chain-musicbymarina3.webp", "../images/rock/the_jesus_and_mary_chain-musicbymarina4.webp"]
+			}
+		]
+	},
+	{
+		"name": "KVB (The)",
+		"type": "rock",
+		"photosPath":
+		[
+		{
+			"jpg": ["../images/rock/the_kvb-musicbymarina1.jpg", "../images/rock/the_kvb-musicbymarina2.jpg", "../images/rock/the_kvb-musicbymarina3.jpg", "../images/rock/the_kvb-musicbymarina4.jpg","../images/rock/the_kvb-musicbymarina5.jpg","../images/rock/the_kvb-musicbymarina6.jpg","../images/rock/the_kvb-musicbymarina7.jpg","../images/rock/the_kvb-musicbymarina8.jpg","../images/rock/the_kvb-musicbymarina9.jpg","../images/rock/the_kvb-musicbymarina10.jpg"],
+			"webp": ["../images/rock/the_kvb-musicbymarina1.webp", "../images/rock/the_kvb-musicbymarina2.webp", "../images/rock/the_kvb-musicbymarina3.webp", "../images/rock/the_kvb-musicbymarina4.webp", "../images/rock/the_kvb-musicbymarina5.webp", "../images/rock/the_kvb-musicbymarina6.webp", "../images/rock/the_kvb-musicbymarina7.webp", "../images/rock/the_kvb-musicbymarina8.webp", "../images/rock/the_kvb-musicbymarina9.webp", "../images/rock/the_kvb-musicbymarina10.webp"]
+		}
+		]
+	},
+	{
+		"name": "Lemon Twigs (The)",
+		"type": "rock",
+		"photosPath":
+		[
+		{
+			"jpg": ["../images/rock/the_lemon_twigs-musicbymarina1.jpg", "../images/rock/the_lemon_twigs-musicbymarina2.jpg", "../images/rock/the_lemon_twigs-musicbymarina3.jpg", "../images/rock/the_lemon_twigs-musicbymarina4.jpg","../images/rock/the_lemon_twigs-musicbymarina5.jpg","../images/rock/the_lemon_twigsthe_lemon_twigs-musicbymarina6.jpg"],
+			"webp": ["../images/rock/the_lemon_twigs-musicbymarina1.webp", "../images/rock/the_lemon_twigs-musicbymarina2.webp", "../images/rock/the_lemon_twigs-musicbymarina3.webp", "../images/rock/the_lemon_twigs-musicbymarina4.webp", "../images/rock/the_lemon_twigs-musicbymarina5.webp", "../images/rock/the_lemon_twigs-musicbymarina6.webp"]
+		}
+		]
+	},
+	{
+		"name": "Moonlandingz (The)",
+		"type": "rock",
+		"photosPath":
+		[
+		{
+			"jpg": ["../images/rock/the_moonlandingz-musicbymarina1.jpg", "../images/rock/the_moonlandingz-musicbymarina2.jpg", "../images/rock/the_moonlandingz-musicbymarina3.jpg", "../images/rock/the_moonlandingz-musicbymarina4.jpg","../images/rock/the_moonlandingz-musicbymarina5.jpg"],
+			"webp": ["../images/rock/the_moonlandingz-musicbymarina1.webp", "../images/rock/the_moonlandingz-musicbymarina2.webp", "../images/rock/the_moonlandingz-musicbymarina3.webp", "../images/rock/the_moonlandingz-musicbymarina4.webp", "../images/rock/the_moonlandingz-musicbymarina5.webp"]
+		}
+		]
+	},
+	{
+		"name": "Savages (The)",
+		"type": "rock",
+		"photosPath":
+		[
+			{
+			"jpg": ["../images/rock/the_savages-musicbymarina1.jpg", "../images/rock/the_savages-musicbymarina2.jpg"],
+			"webp": ["../images/rock/the_savages-musicbymarina1.webp", "../images/rock/the_savages-musicbymarina2.webp"]
+		}
+		]
+	},
+	{
+		"name": "Skull Defekts (The)",
+		"type": "rock",
+		"photosPath":
+		[
+		{
+			"jpg": ["../images/rock/the_skull_defekts-musicbymarina1.jpg", "../images/rock/the_skull_defekts-musicbymarina2.jpg", "../images/rock/the_skull_defekts-musicbymarina3.jpg", "../images/rock/the_skull_defekts-musicbymarina4.jpg","../images/rock/the_skull_defekts-musicbymarina5.jpg"],
+			"webp": ["../images/rock/the_skull_defekts-musicbymarina1.webp", "../images/rock/the_skull_defekts-musicbymarina2.webp", "../images/rock/the_skull_defekts-musicbymarina3.webp", "../images/rock/the_skull_defekts-musicbymarina4.webp", "../images/rock/the_skull_defekts-musicbymarina5.webp"]
+		}
 		]
 	},
 	{
@@ -357,8 +883,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/todd-edwards-musicbymarina-1.jpg"],
-			"webp": ["../images/electronic/todd-edwards-musicbymarina-1.webp"]
+			"jpg": ["../images/electronic/todd_edwards-musicbymarina.jpg"],
+			"webp": ["../images/electronic/todd_edwards-musicbymarina.webp"]
 			}
 		]
 	},
@@ -368,7 +894,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/1888839_764353863598473_1992132639_o.jpg?_nc_cat=103&oh=0495bf997d50b322083e4d750ade90b0&oe=5C5654AA"]
+			"jpg": ["../images/electronic/teed-musicbymarina.jpg"],
+			"webp": ["../images/electronic/teed-musicbymarina.webp"]
 			}
 		]
 	},
@@ -378,8 +905,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/21034531_1848129308554251_3799297742902904146_n.jpg?_nc_cat=103&oh=9b3cd0dcdfedcb59a0c9090c476e516c&oe=5C18C83B",
-		"https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20953149_1848129641887551_7652735417763967610_n.jpg?_nc_cat=101&oh=7e283ac13b26d2074b49898e60515636&oe=5C629D11"]
+			"jpg": ["../images/rock/ty_segall-musicbymarina1.jpg", "../images/rock/ty_segall-musicbymarina2.jpg", "../images/rock/ty_segall-musicbymarina3.jpg", "../images/rock/ty_segall-musicbymarina4.jpg", "../images/rock/ty_segall-musicbymarina5.jpg", "../images/rock/ty_segall-musicbymarina6.jpg", "../images/rock/ty_segall-musicbymarina7.jpg", "../images/rock/ty_segall-musicbymarina8.jpg"],
+			"webp": ["../images/rock/ty_segall-musicbymarina1.webp", "../images/rock/ty_segall-musicbymarina2.webp", "../images/rock/ty_segall-musicbymarina3.webp", "../images/rock/ty_segall-musicbymarina4.webp", "../images/rock/ty_segall-musicbymarina5.webp", "../images/rock/ty_segall-musicbymarina6.webp", "../images/rock/ty_segall-musicbymarina7.webp", "../images/rock/ty_segall-musicbymarina8.webp"]
 			}
 		]
 	},
@@ -389,7 +916,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/891935_781438308556695_823055010578276049_o.jpg?_nc_cat=101&oh=8aa4448989e429f0454ad19bc451c573&oe=5C5596E8"]
+				"jpg": ["../images/rock/whomadewho-musicbymarina.jpg"],
+				"webp": ["../images/rock/whomadewho-musicbymarina.webp"]
 			}
 		]
 	}
