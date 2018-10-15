@@ -303,8 +303,8 @@
 		"photosPath":
 		[
 			{
-			"jpg": ["../images/electronic/four_tet-musicbymarina1.jpg", "../images/electronic/follakzoid-musicbymarina2.jpg"],
-			"webp": ["../images/electronic/four_tet-musicbymarina1.webp", "../images/electronic/follakzoid-musicbymarina2.webp"]
+			"jpg": ["../images/electronic/four_tet-musicbymarina1.jpg", "../images/electronic/four_tet-musicbymarina2.jpg"],
+			"webp": ["../images/electronic/four_tet-musicbymarina1.webp", "../images/electronic/four_tet-musicbymarina2.webp"]
 			}
 		]
 	},
