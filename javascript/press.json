@@ -239,8 +239,8 @@
 		{
 			"artiste": "DJ Harvey",
 			"media": "Instagram",
-			"png": ["../images/works/press/social/dj-harvey-portrait.png"],
-			"webp": ["../images/works/press/social/dj-harvey-portrait.webp"]
+			"png": ["../images/works/press/social/dj-harvey1.png", "../images/works/press/social/dj-harvey2.png"],
+			"webp": ["../images/works/press/social/dj-harvey1.webp", "../images/works/press/social/dj-harvey2.webp"]
 		},
 		{
 			"artiste": "DJ Tennis",
