@@ -1,20 +1,27 @@
-const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/data.json";
-let contenuLettres = $('#letters');
+/*ALL THE METHODS FOR ROCK PORTFOLIO PAGE*/
 
-/*Fonction pour mettre dans l'ordre alphabetique les noms des artistes*/
-const ordreAlphabetique = (artist1, artist2) =>{
-	if(artist1.name < artist2.name) return -1;
-	if(artist1.name > artist2.name) return 1;
+// data where I will fetch the images from portfolio.json
+const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/portfolio.json";
+
+/**
+ * @description Helps to sort my array of objects by the name of the artists
+ * @param {string} artist1, artist2
+ */
+const byRockName = (artist1, artist2) =>{
+	if(artist1.name < artist2.name) return 1;
+	if(artist1.name > artist2.name) return -1;
 	return 0;
 }
 
-
-/*Fonction pour ajouter les lettres et les artistes dedans*/
-const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
+/**
+ * @description Add each letter of the alphabet in an article, 
+ * Then add each artist of the data in the right article
+ * 
+ */
 const addLetters = () =>{
+	const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
 	let lettersContenu;
-	// Creer le contenu de mes "boites aux lettres"
 	alphabet.map((letter)=>{
 		lettersContenu = `
 		<li id=${letter}>
@@ -22,22 +29,23 @@ const addLetters = () =>{
 		<h4 style='color: black'>${letter.toUpperCase()}</h4>
 		<ul class='artistes'>
 		${
-			//Fonction pour ajouter chaque artiste dans la lettre associée
+			// I add each artist in the letter
 			fetch(imagesUrl).then(response=>response.json()).then((data)=>{
-				const photos = data.photos.sort(ordreAlphabetique);
-				const electroList = photos.filter((photo) => photo.type === 'rock');
+				const photos = data.photos.sort(byRockName);
+				const rockList = photos.filter((photo) => photo.type === 'rock');
 
-				electroList.map((photo)=>{
-				const listeArtistes = `
+				rockList.map((photo)=>{
+				const artistList = `
 				<li class='liste-artistes'>
 				<h5 id='${photo.name}'>${photo.name}</h5>
 				</li>
 				`;
-				const artistes = $(`#${letter} .artistes`);
-				// si la lettre de ma boite correspond à la 1ere lettre du nom du dj, je mets le nom dedans
+				
+				// If the letter in the article suits to the first letter of the artist name, I put the name inside
 				if(photo.name[0] === letter) {
-					$(`#${letter} .artistes`).prepend(listeArtistes);
-					// Supprimer les artistes doublons
+					$(`#${letter} .artistes`).prepend(artistList);
+					
+					// I delete the name of duplicated artists name if there are some
 					$('.liste-artistes').each(function () {					
       					$('.liste-artistes:contains("' + $(this).text() + '"):gt(0)').remove(); 
  					});
@@ -53,19 +61,21 @@ const addLetters = () =>{
 	});	
 }
 
-
-// Creer une promise pour ensuite fetcher par defaut toutes mes lettres et noms de djs dans les boites
-const ajouterLettres = new Promise((resolve, reject) =>{
-	const listeArtistes = $('.liste-artistes h5');
-	if(listeArtistes) {
-		resolve('Alphabet et djs bien remplis dans les boites');
+/* @description Add a promise to fetch my letters and rock bands names.
+ Or put an error message
+ * @param {string} callback
+ */
+const verifyLetters = new Promise((resolve, reject) =>{
+	const artistList = $('.liste-artistes h5');
+	if(artistList) {
+		resolve('Alphabet and rock bands are filled in boxes');
 	} else {
-		reject('Pas bien rempli, recheck ta fonction addLetters meuf ');
+		reject('Check again your addletters function');
 	}
 })
 
-ajouterLettres.then(()=>{
+verifyLetters.then(()=>{
 addLetters();
 }).catch((error)=>{
-	console.warn('Check ton erreur dans la fonction addLetters: ', error);
+	console.warn('Check again your addletters function: ', error);
 });

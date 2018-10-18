@@ -1,7 +1,10 @@
+/**
+ * @description Check if browser can use serviceworker and register
+**/
 if('serviceWorker' in navigator) {
 	navigator.serviceWorker
 	.register('sw.js')
 	.then(()=>{
-		console.log('Ton serviceWorker est bien enregistré');
+		console.log('[ServiceWorker] wake up.');
 	});
 }

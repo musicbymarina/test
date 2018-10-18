@@ -1,27 +1,34 @@
-/* Si je clique sur un h3:
-- lui ajouter la classe active pour avoir le + qui se transforme en -
-- récuperer son index et l'utiliser dans l'article
-- mettre cet article en SlideDown et ajouter un toggleClass active(qui aura un display block)
-(De base les articles sont cachés)
-*/
+/*ALL THE METHODS FOR PRESS PAGE*/
 
-$('.press article').hide();
-$(this).on('click', (event) => {
-	const target = $(event.target);
-	const parents = target.parent();
+// data where I will fetch the images from press.json
+const presse = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/press.json";
 
-	if(target.is(".accordion")){
-		target.toggleClass('active');
 
-		const index = parents.find(target).index('h3');
-		const article = $('.press article');
-		if(article[index-1].style.display === 'block'){
-			article[index-1].style.display = 'none';
-		} else {
-			article[index-1].style.display = 'block';
-		}
-	} else if(target.is(".agrandir")) {
-		console.log('tu cliques sur une photo');
+/**
+ * @description Helps to sort my array of objects by the name of the media
+ * @param {string} media1, media2
+ */
+const byName = (media1, media2) =>{
+  if(media1.name < media2.name) return 1;
+  if(media1.name > media2.name) return -1;
+  return 0;
+}
+
+/**
+ * @description Helps to sort my array of objects by the name of the artists
+ * @param {string} name1, name2
+ */
+const byArtist = (name1, name2) =>{
+  if(name1.artiste < name2.artiste) return 1;
+  if(name1.artiste > name2.artiste) return -1;
+  return 0;
+}
+
+/* @description Open a modal and show a 100% width image
+ * when I click on a picture
+ */
+const openPhoto = () =>{
+	console.log('tu cliques sur une photo');
 			let image = event.target;
 			console.log(image);
 			$('.modal-content').html('');
@@ -30,160 +37,213 @@ $(this).on('click', (event) => {
 			$(event.target).clone().appendTo('.modal-content');
 			$('.modal-content img').css({'width':'100%'});
 			$('#myModal').show();
+}
+
+/* @description Close a modal
+ * 
+ */
+const closeModal = () =>{
+	$('#myModal').hide();
+	$('html').removeClass('force');
+}
+
+
+ /* @description Event define all the click events of Press page except the menu
+ * 
+ */ 
+$(this).on('click', (event) => {
+	const target = $(event.target);
+	const parents = target.parent();
+
+/* If I click on a h3 heading(accordion):
+-I add an .open class to change the + content in minus
+- I take its index and use it to get the article
+- I slidedown this article and I show it
+*/
+	if(target.is(".accordion")){
+		target.toggleClass('open');
+		const index = parents.find(target).index('h3');
+		const article = $('.press article');
+		if(article[index-1].style.display === 'block'){
+			article[index-1].style.display = 'none';
+		} else {
+			article[index-1].style.display = 'block';
+		}
+		
+	} else if(target.is(".open-photo")) {
+		openPhoto();
 			
-	// Si je clique sur le bouton close, je ferme la photo agrandie
 	} else if(target.is(".close")) {
-			console.log('tu cliques sur le bouton pour fermer la photo agrandie');
-			$('#myModal').hide();
-			$('html').removeClass('force');
-			
-			// Si je clique pas sur le nom d'un artiste dans ma boite, je fais rien
+		closeModal();
 	} else {
-		console.log('ca ne sert à rien de cliquer, ca fonctionnera pas');
+		/*If I click elsewhere on this page, it won't work*/
 		return;
 	}	
 	})
 
-
-// Remplir l'article digital avec le nom du magazine, l'article et le lien correspondant
-const presse = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/press.json";
-
-// Je cree les titres 
+/**
+ * @description Create the titles of each magazines 
+ * (for digital and printing) or artist (for social)
+ * @param {string} data
+ */
 const addMagazines = (data) => {
 	let content = ``;
-	const digital = data.digital;
+	const digital = data.digital.sort(byName);
+	const paper = data.paper.sort(byName);
+	const social = data.social.sort(byArtist);
 	
+	// I add the titles in digital article
 	digital.map((magazine)=> {
 		content = `<h4>${magazine.name}</h4>`;
+		$('#digital ul').prepend(content);
+	});
 
-	$('#digital ul').prepend(content);
-	
-});
-	const paper = data.paper;
+	// I add the titles in printing article
 	paper.map((magazine)=>{
 		content = `<h4>${magazine.name}</h4>`;
-
 		$('#print ul').prepend(content);
-	})
+	});
 	
-	const social = data.social;
+	// I add the titles in social article
 	social.map((images)=>{
 		content = `<li class='pile'><h4>${images.artiste}</h4></li>`;
-
 		$('#social ul').prepend(content);
-	})
-	
+	});
 }
 
-// Je rentre les liens pour chaque titre digital
+/**
+ * @description Add my links for each digital magazine title
+**/
 const addDigitalLinks = () =>{
-	const titres = $('#digital h4');
+	const headings = $('#digital h4');
 			$('#digital h4').each((index)=> {
-				const titre = titres[index];
+				const title = headings[index];
 				fetch(presse).then(response=>response.json()).then((data)=>{
-					const listeMagazine = data.digital.filter((magazine) => magazine.name === titre.innerHTML);
+					const listeMagazine = data.digital.filter((magazine) => magazine.name === title.innerHTML);
 					listeMagazine.map((mag)=>{
 						const liens = mag.links;
 						liens.map((lien)=>{
-
 							const content = `<li><p>Subject: <a href=${lien.url} target='_blank'>${lien.artiste}</a></p></li>`;
-							titre.innerHTML = titre.innerHTML + `<ul>${content}</ul>`;
-						})
-					})
-				});
-			})
-}
-
-// Je rentre les liens pour chaque titre papier
-const addPrintLinks = () =>{
-		const titres = $('#print h4');
-			$('#print h4').each((index)=> {
-				const titre = titres[index];
-				fetch(presse).then(response=>response.json()).then((data)=>{
-					const listeMagazine = data.paper.filter((magazine) => magazine.name === titre.innerHTML);
-					listeMagazine.map((mag)=>{
-						const files = mag.images;
-						files.map((file)=>{
-							if(file.src.endsWith('.png') || file.src.endsWith('.webp')){
-								const content = `<li>
-								<figure>
-									<picture>
-										<source media='(min-width: 501px)' srcset=${file.src}>
-										<source media='(max-width: 500px)' srcset=${file.webp}>
-										<img src=${file.src} alt=${mag.name} class='agrandir'>
-									</picture> 
-								 	<figcaption>${file.artiste}</figcaption>
-								 </figure>
-								</li>`;
-								titre.innerHTML = titre.innerHTML + `<ul>${content}</ul>`;
-							} else if(file.src.endsWith('.pdf')){
-								const content = `<li><p>Subject: <a href=${file.src} target='_blank'>${file.artiste}</a></p></li>`;
-								titre.innerHTML = titre.innerHTML + `<ul>${content}</ul>`;
-							}
-							})
-						})
+							title.innerHTML = title.innerHTML + `<ul>${content}</ul>`;
+						});
 					});
 				});
+			});
 }
 
-// Je rentre les liens pour chaque post instagram
+/**
+ * @description Add my links for each print magazine title
+**/
+const addPrintLinks = () =>{
+	const headings = $('#print h4');
+	$('#print h4').each((index)=> {
+		const title = headings[index];
+		fetch(presse).then(response=>response.json()).then((data)=>{
+			const listeMagazine = data.paper.filter((magazine) => magazine.name === title.innerHTML);
+			listeMagazine.map((mag)=>{
+				const files = mag.images;
+				files.map((file)=>{
+					const webpFile = file.webp;
+					const otherFile = file.src;
+					// If my link is .webp and png, I check if the browser accepts webp
+					if(webpFile && otherFile) {
+						Modernizr.on('webp', (result)=>{
+							if(result){
+								console.log('Your browser loves webp files, that increases the performance of my website');
+								// If yes I add ONLY webp files to increase the performance
+								let content = `
+								<li>
+									<figure>
+										<picture>
+											<source media='(min-width: 0px)' srcset=${webpFile} type='image/webP'>
+											<img src=${webpFile} alt=${mag.name} class='open-photo'>
+										</picture> 
+								 		<figcaption>${file.artiste}</figcaption>
+									</figure>
+								</li>`;
+								title.innerHTML = title.innerHTML + `<ul>${content}</ul>`;
+							} else if(otherFile.endsWith('.png')) {
+								// If not I verify the other file is a png file to use it
+								let content = `
+								<li>
+									<figure>
+										<picture>
+											<img src=${otherFile} alt=${mag.name} class='open-photo'>
+										</picture> 
+										<figcaption>${file.artiste}</figcaption>
+									</figure>
+								</li>`;
+								title.innerHTML = title.innerHTML + `<ul>${content}</ul>`;
+							}
+						})
+					} else if(file.src.endsWith('.pdf')){
+						// If the other file is a pdf file, I add a link instead of an image
+						const content = `<li><p>Subject: <a href=${file.src} target='_blank'>${file.artiste}</a></p></li>`;
+						title.innerHTML = title.innerHTML + `<ul>${content}</ul>`;
+					}
+				})
+			})
+		});
+	});
+}
+
+/**
+ * @description Add my links for each artist/promoter title
+**/
 const addSocialLinks = () =>{
-			const titres = $('#social li');
-			$('#social li').each((index)=> {
-				const titre = titres[index];
-				fetch(presse).then(response=>response.json()).then((data)=>{
-					const socialPosts = data.social.filter((post) => post.artiste === $('#social h4')[index].innerHTML);
-					socialPosts.map((socialPost)=>{
-						const pictures = socialPost.pic;
-						const picturesOptimized = socialPost.webp;
-						pictures.map((pic)=>{
-								const content = `<figure>
+	const headings = $('#social li');
+	$('#social li').each((index)=> {
+		const title = headings[index];
+		fetch(presse).then(response=>response.json()).then((data)=>{
+			const socialPosts = data.social.filter((post) => post.artiste === $('#social h4')[index].innerHTML);
+			socialPosts.map((socialPost)=>{
+				if(socialPost.png || socialPost.webp){
+					const pictures = socialPost.png;
+					const webpFiles = socialPost.webp;
+					let content =``;
+					
+					// If my images are .webp or png, I check if the browser accepts webp
+					Modernizr.on('webp', (result)=>{
+						if(result){
+							// If yes I add ONLY webp images to increase the performance
+							console.log('Your browser loves webp files, that increases the performance of my website');
+							webpFiles.map((webFile)=>{
+							content = `
+							<figure>
 								<picture>
-								<source media='(min-width: 501px)' srcset=${pic}>
-								<source media='(max-width: 500px)' srcset=${picturesOptimized}>
-								<img src=${pic} alt=${socialPost.artiste} class='agrandir'>
+									<source srcset=${webFile} media='(min-width: 0px)' type='image/webp'>
+									<img src=${webFile} alt=${socialPost.artiste} class='open-photo'> 
 								</picture> 
 								<figcaption>${socialPost.artiste}</figcaption>
-								</figure>`;
-								titre.innerHTML += content;
-							
-							})
-						})
+							</figure>`;
+							title.innerHTML += content;
+							});
+						} else {
+							// If not I will use the png file
+							pictures.map((picture)=>{
+							content = `
+							<figure>
+								<picture>
+									<img src=${picture} alt=${socialPost.artiste} class='open-photo'> 
+								</picture> 
+								<figcaption>${socialPost.artiste}</figcaption>
+							</figure>`;
+							title.innerHTML += content;
+							});
+						}
 					});
-				});
+				}
+			});
+		});
+	});
 }
 
-// Je remplis la page
+/**
+ * @description Fill all the titles, links and images in my articles
+**/
 fetch(presse).then((response)=>response.json()).then(addMagazines).then(()=>{
 	addDigitalLinks();
 	addPrintLinks();
 	addSocialLinks();
 });
 
-/*SI JE CLIQUE SUR UNE PHOTO DU SLIDER :
-- un modal s'ouvre
-- dans le modal (modal-content), j'ai l'image en grand écran
-- si je clique sur le close (.close), le modal se ferme
-*/
-const agrandirPhoto = () => {
-$('.agrandir img').on('click', (event) => {
-	console.log($(event.target));
-	$('.modal-content').html('');
-	$('html').addClass('force');
-	$('.modal-content').html(`<span class="close">X</span>`);
-	$(event.target).clone().appendTo('.modal-content');
-	$('.modal-content img').css({'width':'100%'});
-	$('#myModal').show();
-	
-
-	$('.close').on('click', () =>{
-		$('#myModal').hide();
-		$('html').removeClass('force');
-});
-});
-}
-
-// Tester si c'est parce que le DOM est loadé ou parce que j'ai déplacé les events listeners
-$(function() {
-    agrandirPhoto();
-  }); // fin function quand le DOM est loadé
