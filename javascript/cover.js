@@ -15,7 +15,7 @@ $(this).on('click', (event) => {
     target.toggleClass('open');
 
     const index = parents.find(target).index('h3');
-    const article = $('.about article');
+    const article = $('.cover article');
     if(article[index-1].style.display === 'block'){
       article[index-1].style.display = 'none';
     } else {

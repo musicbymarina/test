@@ -1,55 +1,57 @@
+ /*ALL THE METHODS FOR CONTACT PAGE*/
+ 
+ /* @description Create a VCF card and download it*/
 const download = () =>{
-	
 	const text = `
-BEGIN:VCARD
-VERSION:4.0
-N:Sellimoutou;Marina
-FN:SELLIMOUTOU Marina
-ORG:MUSIC BY MARINA
-TITLE:Photographer
-ADR;TYPE=WORK:;;;Paris;;;France
-EMAIL;TYPE=PREF, INTERNET:info@musicbymarina.fr
-REV:${Date.now()}
-END:VCARD
+	BEGIN:VCARD
+	VERSION:4.0
+	N:Sellimoutou;Marina
+	FN:SELLIMOUTOU Marina
+	ORG:MUSIC BY MARINA
+	TITLE:Photographer
+	ADR;TYPE=WORK:;;;Paris;;;France
+	EMAIL;TYPE=PREF, INTERNET:info@musicbymarina.fr
+	REV:${Date.now()}
+	END:VCARD
 	`;
-	
 	const buttonDownload = `<a href='data:text/plain;charset=utf-8, encodeURIComponent(${text})' download='Music_by_Marina.vcf'> +ME IN YOUR CONTACTS</a>`;	
 	$('#downloadVCF').prepend(buttonDownload);
 }
 
-// Si je suis sur mon tel, un lien pour télécharger mon vcf apparait, je récupère ma carte vcf
-
+/**
+ * @description Display if mobile phone: add a VCF download button
+ * @param {string} mobileSize
+ */
 const downloadContact = (mobileSize) => {
 	download();
 	mobileSize.matches ?  $('#downloadVCF').show(): $('#downloadVCF a:first').hide();
 }
 
 if(matchMedia) {
-	const mobileSize = window.matchMedia("(max-width: 400px)");
+	const mobileSize = window.matchMedia("(max-width: 500px)");
 	mobileSize.addListener(downloadContact);
 	downloadContact(mobileSize);
 	
 }
 
+/**
+ * @description Event : If I click on Send an email, It opens default email client to send me a message
+ I added in the default email a subject and a first sentence.
+ (I've hidden my email address from my html code for the spambot)
+ **/
 $('#downloadVCF a').last().on('click', ()=>{
-	$('.way a').last().attr({"href": "mailto:info@musicbymarina.fr", "title": "Send an email"});
+	$('.way a').last().attr({"href": "mailto:info@musicbymarina.fr?subject=Mail%20from%20your%20website&body=Hi%20Marina%0A%0AI%20swear%20I%20read%20the%20article%20Before%20Contacting%20Marina.%0A%0A", "target": "_blank"});
 });
 
-
-/* Si je clique sur un h3:
-- lui ajouter la classe active pour avoir le + qui se transforme en -
-- récuperer son index et l'utiliser dans l'article
-- mettre cet article en SlideDown et ajouter un toggleClass active(qui aura un display block)
-(De base les articles sont cachés)
-*/
-
-$('.contact article').hide();
+/**
+ * @description Event : If I click on each heading titles, I open its article
+ **/
 $(this).on('click', (event) => {
 	const target = $(event.target);
 	const parents = target.parent();
 
 	if(target.is(".accordion")){
-		target.toggleClass('active');
+		target.toggleClass('open');
 
 		const index = parents.find(target).index('h3');
 		const article = $('.contact article');
@@ -59,8 +61,4 @@ $(this).on('click', (event) => {
 			article[index-1].style.display = 'block';
 		}
 	}
-	})
-
-
-
-
+})
