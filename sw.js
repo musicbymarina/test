@@ -1,6 +1,18 @@
-const cacheName = 'v5';
+const cacheFiles = [
+'/', 
+'index.html',
+'/html/offline.html',
+'/html/lost.html',
+'/css/style.css',
+'/javascript/index.js',
+'/javascript/menu.js',
+'images/',
+'/javascript/',
+'/css/',
+'/html/'
+];
 
-const cacheFiles = ['index.html', '/html/about.html', '/html/contact.html', '/html/electronic.html', '/html/offline.html', '/html/lost.html', '/html/press.html', '/html/rock.html', '/css/style.css', '/css/imagesHome.css', '/css/about.css', '/css/contact.css', '/css/portfolio.css', '/css/press.css', '/javascript/about.js', '/javascript/contact.js', '/javascript/electronic.js', '/javascript/images.js', '/javascript/index.js', '/javascript/menu.js', '/javascript/portfolio.js', '/javascript/press.js', '/javascript/rock.js'];
+const cacheName = 'v5';
 
 self.addEventListener('install', event => {
     console.log('[ServiceWorker] Installed');
@@ -38,6 +50,9 @@ self.addEventListener('fetch', event => {
         	console.log("[ServiceWorker] Found in Cache", event.request.url, response);
         	return response || fetch(event.request)
         						.then(response => {
+                      if(response.status === 404){
+                        return cache.match('/html/lost.html')
+                      }
           							console.log('[ServiceWorker] not Found in Cache, need to search in the network', event.request.url);
           							cache.put(event.request, response.clone());
           							console.log('[ServiceWorker] New Data Cached', event.request.url);
