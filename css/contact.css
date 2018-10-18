@@ -1,5 +1,4 @@
-.contact,
-.others {
+.contact{
 	color: black;
 		border: solid 1px #eee;
 	background-color: white;
@@ -13,6 +12,7 @@ section > article *{
 }
 
 .contact article{
+	display: none;
 	border: solid 5px black;
 	margin: 2em 0;
 }
@@ -52,7 +52,8 @@ section > article *{
 	margin-left: 5px;
 }
 
-.active:after{
+
+.open:after{
 	content: '\2796';
 }
 
@@ -76,9 +77,8 @@ img{
 
 .contact p,
 .contact li,
-.contact a,
 .contact figcaption {
-	font-family: 'Shadows Into Light', cursive;
+	font-family: 'Indie Flower', cursive;
 	font-size: 1.2em;
 	text-transform: none;
 }
@@ -115,36 +115,26 @@ img{
 .way p{
 	margin: 1em auto;
 }
-.way a{
+#downloadVCF a{
 	padding: 1em;
 	font-weight: bold;
 	font-family: Roboto, sans-serif;
 	text-decoration: none;
-	color: #57595B;
+	color: black;
 	background-color: white;
 	text-transform: uppercase;
-	border: 5px solid black;
-	border-radius: 50px;
 	margin: 1em auto;
 	width: 50%;
 	height: 60px;
-	font-weight: bolder;
+	font-weight: normal;
 	font-size: 1em;
 	width: 30%;
 	text-align: center;
-	-webkit-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
-	-moz-box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
-	box-shadow: -7px 7px 19px 7px rgba(0,0,0,0.75);
 }
 
-.way a:hover{
-	background-color: black;
-	color: white;
-}
-
-.way a:active{
-	background-color: white;
-	color: black;
+#downloadVCF a:hover,
+#downloadVCF a:active{
+	font-weight: bolder;
 }
 	
 @media screen and (max-width: 869px) {
@@ -183,12 +173,13 @@ img{
 	font-size: 1em;
 }
 
-.contact h3{
+.accordion,
+.accordion .open h3{
+	width: auto;
 	margin: 1em 0;
 }
 
 .contact li{
-	width: 100%;
 	margin: 0 10px;
 }
 
@@ -198,13 +189,16 @@ img{
 
 .contact p{
 	padding: 1em 10px;
+	width: auto;
 }
 .contact ol > li{
 	margin: 0 10px;
+	width: auto;
 }
 
 .contact ul > li{
 	margin: 0 10px;
+	width: auto;
 }
 
 .contact ul,

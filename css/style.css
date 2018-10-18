@@ -221,6 +221,7 @@ footer{
 		border: solid 5px white;
 		margin: 2em 0 0 0;
 		z-index: auto;
+		bottom: 0;
 }
 
 details{
@@ -240,6 +241,7 @@ summary:active{
 details p{
 	padding: 0 1em;
 	color: black;
+	font-size: 0.8em;
 }
 
 details p{
@@ -258,6 +260,7 @@ details img{
 	width: 25%;
 	filter: grayscale(100);
 }
+
 @media screen and (max-width: 500px) {
 	#logo{
 		width: 3%;
@@ -298,17 +301,18 @@ details img{
 		margin: 1em auto;
 	}
 	
-	#titre{
+	#titre h2{
 		margin: 0 auto;
+		width: auto;
 	}
 	
 	.pub{
 		display: none;
 	}
 	
-
-	
 }
+
+
 
 @media screen and (max-width: 869px) {
 	#logo{
@@ -348,3 +352,4 @@ details img{
 	}
 	
 }
+

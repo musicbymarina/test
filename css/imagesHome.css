@@ -8,11 +8,11 @@
 }
 
 button {
-	color: #57595B;
-	background-color: white;
+	color: white;
+	background-color: black;
 	text-transform: uppercase;
-	border: 5px solid black;
-	border-radius: 50px;
+	border: 1px white dotted;
+	border-radius: 5px;
 	margin: 0 auto;
 	width: 30%;
 	height: 60px;
@@ -29,11 +29,11 @@ button:focus{
 }
 
 button:active{
-	background-color: #57595B;
-	color: white;
-	-webkit-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
-	box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.75);
+	background-color: white;
+	color: black;
+	-webkit-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.15);
+	-moz-box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.15);
+	box-shadow: inset -7px 7px 19px 7px rgba(0,0,0,0.15);
 	transform: translateY(4px);
 }
 
@@ -43,6 +43,19 @@ button:active{
 	margin: auto;
 	padding: 0;
 	width: 100%;
+}
+
+#slider{
+	margin: auto;
+	list-style-type: none;
+}
+
+#slider > li:nth-child(0){
+	display: block;
+}
+
+#slider li:first ~li{
+	display: none;
 }
 
 #slider > figure {
@@ -85,7 +98,7 @@ button:active{
 	cursor: zoom-in;
 }
 
-#slider figure.active {
+#slider li figure.active {
 	display: flex;
 	height: auto;
 	margin: 0 auto;
@@ -125,9 +138,14 @@ figcaption {
 .slider ul {
 	margin: auto;
 	width: 100%;
+	list-style-type: none;
 }
 
 /*BOUTONS PREVIOUS ET NEXT*/
+
+#arrows{
+	margin: 0 auto;
+}
 
 .slider-nav {
 	margin: 1em auto;
@@ -155,6 +173,7 @@ figcaption {
 .slider-nav .arrow {
 	flex: 0 0 15%;
 	font-size: xx-large;
+	margin: 1em 0;
 }
 
 .slider-nav a {
@@ -164,6 +183,12 @@ figcaption {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
+}
+
+#info{
+	font-size: 1em;
+	text-align: center;
+	color: orangered;
 }
 
 .slider-nav span {
@@ -183,8 +208,6 @@ button:hover,
 	color: cornsilk;
 }
 
-
-
 /*
 THUMBNAIL
 */
@@ -194,10 +217,10 @@ THUMBNAIL
 }
 
 #thumbnail {
-	margin: auto;
+	margin: 1em auto;
 	height: auto;
 	width: 100%;
-	display: flex;
+	display: none;
 	flex-direction: row;
 	align-items: stretch;
   	justify-content: space-around;
@@ -211,23 +234,28 @@ THUMBNAIL
 	width: 15%;
 }
 
-#thumbnail figure {
-	margin: 0 auto;
+#thumbnail li figure {
+	margin: 1em;
 	width: auto;
 	border: solid 1px #eee;
-	background-color: white;
-	box-shadow: 
+	background-color: black;
+	
+	box-shadow: none;
 	/*Ombre de la 1ere couche:*/
-	0 1px 1px rgba(0,0,0,0.15),
+	/*0 1px 1px rgba(0,0,0,0.15),*/
 	/*2eme couche:*/
-	0 10px 0 -5px #eee,
+	/*0 10px 0 -5px #eee,*/
 	/*Ombre de la 2eme couche:*/
-	0 10px 1px -4px rgba(0,0,0,0.15),
+	/*0 10px 1px -4px rgba(0,0,0,0.15),*/
 	/*3eme couche:*/
-	0 20px 0 -10px #eee,
+	/*0 20px 0 -10px #eee,*/
 	/*Ombre de la 3eme couche:*/
-	0 20px 1px -9px rgba(0, 0, 0, 0.15);
-	padding: 20px;
+	/*0 20px 1px -9px rgba(0, 0, 0, 0.15);*/
+	padding: 1em;
+}
+
+#thumbnail li figcaption{
+	display: none;
 }
 
 
@@ -260,7 +288,7 @@ THUMBNAIL
 	padding: 10px;
 	border: solid 3px white;
 	border-radius: 10px;
-	width: 95%;
+	width: 90%;
 }
 	
 .close{
@@ -313,11 +341,11 @@ THUMBNAIL
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 36s linear infinite 0s;
-    -moz-animation: imageAnimation 36s linear infinite 0s;
-    -o-animation: imageAnimation 36s linear infinite 0s;
-    -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 36s linear infinite 0s;
+    -webkit-animation: imageAnimation 42s linear infinite 0s;
+    -moz-animation: imageAnimation 42s linear infinite 0s;
+    -o-animation: imageAnimation 42s linear infinite 0s;
+    -ms-animation: imageAnimation 42s linear infinite 0s;
+    animation: imageAnimation 42s linear infinite 0s;
 }
 
 .pub li div {
@@ -461,12 +489,12 @@ THUMBNAIL
 	button{
 		width: 100%;
 		display: block;
-		margin: 0 auto;
+		margin: 10px auto;
 		padding: 0;
 	}
 	
-	.active{
-		width: 90%;
+	.ouvert{
+		width: 85%;
 		padding: 0;
 		margin: 0;
 	}
@@ -480,6 +508,10 @@ THUMBNAIL
 		display: none;
 	}
 	
+	#myModal{
+		height: auto;
+	}
+	
 	.force{
 		transform: rotate(-90deg);
 		transform-origin: left top;
@@ -490,5 +522,9 @@ THUMBNAIL
 		top: 100%;
 		left: 0;
 	}
+	
+	.modal-content{
+	width: 95%;
+}
 	
 }
