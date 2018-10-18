@@ -14,7 +14,7 @@ figure{
 	0 20px 1px -9px rgba(0, 0, 0, 0.15);
 	padding: 20px;
 }
-.electronic{
+.letters{
 	width: 100%;
 	border: solid 5px white;
 	padding: 2em 0;
@@ -80,6 +80,7 @@ box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
 	padding: 0;
 }
 
+
 .liste-artistes{
 	flex-wrap: wrap;
 	width: 100%
@@ -96,10 +97,30 @@ box-shadow: 22px -15px 2px 0px rgba(182, 177, 177);
 
 #hidden{
 	display: none;
+	margin: 1em;
 }
 
 #hidden button{
 	margin: 1em auto;
+}
+
+#thumbnail{
+	margin: auto;
+	display: flex;
+}
+
+#thumbnail li{
+	margin: 10px;
+	width: 15%;
+}
+
+#thumbnail figure{
+	margin: 1em;
+}
+
+#slider{
+	margin: auto;
+	list-style-type: none;
 }
 
 @media screen and (max-width: 500px) {

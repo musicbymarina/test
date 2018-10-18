@@ -12,8 +12,10 @@ section > article *{
 }
 
 .press article{
+	display: none;
 	border: solid 5px black;
 	margin: 2em 0;
+	width: 100%;
 }
 
 
@@ -122,7 +124,7 @@ img{
 	margin-left: 5px;
 }
 
-.active:after{
+.open:after{
 	content: '\2796';
 }
 
@@ -137,8 +139,12 @@ img{
 	padding: 1em;
 	}
 	
+	.accordion{
+		width: 85%;
+	}
+	
 	#print figure{
-		width: 80%;
+		width: 100%;
 		box-shadow: none;
 	}
 

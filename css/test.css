@@ -1,0 +1,218 @@
+.contact{
+  color: black;
+  border: solid 1px #eee;
+  background-color: white;
+  box-shadow: 0 -1px 1px rgba(0,0,0,0.15), 0 -10px 0 -5px #eee, 0 -10px 1px -4px rgba(0,0,0,0.15), 0 -20px 0 -10px #eee, 0 -20px 1px -9px rgba(0,0,0,0.15);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section > article *{
+  color: black;
+}
+
+.contact article{
+  display: flex;
+  border: solid 5px black;
+  margin: 2em 0;
+}
+
+
+.contact figure{
+  width: 50%;
+  margin: 1em auto;
+  box-sizing: border-box;
+}
+
+.way h3,
+.others h4,{
+  margin: 2em;
+  padding: 0 2em;
+}
+
+.contact h3{
+  color: black;
+}
+
+/*Accordeon*/
+
+
+.accordion{
+  cursor: pointer;
+  transition: 0.4s;
+  border: solid 5px black;
+  padding: 1em 2em;
+}
+
+.accordion:after{
+  content: '\02795';
+  font-size: 1em;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.open:after{
+  content: '\2796';
+}
+
+.accordion:hover{
+  background-color: black;
+  color: white;
+}
+
+
+img{
+  width: 100%;
+  border: solid 1px #e8e6e6;
+}
+
+.contact figcaption{
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.contact p,
+.contact li,
+.contact figcaption {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.2em;
+  text-transform: none;
+}
+
+.contact p{
+  font-weight: bold;
+  padding: 1em 6em;
+}
+
+
+
+.contact ul, .contact ol{
+  list-style: none;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  padding-inline-start:0;
+}
+
+.contact ul > li,
+.contact ol > li{
+  flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#downloadVCF{
+  display: flex;
+  flex-direction: column;
+}
+
+.way p{
+  margin: 1em auto;
+}
+#downloadVCF a{
+  padding: 1em;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  margin: 1em auto;
+  width: 50%;
+  height: 60px;
+  font-weight: normal;
+  font-size: 1em;
+  width: 30%;
+  text-align: center;
+}
+
+#downloadVCF a:hover,
+#downloadVCF a:active{
+  font-weight: bolder;
+}
+  
+@media screen and (max-width: 869px) {
+
+.contact ul > li,
+.contact ol > li{
+  margin: 0 2em;
+}
+
+.contact p,
+.contact figcaption{
+  font-size: 1em;
+}
+
+.contact p{
+  width: 100%;
+  padding: 1em;
+}
+
+.contact figure{
+  width: 70%;
+}
+
+#downloadVCF a{
+  font-weight: normal;
+  width: 50%;
+  box-sizing: border-box;
+  margin: 1em auto;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+.contact h3,
+.contact p{
+  font-size: 1em;
+}
+
+.accordion,
+.accordion .open h3{
+  width: auto;
+  margin: 1em 0;
+}
+
+.contact li{
+  margin: 0 10px;
+}
+
+.contact figure{
+  width: 90%;
+}
+
+.contact p{
+  padding: 1em 10px;
+  width: auto;
+}
+.contact ol > li{
+  margin: 0 10px;
+  width: auto;
+}
+
+.contact ul > li{
+  margin: 0 10px;
+  width: auto;
+}
+
+.contact ul,
+.contact ol{
+  margin: 1em 0;
+} 
+
+#downloadVCF a{
+  width: 70%;
+  padding: 1em 0;
+}
+
+#downloadVCF a:first-child{
+  width: 95%;
+}
+
+  }

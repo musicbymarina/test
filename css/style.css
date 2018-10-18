@@ -261,6 +261,18 @@ details img{
 	filter: grayscale(100);
 }
 
+.offline p,
+.offline article,
+.lost p,
+.lost article{
+	color: black;
+}
+
+.offline article,
+.lost article{
+	display: flex;
+}
+
 @media screen and (max-width: 500px) {
 	#logo{
 		width: 3%;
