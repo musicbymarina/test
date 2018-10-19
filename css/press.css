@@ -165,6 +165,6 @@ img{
 	}
 	
 	.press article{
-		display: flex;
+		display: block;
 	}
 }

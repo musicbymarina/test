@@ -230,7 +230,7 @@ img{
 }
 
 .contact article{
-	display: flex;
+	display: block;
 }
 
 	}

@@ -224,7 +224,7 @@ img{
 }
 
 .cover article{
-  display: flex;
+  display: block;
 }
 
   }
