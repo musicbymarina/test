@@ -186,25 +186,26 @@ figcaption {
 }
 
 #info{
+	display: block;
 	font-size: 1em;
 	text-align: center;
 	color: orangered;
 }
 
-.slider-nav span {
+.slider-nav i {
 	font-size: 1.5em;
 	display: block;
 	width: 100%;
 	color: white;
 }
 
-.slider-nav span:hover,
+.slider-nav i:hover,
 button:hover,
 #thumbnail li:hover {
 	cursor: pointer;
 }
 
-.slider-nav span:active{
+.slider-nav i:active{
 	color: cornsilk;
 }
 
@@ -515,7 +516,7 @@ THUMBNAIL
 	.force{
 		transform: rotate(-90deg);
 		transform-origin: left top;
-		width: 100vh;
+		width: 90vh;
 		height: 100vw;
 		overflow-x: hidden;
 		position: absolute;
@@ -525,6 +526,10 @@ THUMBNAIL
 	
 	.modal-content{
 	width: 95%;
+}
+
+.slider-nav .arrow {
+	margin: 1em;
 }
 	
 }

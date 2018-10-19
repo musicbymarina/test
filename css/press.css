@@ -163,4 +163,8 @@ img{
 		top: 100%;
 		left: 0;
 	}
+	
+	.press article{
+		display: flex;
+	}
 }

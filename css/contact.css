@@ -115,6 +115,11 @@ img{
 .way p{
 	margin: 1em auto;
 }
+
+.way i{
+	text-align: center;
+	font-weight: bold;
+}
 #downloadVCF a{
 	padding: 1em;
 	font-weight: bold;
@@ -122,19 +127,28 @@ img{
 	text-decoration: none;
 	color: black;
 	background-color: white;
-	text-transform: uppercase;
+	text-transform: normal;
 	margin: 1em auto;
 	width: 50%;
 	height: 60px;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 1em;
 	width: 30%;
 	text-align: center;
 }
 
 #downloadVCF a:hover,
-#downloadVCF a:active{
+#downloadVCF a:active,
+#downloadVCF i:hover,
+#downloadVCF i:active,
+{
 	font-weight: bolder;
+	cursor: pointer;
+	
+}
+
+.flaticon-mail:hover{
+	cursor: pointer;
 }
 	
 @media screen and (max-width: 869px) {
@@ -213,6 +227,10 @@ img{
 
 #downloadVCF a:first-child{
 	width: 95%;
+}
+
+.contact article{
+	display: flex;
 }
 
 	}

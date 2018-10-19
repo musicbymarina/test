@@ -223,4 +223,8 @@ img{
   width: 90%;
 }
 
+.cover article{
+  display: flex;
+}
+
   }

@@ -10,10 +10,11 @@
 }
 
 @font-face{
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-display: swap;
 	src: local('Roboto'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
 }
+
 
 body {
 	background-color: black;
@@ -222,43 +223,43 @@ footer{
 		margin: 2em 0 0 0;
 		z-index: auto;
 		bottom: 0;
+		background-color: white;
 }
 
-details{
-	background-color: white;
-}
-summary{
-		font-weight: bold;
-	padding: 1em 6em;
-	outline: white;
-	background-color: black;
-}
 
-summary:active{
-	outline: white;
-}
 
-details p{
+footer p{
 	padding: 0 1em;
 	color: black;
-	font-size: 0.8em;
+	font-size: 0.9em;
+	font-weight: bold;
 }
 
-details p{
+footer p{
 	text-align: center;
 }
 
-details ul{
+footer ul{
 	display: flex;
-	list-style-image: none;
+	list-style-type: none;
 	align-content: center;
 	justify-content: space-around;
 	margin: 0;
 }
 
-details img{
-	width: 25%;
-	filter: grayscale(100);
+footer i {
+	font-size: 2em;
+	display: block;
+	width: 100%;
+	color: black;
+}
+
+footer i:hover{
+	cursor: pointer;
+}
+
+footer i:active{
+	color: grey;
 }
 
 .offline p,
@@ -273,19 +274,74 @@ details img{
 	display: flex;
 }
 
+
+
+@media screen and (max-width: 869px) {
+	#logo{
+		width: 3%;
+		margin: 0 1em;
+	}
+	
+	header nav{
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	
+	ul.parent-menu{
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		width: 80%;
+		box-sizing: content-box;
+	}
+	
+	ul.parent-menu > li{
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		padding: 0 1em 1em 1em;
+		margin-left: 1em;
+	}
+	
+	.child-menu{
+		flex-direction: column;
+		display: flex;
+	}
+	
+	.pub{
+		display: none;
+	}
+	
+	
+}
+
 @media screen and (max-width: 500px) {
 	#logo{
 		width: 3%;
 	}
 	
+	#logo h1{
+		font-size: 1em;
+	}
+	
 	#burger{
-		display: block;
+		display: none;
 	}
 	
 	header nav{
-		visibility: hidden;
+		visibility: visible;
 		display: block;
-		width: 80%;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	nav a{
+		font-size: 1em;
+	}
+	
+	#burger{
+		display: none;
 	}
 	
 	ul.parent-menu{
@@ -310,7 +366,7 @@ details img{
 	}
 	
 	main{
-		margin: 1em auto;
+		margin: 0 auto;
 	}
 	
 	#titre h2{
@@ -322,46 +378,11 @@ details img{
 		display: none;
 	}
 	
+
 }
 
 
 
-@media screen and (max-width: 869px) {
-	#logo{
-		width: 3%;
-		margin: 0 1em;
-	}
-	
-	header nav{
-		display: block;
-		width: 80%;
-		margin: 6em auto;
-	}
-	
-	ul.parent-menu{
-		display: flex;
-		flex-direction: column;
-		padding: 1em;
-		width: 80%;
-		box-sizing: content-box;
-	}
-	
-	ul.parent-menu > li{
-		display: flex;
-		flex-direction: column;
-		width: 70%;
-		padding: 0 1em 1em 1em;
-		margin-left: 1em;
-	}
-	
-	.child-menu{
-		flex-direction: column;
-		display: flex;
-	}
-	
-	.pub{
-		display: none;
-	}
-	
-}
+
+
 
