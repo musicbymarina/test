@@ -14,7 +14,7 @@ const download = () =>{
 	REV:${Date.now()}
 	END:VCARD
 	`;
-	const buttonDownload = `<a href='data:text/plain;charset=utf-8, encodeURIComponent(${text})' download='Music_by_Marina.vcf'> +ME IN YOUR CONTACTS</a>`;	
+	const buttonDownload = `<a href='data:text/plain;charset=utf-8, encodeURIComponent(${text})' download='Music_by_Marina.vcf'> <i class="flaticon-agenda" aria-label='Add me on your phone' title="Add me on your phone">Add me on your phone</i></a>`;	
 	$('#downloadVCF').prepend(buttonDownload);
 }
 

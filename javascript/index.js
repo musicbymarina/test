@@ -191,6 +191,21 @@ const displayLaptop = () => {
     
     $('.pub').prepend(content);
     return content;
+          } else{
+            content = `<li>
+    <span style='background-image: url("${jpg}"); animation-delay: ${favorite.delay}; -webkit-animation-delay: ${favorite.delay};
+      -moz-animation-delay: ${favorite.delay}; -o-animation-delay: ${favorite.delay}; -ms-animation-delay: ${favorite.delay};'>${favorite.type}</span>
+    <div>
+    <h2 style='text-align:right; text-transform: uppercase'>
+    <a href="${adRock.link}"> ${adRock.text}</a>
+    </h2>
+    <h2 style='text-align:right; text-transform: uppercase'>
+    <a href="${adElectro.link}"> ${adElectro.text}</a>
+    </h2>
+    </div>
+    </li>`;
+    $('.pub').prepend(content);
+    return content;
           }
         })
       } 
@@ -244,24 +259,20 @@ const displayMobile = () =>{
  * @description Add the photos in the slider (and thumbnail for portfolio)
  * @param {string} photos
  */
-  const addPhotos = (photos) =>{
+const addPhotos = (photos) =>{
     let sliderContent;  
     let thumbnailContent = ``;
     const firstWebp = photos[0].photosPath[0].webp[0];
     const firstJpg = photos[0].photosPath[0].jpg[0];
-  
-    photos.map(artiste=> {    
-      artiste.photosPath.map((photoPath)=>{
-     
-        if(photoPath.webp){
-        
-          Modernizr.on('webp', (result)=>{
-            if(result){
-              photoPath.webp.map((imageWebp)=>{
-              // Make appears the first webp picture of the list
-                if(imageWebp === firstWebp){
-                  sliderContent = 
-                `<li class='active'>
+    
+    photos.map((artiste)=>{
+    artiste.photosPath.map((photoPath)=>{
+      Modernizr.on('webp', (result)=>{
+        if(result){
+          photoPath.webp.map((imageWebp)=>{
+             // Make appears the first webp picture of the slider
+            if(imageWebp === firstWebp){
+              sliderContent = `<li class='active'>
                   <figure>
                     <picture>
                       <source srcset=${imageWebp} media='(min-width: 0px)' type='image/webp'>
@@ -270,10 +281,8 @@ const displayMobile = () =>{
                     <figcaption>${artiste.name}</figcaption>
                   </figure>
                 </li>`;
-                }
-                else{
-                  sliderContent = 
-                `<li class='hidden'>
+            }else{
+              sliderContent = `<li class='hidden'>
                   <figure>
                     <picture>
                       <source srcset=${imageWebp} media='(min-width: 0px)' type='image/webp'>
@@ -282,9 +291,8 @@ const displayMobile = () =>{
                     <figcaption>${artiste.name}</figcaption>
                   </figure>
                 </li>`;
-                }
-                
-                thumbnailContent = 
+            }
+            thumbnailContent = 
                 `<li>
                   <figure>
                   <picture>
@@ -295,15 +303,14 @@ const displayMobile = () =>{
                   </figure>
                 </li>`;
                         
-          slider.prepend(sliderContent);
-          thumbnail.prepend(thumbnailContent);
-            })
-          } else{
+              slider.prepend(sliderContent);
+              thumbnail.prepend(thumbnailContent);
+          })
+        } else{
           photoPath.jpg.map((imageJpg)=>{
-            // Make appears the first img picture of the list
             if(imageJpg === firstJpg) {
-              sliderContent = 
-                `<li class='active'>
+                  sliderContent = 
+                  `<li class='active'>
                     <figure>
                       <picture>
                         <source srcset=${imageJpg} media='(min-width: 0px)' type='image/jpeg'>
@@ -314,36 +321,34 @@ const displayMobile = () =>{
                 </li>`;
             }else{
               sliderContent = 
-                `<li class='hidden'>
-                  <figure>
-                    <picture>
-                      <source srcset=${imageJpg} media='(min-width: 0px)' type='image/jpeg'>
-                      <img src='${imageJpg}' alt='${artiste.name}' style='border: solid 1px #e8e6e6'>
-                    </picture>
-                    <figcaption>${artiste.name}</figcaption>
-                  </figure>
+                  `<li class='hidden'>
+                    <figure>
+                      <picture>
+                        <source srcset=${imageJpg} media='(min-width: 0px)' type='image/jpeg'>
+                        <img src='${imageJpg}' alt='${artiste.name}' style='border: solid 1px #e8e6e6'>
+                      </picture>
+                      <figcaption>${artiste.name}</figcaption>
+                    </figure>
                 </li>`;
             }
-            
             thumbnailContent = 
-                `<li>
-                  <figure>
-                    <picture>
-                      <source srcset=${imageJpg} media='(min-width: 0px)' type='image/jpeg'>
-                      <img src='${imageJpg}' alt='${artiste.name}' style='border: solid 1px #e8e6e6'>
-                    </picture>
-                    <figcaption>${artiste.name}</figcaption>
-                  </figure>
-                </li>`;
-          slider.prepend(sliderContent);
-          thumbnail.prepend(thumbnailContent);
+                  `<li>
+                    <figure>
+                      <picture>
+                        <source srcset=${imageJpg} media='(min-width: 0px)' type='image/jpeg'>
+                        <img src='${imageJpg}' alt='${artiste.name}' style='border: solid 1px #e8e6e6'>
+                      </picture>
+                      <figcaption>${artiste.name}</figcaption>
+                    </figure>
+                  </li>`;
+                  slider.prepend(sliderContent);
+                  thumbnail.prepend(thumbnailContent);
           })
         }
-        })
-      } 
-      return slider;
-    });
-  });
+        
+      })
+    })  
+    })
 }
 
 /**
@@ -515,12 +520,12 @@ $(this).on('click', (event)=>{
   } else if(target.is('#all')){
     showMeAll();
     
-  } else if(target.is('.next span')){
-      $('.next span').animate({'color':'#eee'}, 'slow');
+  } else if(target.is('.next i')){
+      $('.next i').animate({'color':'#eee'}, 'slow');
       showNextOrPreviousPicture(-1);
       
-  } else if(target.is('.previous span')){
-      $('.previous span').animate({'color':'#eee'}, 'slow');
+  } else if(target.is('.previous i')){
+      $('.previous i').animate({'color':'#eee'}, 'slow');
       showNextOrPreviousPicture(+1);
   }
   else {

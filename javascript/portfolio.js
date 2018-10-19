@@ -209,12 +209,12 @@ $(this).on('click', (event) => {
 			closeModal();
 			
 	// If I click on next arrow, I show the next pic
-	} else if(target.is('.next span')){
+	} else if(target.is('.next i')){
 		showNextOrPreviousPicture(+1);
 		WidthChange(mobileSize);
 	
 	// If I click on previous arrow, I show the previous pic
-	} else if(target.is('.previous span')){
+	} else if(target.is('.previous i')){
 		showNextOrPreviousPicture(-1);
 		WidthChange(mobileSize);
 	
