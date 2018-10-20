@@ -1,7 +1,8 @@
 /*ALL THE METHODS FOR ELECTRONIC PORTFOLIO PAGE*/
 
 // data where I will fetch the images from portfolio.json
-const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/portfolio.json";
+//const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/portfolio.json";
+const imagesUrl = "https://github.com/musicbymarina/test/raw/master/javascript/portfolio.json";
 
 /**
  * @description Helps to sort my array of objects by the name of the artists
