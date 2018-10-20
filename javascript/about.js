@@ -16,10 +16,10 @@ $(this).on('click', (event) => {
 
     const index = parents.find(target).index('h3');
     const article = $('.about article');
-    if(article[index-1].style.display === 'block'){
-      article[index-1].style.display = 'none';
+    if(article[index].style.display === 'block'){
+      article[index].style.display = 'none';
     } else {
-      article[index-1].style.display = 'block';
+      article[index].style.display = 'block';
     }
   }
   })

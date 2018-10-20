@@ -64,10 +64,10 @@ $(this).on('click', (event) => {
 		target.toggleClass('open');
 		const index = parents.find(target).index('h3');
 		const article = $('.press article');
-		if(article[index-1].style.display === 'block'){
-			article[index-1].style.display = 'none';
+		if(article[index].style.display === 'block'){
+			article[index].style.display = 'none';
 		} else {
-			article[index-1].style.display = 'block';
+			article[index].style.display = 'block';
 		}
 		
 	} else if(target.is(".open-photo")) {
