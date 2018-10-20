@@ -12,7 +12,7 @@ const cacheFiles = [
 '/html/'
 ];
 
-const cacheName = 'v3';
+const cacheName = 'v4';
 
 self.addEventListener('install', event => {
     console.log('[ServiceWorker] Installed');
