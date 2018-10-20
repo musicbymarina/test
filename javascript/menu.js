@@ -90,4 +90,3 @@ $('#works').on('click', ()=>{
 $('#burger').on('click', () => {
 	$('header nav').css('visibility', $('header nav').css('visibility') == 'hidden' ? 'visible' : 'hidden');
 });
-

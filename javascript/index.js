@@ -409,7 +409,7 @@ const cleanMySlider = () =>{
 const showNextOrPreviousPicture = (whichOne) => {
   const activePhotoIndex = $('#slider').find('.active').index();
   const nextPhotoIndex = activePhotoIndex + whichOne;
-  //const sliderLength = $('#thumbnail li').length;
+
   const sliderLength = $('#slider li').length;
   const nextPhoto = $('#slider li')[nextPhotoIndex];
   
@@ -437,19 +437,6 @@ const showNextOrPreviousPicture = (whichOne) => {
   }
 }
 
-/* @description Open a modal and show a 100% width image
- * when I click on a picture
- */
-  const openPhoto = () => {
-    $('.pub').remove();
-    $('.modal-content').html('');
-    $('html').addClass('force');
-
-    $('.modal-content').html(`<span class="close">X</span>`);
-    $(event.target).clone().appendTo('.modal-content');
-    $('.modal-content img').css({'width':'100%'});
-    $('#myModal').show();
-}
 
 /* @description Close a modal
  * 
@@ -506,7 +493,17 @@ const showMeAll = () =>{
 $(this).on('click', (event)=>{
   const target = $(event.target);
   if(target.is('.active img')){
-    openPhoto();
+    /* @description Open a modal and show a 100% width image
+    * when I click on a picture
+    */
+    $('.pub').remove();
+    $('.modal-content').html('');
+    $('html').addClass('force');
+
+    $('.modal-content').html(`<span class="close">X</span>`);
+    $(event.target).clone().appendTo('.modal-content');
+    $('.modal-content img').css({'width':'100%'});
+    $('#myModal').show();
     
   } else if(target.is('.close')){
     closeModal();

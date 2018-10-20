@@ -108,21 +108,6 @@ const showNextOrPreviousPicture = (whichOne) => {
 	}
 }
 
-/* @description Open a modal and show a 100% width image
- * when I click on a picture
- */
-const openPhoto = () =>{
-	console.log('tu cliques sur une photo');
-			let image = event.target;
-			console.log(image);
-			$('.modal-content').html('');
-			$('html').addClass('force');
-			$('.modal-content').html(`<span class="close">X</span>`);
-			$(event.target).clone().appendTo('.modal-content');
-			$('.modal-content img').css({'width':'100%'});
-			$('#myModal').show();
-}
-
 /* @description Close a modal
  * 
  */
@@ -131,8 +116,14 @@ const closeModal = () =>{
 	$('html').removeClass('force');
 }
 
-const showImages = () =>{
-	cleanMySlider();
+/* @description Event define all the click events of Portfolio except the menu
+ * 
+ */ 
+$(this).on('click', (event) => {
+	const target = $(event.target);
+	// I show the images from the artist chosen
+	if(target.is(".artistes h5")){
+			cleanMySlider();
 		const artistName = $(event.target).html();
 		
 		fetch(imagesUrl).then(response=>response.json()).then((data)=>{
@@ -189,20 +180,17 @@ const showImages = () =>{
 			WidthChange(mobileSize);
 			
 			});
-}
-
-/* @description Event define all the click events of Portfolio except the menu
- * 
- */ 
-$(this).on('click', (event) => {
-	const target = $(event.target);
-	// I show the images from the artist chosen
-	if(target.is(".artistes h5")){
-			showImages();
 			
-	// If I click on my main picture from the slider, I open the modal
+	/* @description Open a modal and show a 100% width image
+ 	* when I click on a picture
+ 	*/
 	} else if(target.is(".active img")) {
-			openPhoto();
+			$('.modal-content').html('');
+			$('html').addClass('force');
+			$('.modal-content').html(`<span class="close">X</span>`);
+			$(event.target).clone().appendTo('.modal-content');
+			$('.modal-content img').css({'width':'100%'});
+			$('#myModal').show();
 			
 	// If I click on close, I close the modal
 	} else if(target.is(".close")) {
