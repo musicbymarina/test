@@ -1,7 +1,8 @@
 /*ALL THE METHODS FOR HOME PAGE*/
 
 // data where I will fetch the images from images.json
-const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/images.json";
+//const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/images.json";
+const imagesUrl = "https://musicbymarina.github.io/test/javascript/images.json";
 
 // define some DOM elements for using
 const slider = $('#slider');
