@@ -1,18 +1,18 @@
 const cacheFiles = [
 '/', 
 'index.html',
-'/html/offline.html',
-'/html/lost.html',
-'/css/style.css',
-'/javascript/index.js',
-'/javascript/menu.js',
-'images/',
-'/javascript/',
-'/css/',
-'/html/'
+'./html/offline.html',
+'./html/lost.html',
+'./css/style.css',
+'./javascript/index.js',
+'./javascript/menu.js',
+'./images/',
+'./javascript/',
+'./css/',
+'./html/'
 ];
 
-const cacheName = 'v4';
+const cacheName = 'v5';
 
 self.addEventListener('install', event => {
     console.log('[ServiceWorker] Installed');
