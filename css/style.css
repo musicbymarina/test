@@ -285,7 +285,7 @@ footer i:active{
 	header nav{
 		display: block;
 		width: 100%;
-		margin: auto;
+		margin: 1em auto;
 	}
 	
 	ul.parent-menu{
@@ -346,7 +346,7 @@ footer i:active{
 	
 	ul.parent-menu{
 		display: flex;
-		flex-direction: column;
+	 	flex-direction: column;
 		padding: 1em;
 		width: 80%;
 		box-sizing: content-box;
@@ -380,9 +380,3 @@ footer i:active{
 	
 
 }
-
-
-
-
-
-
