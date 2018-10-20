@@ -1,18 +1,40 @@
 const cacheFiles = [
-'/', 
 'index.html',
+'modernizr-config.json',
+'modernizr-custom.js',
+'./html/about.html',
+'./html/contact.html',
+'./html/cover.html',
+'./html/electronic.html',
 './html/offline.html',
 './html/lost.html',
+'./html/press.html',
+'./html/rock.html',
 './css/style.css',
+'./css/imagesHome.css',
+'./css/about.css',
+'./css/contact.css',
+'./css/cover.css',
+'./css/flaticon.css',
+'./css/portfolio.css',
+'./css/press.css',
 './javascript/index.js',
 './javascript/menu.js',
-'./images/',
-'./javascript/',
-'./css/',
-'./html/'
+'./javascript/about.js',
+'./javascript/contact.js',
+'./javascript/cover.js',
+'./javascript/electronic.js',
+'./javascript/portfolio.js',
+'./javascript/press.js',
+'./javascript/register.js',
+'./javascript/rock.js',
+'./font/Flaticon.eot',
+'./font/Flaticon.svg',
+'./font/Flaticon.ttf',
+'./font/Flaticon.woff'
 ];
 
-const cacheName = 'v5';
+const cacheName = 'v4';
 
 self.addEventListener('install', event => {
     console.log('[ServiceWorker] Installed');
@@ -51,7 +73,7 @@ self.addEventListener('fetch', event => {
         	return response || fetch(event.request)
         						.then(response => {
                       if(response.status === 404){
-                        return cache.match('/html/lost.html')
+                        return cache.match('./html/lost.html')
                       }
           							console.log('[ServiceWorker] not Found in Cache, need to search in the network', event.request.url);
           							cache.put(event.request, response.clone());
@@ -59,7 +81,7 @@ self.addEventListener('fetch', event => {
           							return response;
         						});
       	}).catch((error)=>{
-      		return cache.match('/html/offline.html');
+      		return cache.match('./html/offline.html');
       	})
     })
   );
