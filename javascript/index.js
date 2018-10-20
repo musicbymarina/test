@@ -4,6 +4,7 @@
 //const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/images.json";
 const imagesUrl = "https://musicbymarina.github.io/test/javascript/images.json";
 
+
 // define some DOM elements for using
 const slider = $('#slider');
 const thumbnail = $('#thumbnail');

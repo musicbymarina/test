@@ -81,7 +81,8 @@ const verifFetch = new Promise((resolve, reject) =>{
 
  /* @description Call the promise*/
 verifFetch.then(()=>{
-const quotesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/quotes.json";
+//const quotesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/quotes.json";
+const quotesUrl = "https://musicbymarina.github.io/test/javascript/quotes.json";
 fetch(quotesUrl)
 .then((response)=>response.json())
 .then(fetchQuotes)

@@ -1,8 +1,8 @@
 /*ALL THE METHODS FOR PRESS PAGE*/
 
 // data where I will fetch the images from press.json
-const presse = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/press.json";
-
+//const presse = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/press.json";
+const presse = "https://musicbymarina.github.io/test/javascript/press.json";
 
 /**
  * @description Helps to sort my array of objects by the name of the media
