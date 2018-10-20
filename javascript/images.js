@@ -1,4 +1,5 @@
-const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/data.json";
+//const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/data.json";
+const imagesUrl = "https://musicbymarina.github.io/test/javascript/images.json";
 
 /*Fonction pour mettre dans l'ordre alphabetique les noms des artistes*/
 const ordreAlphabetique = (artist1, artist2) =>{
