@@ -538,16 +538,20 @@ $(this).on('click', (event)=>{
 *
 */
 const imagesParade = () => {
-  verifFetch
-  .then(()=>{
-    fetch(imagesUrl)
+
+    /*fetch(imagesUrl)
     .then((response)=>response.json())
     .then(fetchPhotos)
   })
   .then(displayElwhenFetch)
   .catch((error)=>{
   console.warn('Check your error in fetchPhotos function: ', error);
-})
+  */
+fetch(imagesUrl)
+.then((response)=>response.json())
+.then(fetchPhotos)
+.then(displayElwhenFetch)
+.catch((error)=>console.warn('Check your error in fetchPhotos function: ', error))
 }
 
 

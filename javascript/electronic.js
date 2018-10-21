@@ -67,7 +67,7 @@ const addLetters = () =>{
 /* @description Add a promise to fetch my letters and dj names.
  Or put an error message
  * @param {string} callback
- */
+
 const verifyLetters = new Promise((resolve, reject) =>{
 	const artistTitles = $('.liste-artistes h5');
 	if(artistTitles) {
@@ -82,3 +82,6 @@ addLetters();
 }).catch((error)=>{
 	console.warn('Check again your addletters function: ', error);
 });
+
+ */
+ addLetters();

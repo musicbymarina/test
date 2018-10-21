@@ -67,7 +67,7 @@ const addLetters = () =>{
  Or put an error message
  * @param {string} callback
  */
-const verifyLetters = new Promise((resolve, reject) =>{
+/*const verifyLetters = new Promise((resolve, reject) =>{
 	const artistList = $('.liste-artistes h5');
 	if(artistList) {
 		resolve('Alphabet and rock bands are filled in boxes');
@@ -80,4 +80,5 @@ verifyLetters.then(()=>{
 addLetters();
 }).catch((error)=>{
 	console.warn('Check again your addletters function: ', error);
-});
+});*/
+addLetters();
