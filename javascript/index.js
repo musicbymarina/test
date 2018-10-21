@@ -500,7 +500,9 @@ $(this).on('click', (event)=>{
     */
     $('.pub').remove();
     $('.modal-content').html('');
-    $('html').addClass('force');
+    if(target[0].naturalWidth > target[0].naturalHeight){
+        $('html').addClass('force');
+      }
 
     $('.modal-content').html(`<span class="close">X</span>`);
     $(event.target).clone().appendTo('.modal-content');

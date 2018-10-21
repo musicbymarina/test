@@ -185,8 +185,10 @@ $(this).on('click', (event) => {
  	* when I click on a picture
  	*/
 	} else if(target.is(".active img")) {
+			if(target[0].naturalWidth > target[0].naturalHeight){
+				$('html').addClass('force');
+			}
 			$('.modal-content').html('');
-			$('html').addClass('force');
 			$('.modal-content').html(`<span class="close">X</span>`);
 			$(event.target).clone().appendTo('.modal-content');
 			$('.modal-content img').css({'width':'100%'});
@@ -209,6 +211,7 @@ $(this).on('click', (event) => {
 	// If I click on back to the artists list, I show the alphabets again and hide the button
 	}else if(target.is('#hidden button')){
 		$('.letters').toggle();
+		$('#info').html('');
 		$('#hidden').hide();
 			
 	}

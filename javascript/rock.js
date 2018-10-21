@@ -1,8 +1,8 @@
 /*ALL THE METHODS FOR ROCK PORTFOLIO PAGE*/
 
 // data where I will fetch the images from portfolio.json
-//const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/portfolio.json";
-const imagesUrl = "https://musicbymarina.github.io/test/javascript/portfolio.json";
+const imagesUrl = "https://raw.githubusercontent.com/musicbymarina/test/master/javascript/portfolio.json";
+//const imagesUrl = "https://musicbymarina.github.io/test/javascript/portfolio.json";
 
 
 /**
