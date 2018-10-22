@@ -9,7 +9,7 @@
 	<title>Music by Marina, photographer</title>
 	
 	<!-- Favicon and compatibility for IE-->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<link rel="icon" type="image/png" href="../images/favicon.png" sizes="192x192">
   	<link rel="icon" type="image/png" href="../images/favicon.png" sizes="512x512">
 
@@ -24,14 +24,19 @@
 	<link rel="stylesheet" type="text/css" href="../css/flaticon.css">
 	<link rel="stylesheet" type="text/css" href="../css/imagesHome.css">
   	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto|Notable" rel="stylesheet">
+
+  	<!--Scripts for Jquery et Jquery mobile-->
+  	<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="../javascript/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+	<div data-role="page">
 	<section id="myModal">
 		<div class="modal-content">
 
 		</div>
 	</section>
-<header>
+<header data-role="header">
 	<section id="logo">
 		<a href="../index.html" title="Home">
 		<h1>
@@ -75,7 +80,7 @@
 	</ul>
 </nav>
 </header>
-<main>
+<main data-role="main" class="ui-content">
 	<h2 id="titre">Photographer</h2>
 	<section class="about">
 		<h3 class="accordion">About Marina</h3>
@@ -185,7 +190,7 @@
 		</article>
 	</section>
 </main>
-<footer>
+<footer data-role="footer">
   <p>Copyright 2018. </p>
   <p>By Marina Sellimoutou. All Rights Reserved.</p>
   <p>All content and graphics on this web site are the property of Marina Sellimoutou.</p>
@@ -195,7 +200,7 @@
 
   </ul>
 </footer>
-<script src="../javascript/jquery-3.3.1.min.js"></script>
+</div>
 <script type="text/javascript" src="../javascript/menu.js"></script>
 <script type="text/javascript" src="../javascript/about.js"></script>
 
