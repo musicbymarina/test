@@ -22,10 +22,15 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/flaticon.css">
 	<link rel="stylesheet" type="text/css" href="./css/imagesHome.css">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto|Notable" rel="stylesheet">
+
+  	<!--Scripts for Jquery et Jquery mobile-->
+  	<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="./javascript/jquery-3.3.1.min.js"></script>
+	
 </head>
 <body>
+	<div data-role="page">
 	<ul class="pub">
 		
 	</ul>
@@ -34,7 +39,7 @@
 
 		</div>
 	</section>
-<header>
+<header data-role="header">
 	<section id="logo">
 		<a href="index.html" title="Home">
 		<h1>
@@ -78,7 +83,7 @@
 	</ul>
 </nav>
 </header>
-<main>
+<main class="ui-content">
 
 	<h2 id="titre">Photographer</h2>
 	<section id="buttons">
@@ -116,7 +121,7 @@
 		
 	</section>
 </main>
-<footer>
+<footer data-role="footer">
   <p>Copyright 2018. </p>
   <p>By Marina Sellimoutou. All Rights Reserved.</p>
   <p>All content and graphics on this web site are the property of Marina Sellimoutou.</p>
@@ -127,9 +132,10 @@
   </ul>
 </footer>
 <script defer type="text/javascript" src="modernizr-custom.js"></script>
-<script src="./javascript/jquery-3.3.1.min.js"></script>
+
 <script src="./javascript/menu.js"></script>
 <script src="./javascript/index.js"></script>
 <script src="./javascript/register.js"></script>
+</div>
 </body>
 </html>
