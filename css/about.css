@@ -173,6 +173,11 @@ quote{
 
 
 @media screen and (max-width: 869px) {
+.about p{
+  padding: 0;
+  font-size: 1em;
+  width: auto;
+}
 
 .liste{
   width: 100%;
