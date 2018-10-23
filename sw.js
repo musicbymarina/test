@@ -1,5 +1,5 @@
 const cacheFiles = [
-'/',
+'/test/',
 'index.html',
 'modernizr-config.json',
 'modernizr-custom.js',
@@ -36,7 +36,7 @@ const cacheFiles = [
 './font/Flaticon.woff'
 ];
 
-const cacheName = 'v2';
+const cacheName = 'v3';
 
 self.addEventListener('install', event => {
     console.log('[ServiceWorker] Installed');
